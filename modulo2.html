@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 2: Distintos Tipos de IA | Fundación CONASED</title>
+  <meta name="description" content="Módulo 2: Distintos Tipos de IA. Mapa de tecnologías: IA generativa, sistemas multimodales, algoritmos predictivos, ANI vs AGI y el caso del Taller de Arte.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Estilos Globales -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER INSTITUCIONAL CONASED -->
+  <header class="header-conased">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-conased" aria-label="Inicio Fundación CONASED">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">FUNDACIÓN CONASED</span>
+          <span class="brand-sub">Acción Social y Desarrollo</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="modulo1.html" class="nav-link">
+              <i class="fa-solid fa-circle-nodes"></i> Módulo 1: Conceptos Clave
+            </a>
+          </li>
+          <li>
+            <a href="modulo2.html" class="nav-link active">
+              <i class="fa-solid fa-network-wired"></i> Módulo 2: Tipos de IA
+            </a>
+          </li>
+          <li>
+            <a href="modulo3.html" class="nav-link">
+              <i class="fa-solid fa-hand-holding-hand"></i> Módulo 3: Inclusión y Rol Docente
+            </a>
+          </li>
+          <li>
+            <a href="modulo4.html" class="nav-link">
+              <i class="fa-solid fa-scale-balanced"></i> Módulo 4: Opciones del Mercado
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION (OSCURA CON FONDO INTEGRADO Y FADE) -->
+    <section class="hero-section section-dark">
+      <div class="hero-bg-fade" style="background-image: url('images/prompting_teclado_concept.jpg');" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="tagline">
+            <i class="fa-solid fa-network-wired"></i> Módulo 2 · Charla sobre IA para Educadores
+          </div>
+          <h1>Módulo 2: <span>Variedad de IAs</span>, Especialidades y Niveles de Razonamiento</h1>
+          <p class="lead">
+            Exploraremos las habilidades reales que poseen hoy los modelos (texto, imágenes, audio, video y documentos extensos), las IAs de propósito general frente a las especializadas, y cómo aprovechar los distintos niveles de razonamiento (como en Google Gemini).
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="#habilidades-formatos" class="btn btn-primary">
+              <i class="fa-solid fa-shapes"></i> Habilidades y Formatos
+            </a>
+            <a href="#especialidades-ia" class="btn btn-outline">
+              <i class="fa-solid fa-briefcase"></i> IAs Especializadas
+            </a>
+            <a href="#proposito-general" class="btn btn-outline">
+              <i class="fa-solid fa-globe"></i> Propósito General
+            </a>
+            <a href="#niveles-razonamiento" class="btn btn-outline">
+              <i class="fa-solid fa-brain"></i> Niveles de Razonamiento
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HABILIDADES ACTUALES DE LAS IAS Y FORMATOS SOPORTADOS (SECCIÓN CLARA) -->
+    <section id="habilidades-formatos" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-shapes"></i> Capacidades Técnicas Reales
+          </span>
+          <h2>Habilidades de las IAs Actuales y Formatos Soportados</h2>
+          <p class="text-muted">
+            Los modelos contemporáneos han dejado de ser simples procesadores de texto: hoy son sistemas polivalentes capaces de comprender, transformar y cruzar múltiples tipos de información escolar.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Habilidad 1: Texto -->
+          <div class="card" style="border-top: 4px solid var(--conased-cyan-bright);">
+            <div class="card-icon-box">
+              <i class="fa-solid fa-font"></i>
+            </div>
+            <h3>1. Procesamiento y Generación de Texto</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              Redacción de borradores didácticos, síntesis de lecturas complejas, traducción léxica adaptativa según la edad del alumno, reescritura en distintos tonos pedagógicos y extracción de glosarios clave.
+            </p>
+          </div>
+
+          <!-- Habilidad 2: Imágenes -->
+          <div class="card" style="border-top: 4px solid var(--conased-cyan);">
+            <div class="card-icon-box" style="background: rgba(0, 150, 199, 0.2); color: var(--conased-cyan-bright);">
+              <i class="fa-solid fa-image"></i>
+            </div>
+            <h3>2. Comprensión y Creación de Imágenes</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              Lectura y análisis de fotos de pizarrones, transcripción de esquemas manuscritos de estudiantes, interpretación de mapas conceptuales y generación de ilustraciones visuales personalizadas para clase.
+            </p>
+          </div>
+
+          <!-- Habilidad 3: Audio y Voz -->
+          <div class="card" style="border-top: 4px solid var(--accent-emerald);">
+            <div class="card-icon-box" style="background: var(--accent-emerald-bg); color: var(--accent-emerald);">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <h3>3. Audio y Voz Conversacional</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              Modo de diálogo por voz en tiempo real con entonación natural, transcripción automática de conferencias o clases grabadas, y lectura en voz alta para favorecer la accesibilidad de alumnos con dislexia.
+            </p>
+          </div>
+
+          <!-- Habilidad 4: Video -->
+          <div class="card" style="border-top: 4px solid var(--accent-amber);">
+            <div class="card-icon-box" style="background: var(--accent-amber-bg); color: var(--accent-amber);">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3>4. Análisis y Resumen de Video</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              Capacidad para procesar grabaciones de clases o documentales, extraer los momentos conceptuales más relevantes, responder preguntas sobre lo filmado y generar guías de observación para los alumnos.
+            </p>
+          </div>
+
+          <!-- Habilidad 5: Documentos Extensos -->
+          <div class="card" style="border-top: 4px solid #7209b7;">
+            <div class="card-icon-box" style="background: rgba(114, 9, 183, 0.15); color: #7209b7;">
+              <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+            <h3>5. Documentos Extensos (Big Context)</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              Capacidad para procesar libros enteros, tesis, reglamentos escolares y diseños curriculares anuales completos de 300+ páginas en un solo envío sin perder el hilo analítico.
+            </p>
+          </div>
+        </div>
+
+        <!-- Formatos Soportados -->
+        <div style="background: var(--surface-light); border: 1px solid var(--border-light); border-radius: 14px; padding: 2rem; box-shadow: var(--shadow-sm); margin-top: 2.5rem;">
+          <h3 style="color: var(--text-dark); margin-bottom: 0.5rem;">
+            <i class="fa-solid fa-file-circle-check" style="color: var(--conased-cyan-deep);"></i> Formatos Soportados en el Ecosistema Educativo
+          </h3>
+          <p class="text-muted" style="font-size: 0.92rem; margin-bottom: 1.5rem;">
+            Hoy puedes arrastrar directamente a la ventana de la IA cualquiera de los siguientes archivos de trabajo habitual:
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-pdf" style="color: #ef4444; margin-right: 0.4rem;"></i> PDF (Libros, Artículos)
+            </span>
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-word" style="color: #2563eb; margin-right: 0.4rem;"></i> Word / DOCX
+            </span>
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-excel" style="color: #10b981; margin-right: 0.4rem;"></i> Excel / CSV (Planillas)
+            </span>
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-image" style="color: #f59e0b; margin-right: 0.4rem;"></i> JPG / PNG / WEBP
+            </span>
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-audio" style="color: #8b5cf6; margin-right: 0.4rem;"></i> MP3 / WAV / M4A (Audio)
+            </span>
+            <span style="background: var(--surface-light-card); border: 1px solid var(--border-light); padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 600; color: var(--text-dark);">
+              <i class="fa-solid fa-file-code" style="color: #06b6d4; margin-right: 0.4rem;"></i> HTML / Python / JS
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ESPECIALIDADES DE IAS SEGÚN LA DIMENSIÓN DEL PROYECTO (SECCIÓN OSCURA CON FONDO ANGULADO) -->
+    <section id="especialidades-ia" class="section section-dark section-has-bg">
+      <div class="section-bg-fade-angled" style="background-image: url('images/ias_especializadas_burbujas.jpg');" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-briefcase"></i> Ecosistema de Especialidades
+          </span>
+          <h2>IAs Especializadas según la Dimensión de la Tarea</h2>
+          <p class="text-muted">
+            Junto a los chats polivalentes, existen herramientas diseñadas específicamente para resolver con máxima precisión un nicho pedagógico o técnico concreto.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Perplexity -->
+          <div class="card" style="border-top: 4px solid var(--conased-cyan-bright);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h3 style="color: #ffffff; margin-bottom: 0;">Perplexity AI</h3>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(0, 180, 216, 0.2); color: var(--conased-cyan-bright);">Investigación</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              <strong>Especialidad:</strong> Motor de búsqueda conversacional en tiempo real con citas académicas y enlaces directos a las fuentes originales.
+            </p>
+            <div style="background: rgba(0, 180, 216, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.83rem; color: #caf0f8; margin-top: 0.75rem;">
+              <i class="fa-solid fa-circle-check"></i> <strong>Ideal para:</strong> Búsqueda de datos factuales recientes, papers científicos y verificación de información docente.
+            </div>
+          </div>
+
+          <!-- NotebookLM -->
+          <div class="card" style="border-top: 4px solid var(--accent-emerald);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h3 style="color: #ffffff; margin-bottom: 0;">NotebookLM</h3>
+              <span class="badge-tag" style="margin-bottom: 0; background: var(--accent-emerald-bg); color: var(--accent-emerald);">Google Labs</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              <strong>Especialidad:</strong> Cuaderno de notas inteligente que opera <em>exclusivamente</em> sobre la bibliografía que tú le subes (libros, apuntes, PDFs).
+            </p>
+            <div style="background: rgba(6, 214, 160, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.83rem; color: #a7f3d0; margin-top: 0.75rem;">
+              <i class="fa-solid fa-headphones"></i> <strong>Función estrella:</strong> Genera guías de estudio interactivas y discusiones de audio estilo podcast educativo entre dos voces.
+            </div>
+          </div>
+
+          <!-- Midjourney & FLUX -->
+          <div class="card" style="border-top: 4px solid var(--accent-amber);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h3 style="color: #ffffff; margin-bottom: 0;">Midjourney / FLUX</h3>
+              <span class="badge-tag" style="margin-bottom: 0; background: var(--accent-amber-bg); color: var(--accent-amber);">Arte Visual</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              <strong>Especialidad:</strong> Generación de imágenes de calidad artística superior, con alto control de iluminación, planos fotográficos y texturas pictóricas.
+            </p>
+            <div style="background: rgba(231, 111, 81, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.83rem; color: #fed7aa; margin-top: 0.75rem;">
+              <i class="fa-solid fa-palette"></i> <strong>Ideal para:</strong> Proyectos de arte, afiches de actos escolares, recursos visuales de Historia y literatura.
+            </div>
+          </div>
+
+          <!-- ElevenLabs & Whisper -->
+          <div class="card" style="border-top: 4px solid #f72585;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h3 style="color: #ffffff; margin-bottom: 0;">ElevenLabs / Whisper</h3>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(247, 37, 133, 0.15); color: #f72585;">Voz y Audio</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              <strong>Especialidad:</strong> Clonación y modulación emocional de voz humana con entonación natural, y transcripción fonética ultrarrápida.
+            </p>
+            <div style="background: rgba(247, 37, 133, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.83rem; color: #fbcfe8; margin-top: 0.75rem;">
+              <i class="fa-solid fa-volume-high"></i> <strong>Ideal para:</strong> Audiolibros didácticos, narración de cuentos y desgrabación de debates escolares.
+            </div>
+          </div>
+
+          <!-- Cursor / v0 -->
+          <div class="card" style="border-top: 4px solid #7209b7;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h3 style="color: #ffffff; margin-bottom: 0;">Cursor / v0</h3>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(114, 9, 183, 0.2); color: #c084fc;">Código y Web</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              <strong>Especialidad:</strong> Asistentes de desarrollo de software que crean código, corrigen bugs y ensamblan interfaces web interactivas completas.
+            </p>
+            <div style="background: rgba(114, 9, 183, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.83rem; color: #e9d5ff; margin-top: 0.75rem;">
+              <i class="fa-solid fa-code"></i> <strong>Ideal para:</strong> Docentes de informática y escuelas técnicas que programan simuladores didácticos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LAS IAS MÁS COMPETITIVAS DEL MERCADO: ¿PROPÓSITO GENERAL? (SECCIÓN CLARA) -->
+    <section id="proposito-general" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-globe"></i> Ecosistema Líder
+          </span>
+          <h2>ChatGPT, Claude y Gemini: ¿IAs de Propósito General?</h2>
+          <p class="text-muted">
+            Frente a las herramientas monoproducto que solo hacen una cosa, las tres plataformas líderes del mercado se distinguen por su carácter integrador y polivalente.
+          </p>
+        </div>
+
+        <!-- Pregunta Conceptual -->
+        <div style="background: var(--conased-ice); border-left: 5px solid var(--conased-cyan-deep); border-radius: 12px; padding: 2rem; margin-bottom: 2.5rem;">
+          <h3 style="color: var(--conased-teal-deep); font-size: 1.25rem; margin-bottom: 0.5rem;">
+            <i class="fa-solid fa-circle-question" style="color: var(--conased-cyan-deep);"></i> ¿Es correcto llamarlas "IAs de Propósito General"?
+          </h3>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--conased-navy-dark); margin-bottom: 0.75rem;">
+            <strong>Sí, en el sentido computacional y práctico contemporáneo.</strong> En ciencias de la computación, se las denomina <em>General-Purpose AI (GPAI)</em> o modelos fundacionales porque no fueron concebidas para resolver un único problema aislado (como un transcriptor o un generador de gráficos).
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--conased-navy-dark); margin-bottom: 0;">
+            En una misma ventana conversacional, pueden <strong>redactar una rúbrica, resolver una ecuación, interpretar una foto de un pizarrón, analizar un PDF de 300 páginas, ejecutar código y buscar datos en internet</strong>. Son como "navajas suizas cognitivas" que unifican múltiples especialidades en una sola experiencia.
+          </p>
+        </div>
+
+        <!-- Las 3 Grandes Plataformas -->
+        <div class="cards-grid">
+          <!-- ChatGPT -->
+          <div class="card" style="border-top: 4px solid #10a37f;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(16, 163, 127, 0.12); border: 1px solid rgba(16, 163, 127, 0.25); display: flex; align-items: center; justify-content: center; color: #10a37f; flex-shrink: 0;">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" aria-label="Logo ChatGPT">
+                    <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.5045 4.5045 0 0 1-4.4944 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.6667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/>
+                  </svg>
+                </div>
+                <h3 style="color: var(--text-dark); margin-bottom: 0; font-size: 1.25rem;">ChatGPT</h3>
+              </div>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(16, 163, 127, 0.15); color: #047857; font-weight: 600;">OpenAI</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              El pionero y más adoptado mundialmente. Ofrece gran velocidad, ecosistema móvil muy pulido, generación visual con DALL-E integrada y la posibilidad de crear asistentes personalizados (GPTs) adaptados a cada materia.
+            </p>
+            <div style="background: rgba(16, 163, 127, 0.08); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; color: #047857; margin-top: 1rem;">
+              <i class="fa-solid fa-star"></i> <strong>Perfil pedagógico:</strong> Ideal para dinámicas rápidas, lluvias de ideas disparadoras y proyectos escolares interactivos.
+            </div>
+          </div>
+
+          <!-- Claude -->
+          <div class="card" style="border-top: 4px solid #d97706;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(217, 119, 6, 0.12); border: 1px solid rgba(217, 119, 6, 0.25); display: flex; align-items: center; justify-content: center; color: #d97706; flex-shrink: 0;">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" aria-label="Logo Claude Anthropic">
+                    <path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/>
+                  </svg>
+                </div>
+                <h3 style="color: var(--text-dark); margin-bottom: 0; font-size: 1.25rem;">Claude</h3>
+              </div>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(217, 119, 6, 0.15); color: #b45309; font-weight: 600;">Anthropic</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              El modelo favorito de educadores para tareas de redacción y lectura crítica. Destaca por una prosa en español extremadamente natural, respetuosa y libre de clichés robóticos, con razonamiento ético matizado.
+            </p>
+            <div style="background: rgba(217, 119, 6, 0.08); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; color: #b45309; margin-top: 1rem;">
+              <i class="fa-solid fa-star"></i> <strong>Perfil pedagógico:</strong> Excelente para confeccionar rúbricas analíticas cualitativas, redacción de informes empáticos y debates éticos.
+            </div>
+          </div>
+
+          <!-- Google Gemini -->
+          <div class="card" style="border-top: 4px solid #4285f4;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(66, 133, 244, 0.12); border: 1px solid rgba(66, 133, 244, 0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <svg width="25" height="25" viewBox="0 0 24 24" aria-label="Logo Google Gemini">
+                    <defs>
+                      <linearGradient id="geminiLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1ba1e2" />
+                        <stop offset="40%" stop-color="#4285f4" />
+                        <stop offset="75%" stop-color="#9b72cf" />
+                        <stop offset="100%" stop-color="#d96570" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#geminiLogoGrad)" d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/>
+                  </svg>
+                </div>
+                <h3 style="color: var(--text-dark); margin-bottom: 0; font-size: 1.25rem;">Google Gemini</h3>
+              </div>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(66, 133, 244, 0.15); color: #1d4ed8; font-weight: 600;">Google</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              El modelo nativo de Google, integrado con Google Workspace (Docs, Drive, Classroom). Posee la ventana de contexto más grande del mercado (capaz de digerir libros enteros) y capacidades multimodales de fábrica.
+            </p>
+            <div style="background: rgba(66, 133, 244, 0.08); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; color: #1d4ed8; margin-top: 1rem;">
+              <i class="fa-solid fa-star"></i> <strong>Perfil pedagógico:</strong> Insuperable para analizar documentos institucionales pesados, videos de YouTube educativos y articulación con Google Docs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. NIVELES DE RAZONAMIENTO EN LAS IAS: EL CASO DE GOOGLE GEMINI (SECCIÓN OSCURA) -->
+    <section id="niveles-razonamiento" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-brain"></i> Profundidad de Cálculo
+          </span>
+          <h2>Niveles de Razonamiento en las IAs: El Caso de Google Gemini</h2>
+          <p class="text-muted">
+            En las versiones actuales de navegador web y app móvil, la IA ya no responde con una única velocidad cognitiva: podemos elegir el nivel de razonamiento según el desafío pedagógico.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Nivel Rápido / Flash -->
+          <div class="card" style="border-top: 4px solid var(--conased-cyan-bright);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="card-icon-box" style="margin-bottom: 0;">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span class="badge-tag" style="margin-bottom: 0; background: rgba(0, 180, 216, 0.2); color: var(--conased-cyan-bright);">
+                Modo Estándar / Rápido
+              </span>
+            </div>
+            <h3 style="color: #ffffff;">Gemini Flash / Flash Lite</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              <strong>Cómo opera:</strong> Genera respuestas prácticamente instantáneas con latencia mínima. Prioriza la velocidad de salida y el consumo eficiente de recursos computacionales.
+            </p>
+            <div style="margin-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem;">
+              <strong style="color: var(--conased-cyan-bright); display: block; font-size: 0.95rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-check"></i> ¿Para qué sirve en la labor docente diaria?
+              </strong>
+              <ul style="list-style: none; padding-left: 0; font-size: 0.88rem; color: var(--text-muted-light);">
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--conased-cyan-bright);"></i> Responder dudas factuales inmediatas en plena clase.</li>
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--conased-cyan-bright);"></i> Redactar notas rápidas a familias o recordatorios en cuadernos.</li>
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--conased-cyan-bright);"></i> Formatear textos desordenados en tablas o listas sencillas.</li>
+                <li style="margin-bottom: 0;"><i class="fa-solid fa-angle-right" style="color: var(--conased-cyan-bright);"></i> Traducción de vocabulario y resumen de textos cortos.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nivel Razonamiento Profundo / Pro Thinking -->
+          <div class="card" style="border-top: 4px solid var(--accent-emerald);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <div class="card-icon-box" style="margin-bottom: 0; background: var(--accent-emerald-bg); color: var(--accent-emerald);">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <span class="badge-tag" style="margin-bottom: 0; background: var(--accent-emerald-bg); color: var(--accent-emerald);">
+                Modo Razonamiento / Thinking
+              </span>
+            </div>
+            <h3 style="color: #ffffff;">Gemini Pro / Con Pensamiento</h3>
+            <p class="text-muted" style="font-size: 0.92rem;">
+              <strong>Cómo opera:</strong> Antes de escribir la primera palabra, la IA se toma varios segundos de <em>"tiempo de pensamiento"</em> (deliberación interna invisible): desglosa el problema, formula hipótesis, descarta contradicciones y valida la lógica de cada paso.
+            </p>
+            <div style="margin-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem;">
+              <strong style="color: var(--accent-emerald); display: block; font-size: 0.95rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-check"></i> ¿Para qué sirve en la labor docente diaria?
+              </strong>
+              <ul style="list-style: none; padding-left: 0; font-size: 0.88rem; color: var(--text-muted-light);">
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--accent-emerald);"></i> Planificación didáctica de secuencias curriculares complejas.</li>
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--accent-emerald);"></i> Resolución explicada de problemas de física, química y matemática paso a paso.</li>
+                <li style="margin-bottom: 0.4rem;"><i class="fa-solid fa-angle-right" style="color: var(--accent-emerald);"></i> Análisis de contradicciones y contraste de posturas historiográficas.</li>
+                <li style="margin-bottom: 0;"><i class="fa-solid fa-angle-right" style="color: var(--accent-emerald);"></i> Confección de rúbricas analíticas con descriptores observables y rigurosos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regla de Oro Docente -->
+        <div style="background: rgba(0, 56, 84, 0.45); border: 1px solid rgba(0, 180, 216, 0.25); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+          <div style="font-size: 2rem; color: var(--conased-cyan-bright);">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <div style="flex: 1; min-width: 280px;">
+            <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 0.25rem;">
+              Criterio Docente de Selección de Nivel
+            </strong>
+            <span style="font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
+              Usa el modo <strong>Rápido (Flash)</strong> cuando el factor crítico sea el tiempo y la tarea sea mecánica. Activa el modo <strong>Razonamiento (Pro/Thinking)</strong> cuando necesites profundidad lógica, rigor científico o diseño curricular fundamentado.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- NAVEGACIÓN ENTRE MÓDULOS -->
+    <section class="section section-dark" style="padding: 2.5rem 0; border-top: 1px solid var(--border-dark);">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <a href="modulo1.html" class="btn btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Módulo 1: Conceptos Clave</span>
+          </a>
+
+          <div style="text-align: center;">
+            <span class="text-muted" style="font-size: 0.9rem;">
+              <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Has completado el Módulo 2 (Distintos Tipos de IA)
+            </span>
+          </div>
+
+          <a href="modulo3.html" class="btn btn-primary">
+            <span>Siguiente: Módulo 3 (Inclusión y Rol Docente)</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="footer-conased">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4><i class="fa-solid fa-brain" style="color: var(--conased-cyan-bright);"></i> FUNDACIÓN CONASED</h4>
+        <p style="font-size: 0.88rem; margin-top: 0.5rem;">
+          Fundación Concordiense para la Acción Social y Estudios para el Desarrollo. Fortaleciendo las capacidades docentes a través de herramientas de vanguardia pedagógica.
+        </p>
+      </div>
+      <div>
+        <h5 style="color: #ffffff; margin-bottom: 0.85rem;"><i class="fa-solid fa-sitemap"></i> Estructura de la Charla</h5>
+        <ul class="footer-links">
+          <li><a href="modulo1.html"><i class="fa-solid fa-angle-right"></i> Módulo 1: Conceptos Clave de IA</a></li>
+          <li><a href="modulo2.html"><i class="fa-solid fa-angle-right"></i> Módulo 2: Distintos Tipos de IA</a></li>
+          <li><a href="modulo3.html"><i class="fa-solid fa-angle-right"></i> Módulo 3: Inclusión y Rol Docente</a></li>
+          <li><a href="modulo4.html"><i class="fa-solid fa-angle-right"></i> Módulo 4: Opciones del Mercado</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p style="margin-bottom: 0;">&copy; 2026 Fundación CONASED — Material pedagógico de libre uso para capacitaciones docentes.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

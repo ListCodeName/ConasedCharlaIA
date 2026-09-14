@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 3: Inclusión en el Rol Docente y en el Aula | Fundación CONASED</title>
+  <meta name="description" content="Módulo 3: Inclusión de la IA en el Rol Docente y en el Aula. Debate pedagógico, extensión cognitiva, estructuración de documentos administrativos, esquema de ahorro de tiempo vs. creatividad, y guía de presentaciones en archivo unificado HTML/CSS/JS.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Estilos Globales -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER INSTITUCIONAL CONASED -->
+  <header class="header-conased">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-conased" aria-label="Inicio Fundación CONASED">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">FUNDACIÓN CONASED</span>
+          <span class="brand-sub">Acción Social y Desarrollo</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="modulo1.html" class="nav-link">
+              <i class="fa-solid fa-circle-nodes"></i> Módulo 1: Conceptos Clave
+            </a>
+          </li>
+          <li>
+            <a href="modulo2.html" class="nav-link">
+              <i class="fa-solid fa-network-wired"></i> Módulo 2: Tipos de IA
+            </a>
+          </li>
+          <li>
+            <a href="modulo3.html" class="nav-link active">
+              <i class="fa-solid fa-hand-holding-hand"></i> Módulo 3: Inclusión y Rol Docente
+            </a>
+          </li>
+          <li>
+            <a href="modulo4.html" class="nav-link">
+              <i class="fa-solid fa-scale-balanced"></i> Módulo 4: Opciones del Mercado
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION (OSCURA CON FONDO INTEGRADO Y FADE) -->
+    <section class="hero-section section-dark">
+      <div class="hero-bg-fade" style="background-image: url('images/docente_asistente_ia.jpg');" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="tagline">
+            <i class="fa-solid fa-hand-holding-hand"></i> Módulo 3 · El Corazón Pedagógico de la Capacitación
+          </div>
+          <h1>Módulo 3: <span>Inclusión</span> en el Rol Docente y en el Aula</h1>
+          <p class="lead">
+            Cómo transformar la IA en un andamiaje y extensión de capacidades en el aula, optimizar radicalmente el tiempo administrativo e investigativo, y diseñar recursos interactivos portables en HTML unificado para dispositivos móviles.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="#debate-pedagogico" class="btn btn-primary">
+              <i class="fa-solid fa-comments"></i> Debate de Aula y Extensión
+            </a>
+            <a href="#gestion-documental" class="btn btn-outline">
+              <i class="fa-solid fa-file-signature"></i> Gestión y Documentos
+            </a>
+            <a href="#ahorro-tiempo-creatividad" class="btn btn-outline">
+              <i class="fa-solid fa-chart-line"></i> Ahorro de Tiempo y Creatividad
+            </a>
+            <a href="#guia-html-interactivo" class="btn btn-outline">
+              <i class="fa-solid fa-code"></i> Presentaciones HTML/CSS/JS
+            </a>
+            <a href="#laboratorio-prompts" class="btn btn-outline">
+              <i class="fa-solid fa-flask-vial"></i> Laboratorio de Prompts
+            </a>
+            <a href="#taller-arte" class="btn btn-outline">
+              <i class="fa-solid fa-palette"></i> Taller de Arte
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. DEBATE PEDAGÓGICO: LA IA COMO EXTENSIÓN DE CAPACIDADES Y ANDAMIAJE (SECCIÓN CLARA) -->
+    <section id="debate-pedagogico" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-lightbulb"></i> Enfoque Pedagógico en el Aula
+          </span>
+          <h2>El Gran Debate: La IA como Extensión de Capacidades y Andamiaje</h2>
+          <p class="text-muted">
+            Ni prohibir a ciegas ni fascinarse sin pensar: cómo usar la tecnología para potenciar la cabeza de los chicos sin que dejen de razonar por sí mismos.
+          </p>
+        </div>
+
+        <!-- Bloque Ilustración Cómic: Infografía Pedagógica -->
+        <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0, 56, 84, 0.07); margin-bottom: 2.5rem;">
+          <div style="position: relative; background: #031726; border-bottom: 1px solid var(--border-light);">
+            <img src="images/debate_ia_andamiaje_comic.jpg" alt="Infografía en cómic sobre ideas pedagógicas de IA en la escuela: 1. Andamiaje con robot asistente y rueditas de apoyo, 2. La calculadora automatizando lo rutinario para enfocar en pensar, 3. Autoría activa con lupa versus pereza de copiar y pegar dormido" style="width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover;">
+            
+            <div style="background: linear-gradient(to top, rgba(3, 23, 38, 0.98) 0%, rgba(3, 23, 38, 0.8) 60%, transparent 100%); padding: 1.25rem 2rem; color: #ffffff;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.35rem;">
+                <span class="badge-tag" style="background: rgba(6, 214, 160, 0.2); color: var(--accent-emerald); border: 1px solid rgba(6, 214, 160, 0.4); margin-bottom: 0;">
+                  <i class="fa-solid fa-palette"></i> Ayuda Memoria Visual
+                </span>
+                <span style="font-size: 0.85rem; color: var(--conased-cyan-bright); font-weight: 500;">
+                  <i class="fa-solid fa-brain"></i> 3 Claves Pedagógicas de un Vistazo
+                </span>
+              </div>
+              <p style="margin: 0; font-size: 0.92rem; color: var(--conased-ice); line-height: 1.6;">
+                <strong>De la teoría al aula:</strong> 1) La IA como andamio que se retira cuando el alumno gana autonomía; 2) Como la calculadora, que absorbe la cuenta mecánica para dejar tiempo al pensamiento profundo; y 3) La autoría activa, donde el alumno dirige y edita críticamente en lugar de ser un simple copiador pasivo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: Andamiaje -->
+          <div class="card" style="border-top: 4px solid var(--accent-emerald);">
+            <div class="card-icon-box" style="background: var(--accent-emerald-bg); color: var(--accent-emerald);">
+              <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <h3>1. Andamiaje Cognitivo</h3>
+            <p class="text-muted" style="line-height: 1.65; font-size: 0.92rem;">
+              La IA funciona como las rueditas de apoyo cuando aprendés a andar en bici: te ayuda a destrabarte cuando estás frente a la hoja en blanco o con un tema complejo. Te tira un primer esquema para que no te quedes mirando la pantalla vacía, pero a medida que vas entendiendo el tema, esas rueditas se van retirando para que pedalees solo. No reemplaza tu cabeza: te saca el miedo a empezar.
+            </p>
+            <div style="background: rgba(6, 214, 160, 0.1); padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.83rem; color: #065f46; margin-top: 1rem;">
+              <i class="fa-solid fa-lightbulb"></i> <strong>En el aula:</strong> Usala para pedirle analogías, esquemas iniciales o desglosar consignas difíciles paso a paso.
+            </div>
+          </div>
+
+          <!-- Card 2: Extensión de Capacidades (Calculadora) -->
+          <div class="card" style="border-top: 4px solid var(--conased-cyan-deep);">
+            <div class="card-icon-box" style="background: rgba(0, 150, 199, 0.15); color: var(--conased-cyan-deep);">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3>2. La Analogía de la Calculadora</h3>
+            <p class="text-muted" style="line-height: 1.65; font-size: 0.92rem;">
+              Cuando apareció la calculadora de bolsillo en las escuelas, muchos temían que nadie más aprendiera matemática. Al final pasó lo contrario: ahorró tiempo en hacer cuentas largas a mano para poder concentrarse en entender el problema de fondo. Con la IA pasa igual: nos ahorra el trabajo mecánico de armar un borrador para que pongamos toda la energía en lo importante: pensar, debatir y chequear que todo tenga sentido.
+            </p>
+            <div style="background: rgba(0, 150, 199, 0.1); padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.83rem; color: #0077b6; margin-top: 1rem;">
+              <i class="fa-solid fa-lightbulb"></i> <strong>En el aula:</strong> La máquina hace la parte rutinaria; el estudiante hace la parte que requiere criterio y reflexión.
+            </div>
+          </div>
+
+          <!-- Card 3: Autoría Activa vs. Pereza -->
+          <div class="card" style="border-top: 4px solid var(--accent-amber);">
+            <div class="card-icon-box" style="background: var(--accent-amber-bg); color: var(--accent-amber);">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3>3. Autoría Activa vs. Pereza Intelectual</h3>
+            <p class="text-muted" style="line-height: 1.65; font-size: 0.92rem;">
+              No es lo mismo usar la IA para <strong>pensar mejor</strong> que usarla para <strong>no pensar</strong>. El peligro no es la herramienta, sino el "copiar y pegar" con el cerebro apagado. El verdadero aprendizaje se da cuando el chico actúa como un director de orquesta: le pide un borrador al robot, pero después lo lee con lupa, tacha lo que no sirve, corrige errores y le pone sus propias palabras y vivencias.
+            </p>
+            <div style="background: rgba(231, 111, 81, 0.1); padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.83rem; color: #c2410c; margin-top: 1rem;">
+              <i class="fa-solid fa-lightbulb"></i> <strong>En el aula:</strong> Evaluá el proceso, la defensa oral y la edición crítica del alumno, no un texto impreso automático.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CREACIÓN DE MATERIAL PEDAGÓGICO Y ESTRUCTURACIÓN DE DOCUMENTOS (SECCIÓN OSCURA) -->
+    <section id="gestion-documental" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-file-signature"></i> Eficiencia Operativa y Curricular
+          </span>
+          <h2>Creación de Material Pedagógico y Estructuración de Documentos</h2>
+          <p class="text-muted">
+            Cómo canalizar la capacidad generativa de los modelos para ordenar secuencias didácticas completas y redactar ágilmente notas formales, pedidos institucionales y autorizaciones escolares.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: Secuencias Didácticas y Proyectos ABP -->
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(0, 180, 216, 0.15); color: var(--conased-cyan-bright);">
+              <i class="fa-solid fa-list-ol"></i>
+            </div>
+            <h3>Secuencias de Clases y Proyectos (ABP)</h3>
+            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.65;">
+              Planificación clase a clase y diseño de <strong>Aprendizaje Basado en Proyectos (ABP)</strong>: te ayuda a estructurar unidades completas de 4 a 8 clases articuladas, armar proyectos donde los alumnos resuelven desafíos reales, definir objetivos graduales, preguntas disparadoras y rúbricas de evaluación paso a paso.
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
+              <i class="fa-solid fa-circle-check"></i> Proyectos escolares e interdisciplinarios listos para el aula sin perder horas de planificación.
+            </div>
+          </div>
+
+          <!-- Card 2: Notas y Pedidos Formales -->
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(231, 111, 81, 0.15); color: var(--accent-amber);">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <h3>Notas Institucionales y Pedidos</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Estructuración protocolar e impecable de solicitudes de insumos y equipamiento para talleres técnicos, notas de elevación a directivos o supervisión escolar, y pedidos formales de mantenimiento edilicio.
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
+              <i class="fa-solid fa-circle-check"></i> Redacción formal sin desgaste burocrático.
+            </div>
+          </div>
+
+          <!-- Card 3: Permisos y Salidas Escolares -->
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(6, 214, 160, 0.15); color: var(--accent-emerald);">
+              <i class="fa-solid fa-bus"></i>
+            </div>
+            <h3>Autorizaciones y Salidas Educativas</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Confección rápida de notas a padres y tutores para visitas guiadas o salidas de campo, con cronograma, requerimientos de traslado, teléfonos de emergencia, fichas de salud y cláusulas legales de consentimiento.
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
+              <i class="fa-solid fa-circle-check"></i> Cumplimiento normativo y seguridad institucional.
+            </div>
+          </div>
+
+          <!-- Card 4: Exploración de Ideas y Disparadores -->
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(247, 37, 133, 0.15); color: #f72585;">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Exploración y Disparadores</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Búsqueda de analogías cotidianas para explicar temas abstractos (por ejemplo, el flujo de electrones en física comparado con una autopista), dilemas éticos históricos para iniciar debates y desafíos semanales para el aula.
+            </p>
+            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
+              <i class="fa-solid fa-circle-check"></i> Conexión inmediata con los intereses juveniles.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ESQUEMA: AHORRO DE TIEMPO OPERATIVO VS. EXPLOSIÓN CREATIVA (SECCIÓN CLARA) -->
+    <section id="ahorro-tiempo-creatividad" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-chart-pie"></i> Transformación de la Práctica
+          </span>
+          <h2>Del Agotamiento en Pestañas y Wikipedia a la Explosión Creativa</h2>
+          <p class="text-muted">
+            El mayor impacto de la IA no es la automatización en sí, sino la recuperación de tiempo y energía mental docente para volcarla en lo que realmente transforma el aula: la creatividad didáctica y el vínculo humano.
+          </p>
+        </div>
+
+        <!-- Comparativa Histórica de Fricción -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+          <div style="background: #fff5f5; border: 1px solid #fed7d7; border-radius: 12px; padding: 1.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <i class="fa-solid fa-clock-rotate-left" style="font-size: 1.5rem; color: #e53e3e;"></i>
+              <h3 style="color: #9b2c2c; margin-bottom: 0; font-size: 1.15rem;">El Cuello de Botella Histórico</h3>
+            </div>
+            <p style="font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin-bottom: 0.75rem;">
+              Antes de los modelos generativos, preparar una clase innovadora implicaba pasar <strong>1 a 2 horas nocturnas abriendo 20 pestañas del navegador</strong>, esquivando publicidad en blogs educativos obsoletos y rebotando en Wikipedia para contrastar datos o buscar ejemplos.
+            </p>
+            <p style="font-size: 0.88rem; color: #742a2a; margin-bottom: 0; font-weight: 600;">
+              <i class="fa-solid fa-triangle-exclamation"></i> Consecuencia: Agotamiento mental, fatiga burocrática y clases estandarizadas por falta de tiempo material.
+            </p>
+          </div>
+
+          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 1.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <i class="fa-solid fa-bolt" style="font-size: 1.5rem; color: #059669;"></i>
+              <h3 style="color: #065f46; margin-bottom: 0; font-size: 1.15rem;">El Salto Cualitativo con IA</h3>
+            </div>
+            <p style="font-size: 0.92rem; color: #166534; line-height: 1.7; margin-bottom: 0.75rem;">
+              La IA actúa como un <strong>motor de síntesis, estructuración y selección temática inmediata</strong>. No reemplaza el criterio docente: reemplaza las 20 pestañas dispersas entregando una base estructurada en 60 segundos sobre la cual el docente aplica su filtro pedagógico.
+            </p>
+            <p style="font-size: 0.88rem; color: #065f46; margin-bottom: 0; font-weight: 600;">
+              <i class="fa-solid fa-circle-check"></i> Resultado: Liberación de horas semanales para el diseño de experiencias didácticas memorables.
+            </p>
+          </div>
+        </div>
+
+        <!-- Esquema Visual: Disminución de Tiempo vs. Aumento de Creatividad -->
+        <div style="background: #031726; border-radius: 16px; padding: 2rem; color: #ffffff; border: 1px solid var(--border-dark);">
+          <h3 style="color: var(--conased-cyan-bright); font-size: 1.25rem; margin-bottom: 0.5rem;">
+            <i class="fa-solid fa-scale-unbalanced-flip"></i> Esquema de Transferencia: De la Burocracia a la Creatividad
+          </h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted-light); margin-bottom: 1.5rem;">
+            Visualización de cómo la reducción drástica de tiempo en tareas mecánicas habilita la creación de materiales lúdicos e interactivos de alto impacto:
+          </p>
+
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 620px;">
+              <thead>
+                <tr style="background: rgba(0, 56, 84, 0.6); border-bottom: 2px solid rgba(0, 180, 216, 0.3);">
+                  <th style="padding: 1rem 1.25rem; text-align: left; color: #ffffff;">Tarea Docente Habitual</th>
+                  <th style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">Método Tradicional (Pestañas / Wikipedia)</th>
+                  <th style="padding: 1rem 1.25rem; text-align: center; color: var(--accent-emerald);">Con Asistencia de IA</th>
+                  <th style="padding: 1rem 1.25rem; text-align: left; color: var(--conased-cyan-bright);">Transferencia a la Creatividad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Búsqueda y Curaduría Temática</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">45 a 60 min (dispersión)</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">3 a 5 min (-92%)</td>
+                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Diseño de <strong>juegos de rol y trivias temáticas</strong> para consolidar los conceptos.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Documentos Formales (Notas, Permisos)</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">30 a 40 min (redacción)</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">2 min (-94%)</td>
+                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Planificación de <strong>dinámicas grupales y experiencias prácticas</strong> fuera del aula.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Rúbricas Analíticas con Descriptores</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">50 a 70 min (redacción de niveles)</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">4 min (-93%)</td>
+                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Tiempo para <strong>devolución cualitativa y diálogo personal</strong> con cada estudiante.</td>
+                </tr>
+                <tr>
+                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Adaptación Curricular para Diversidad</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">40 a 50 min (reescritura manual)</td>
+                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">3 min en 3 niveles (-93%)</td>
+                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Acompañamiento empático a alumnos con dificultades o altas capacidades.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MINI GUÍA: PRESENTACIONES EN ARCHIVO UNIFICADO HTML/CSS/JS (SECCIÓN OSCURA CON FONDO ANGULADO) -->
+    <section id="guia-html-interactivo" class="section section-dark section-has-bg">
+      <div class="section-bg-fade-angled" style="background-image: url('images/presentaciones_html_interactivas.jpg');" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-code"></i> Formato Innovador y Portable
+          </span>
+          <h2>Mini Guía: Presentaciones Interactivas en Archivo Unificado HTML/CSS/JS</h2>
+          <p class="text-muted">
+            Por qué el formato web autónomo es una alternativa superior y más viable que las diapositivas tradicionales (.pptx o PDF), y cómo pedirle a la IA que lo construya en un único archivo listo para teléfonos móviles.
+          </p>
+        </div>
+
+        <!-- Las 4 Ventajas Clave frente a PPTX / PDF -->
+        <div class="cards-grid" style="margin-bottom: 2.5rem;">
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(6, 214, 160, 0.15); color: var(--accent-emerald);">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Portabilidad Total en Celulares</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Abre al instante en el navegador de cualquier celular (Android o iPhone), tablet o netbook sin requerir PowerPoint, apps pesadas de Microsoft Office ni visores de PDF. No hay problemas de compatibilidad de fuentes.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(0, 180, 216, 0.15); color: var(--conased-cyan-bright);">
+              <i class="fa-solid fa-feather"></i>
+            </div>
+            <h3>Peso Pluma y Cero Dependencias</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Todo el recurso (textos, diseño visual y funciones dinámicas) viaja en <strong>un único archivo .html de 30 a 50 KB</strong>. Se comparte en un segundo por WhatsApp o pendrive y funciona perfectamente sin conexión a internet.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(231, 111, 81, 0.15); color: var(--accent-amber);">
+              <i class="fa-solid fa-hand-pointer"></i>
+            </div>
+            <h3>Interactividad y Dinamismo Real</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              A diferencia de una filmina estática, una web interactiva permite incluir tarjetas que se dan vuelta ("flashcards"), pestañas desplegables y micro-cuestionarios con puntaje automático en tiempo real.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box" style="background: rgba(247, 37, 133, 0.15); color: #f72585;">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Afianzamiento Activo de Conceptos</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              El alumno deja de ser un espectador pasivo de una pantalla proyectada al fondo del aula: tiene la presentación interactiva en la palma de su mano, avanzando a su propio ritmo y comprobando lo aprendido con feedback inmediato.
+            </p>
+          </div>
+        </div>
+
+        <!-- CONTENEDOR UNIFICADO: EL PROMPT Y EL SIMULADOR EN ACCIÓN -->
+        <div style="background: rgba(0, 56, 84, 0.45); border: 1px solid rgba(0, 180, 216, 0.3); border-radius: 18px; padding: 2rem; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+          
+          <!-- Encabezado Unificado -->
+          <div style="margin-bottom: 1.75rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <h3 style="color: var(--conased-cyan-bright); font-size: 1.35rem; margin-bottom: 0; display: flex; align-items: center; gap: 0.6rem;">
+                <i class="fa-solid fa-code-merge"></i> De la Consigna al Recurso: Prompt Estructurado y Diapositiva HTML en Vivo
+              </h3>
+              <span class="badge-tag" style="background: rgba(6, 214, 160, 0.15); color: var(--accent-emerald); margin-bottom: 0;">
+                <i class="fa-solid fa-check-double"></i> Ejemplo Unificado
+              </span>
+            </div>
+            <p style="font-size: 0.94rem; color: var(--text-muted-light); line-height: 1.6; margin-bottom: 0;">
+              Para que la IA construya un recurso educativo autónomo sin errores técnicos, el prompt debe articular con precisión: <strong>1) Texto informativo/documentativo de inicio</strong>, <strong>2) Juego interactivo de preguntas con corrección inmediata</strong>, <strong>3) Pantalla final con puntaje y diagnóstico formativo</strong>, y <strong>4) Formato autónomo en un único archivo HTML</strong>.
+            </p>
+          </div>
+
+          <!-- BLOQUE 1: Plantilla del Prompt Conciso y Estructurado (Copiable) -->
+          <div style="background: #02121e; border: 1px solid var(--border-dark); border-radius: 12px; padding: 1.5rem; margin-bottom: 2.25rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-size: 0.88rem; color: var(--accent-emerald); font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+                <i class="fa-solid fa-terminal"></i> Prompt Conciso y Estructurado (Listo para Copiar y Usar):
+              </span>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-html-diapo" style="padding: 0.4rem 1rem; font-size: 0.84rem;">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-html-diapo" style="background: rgba(3, 23, 38, 0.95); border: 1px solid rgba(0, 180, 216, 0.2); border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; color: #a7f3d0; white-space: pre-wrap; margin: 0; max-height: 350px; overflow-y: auto;">Actúa como Diseñador Instruccional y Desarrollador Web Educativo.
+Crea una presentación interactiva autónoma en UN ÚNICO ARCHIVO .html (todo el CSS embebido dentro de &lt;style&gt; en el &lt;head&gt; y todo el JavaScript dentro de &lt;script&gt; antes de &lt;/body&gt;, sin dependencias externas ni librerías). Debe estar optimizado para teléfonos celulares (Mobile-First, modo oscuro elegante, tipografía legible y botones táctiles grandes).
+
+TEMA DE LA CLASE: La Revolución Industrial y la Máquina de Vapor
+NIVEL EDUCATIVO: 3er año de secundaria (alumnos de 14-15 años)
+
+ESTRUCTURA DE DIAPOSITIVAS (5 diapositivas con barra de progreso superior y navegación Anterior/Siguiente):
+1. DIAPOSITIVA 1 (Texto Documentativo / Informativo Introductorio):
+   - Redacta un texto introductorio claro, motivador y sintético (1 o 2 párrafos) que introduzca el concepto central usando una analogía cotidiana atractiva.
+2. DIAPOSITIVAS 2, 3 y 4 (Juego de Preguntas y Respuestas Interactivo):
+   - 3 preguntas secuenciales de opción múltiple (1 por diapositiva) con 3 opciones cada una.
+   - Al tocar una opción: marcar de inmediato en VERDE si es correcta o en ROJO si es incorrecta, mostrando una breve explicación pedagógica.
+   - El sistema debe acumular internamente las respuestas correctas.
+3. DIAPOSITIVA 5 (Pantalla de Resultados y Puntaje Formativo):
+   - Muestra el puntaje final obtenido (ej: "Puntaje: 2 de 3").
+   - Diagnóstico formativo personalizado según el resultado:
+     * Si obtuvo 3/3: "¡Excelente trabajo! Has comprendido los conceptos a la perfección."
+     * Si obtuvo 2/3: "¡Has hecho un buen trabajo! Tienes una base sólida, pero conviene repasar el concepto de [tema]."
+     * Si obtuvo 0 o 1/3: "Debe repasar más este tema: te recomendamos volver a leer la introducción para afianzar las ideas principales."
+   - Incluye un botón para reiniciar el cuestionario y volver a intentarlo.
+
+FORMATO TÉCNICO DE ENTREGA:
+Entrega únicamente el bloque de código HTML autónomo completo, listo para guardar como "clase.html" y abrir sin internet en cualquier dispositivo móvil.</pre>
+          </div>
+
+          <!-- BLOQUE 2: Simulación en Vivo (Resultado Real Funcionando) -->
+          <div style="background: #02121e; border-radius: 14px; padding: 1.75rem; border: 2px solid var(--conased-cyan-bright); box-shadow: 0 8px 30px rgba(0, 180, 216, 0.15);">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div>
+                <span class="badge-tag" style="background: rgba(6, 214, 160, 0.2); color: var(--accent-emerald); margin-bottom: 0.25rem;">
+                  <i class="fa-solid fa-play"></i> Simulación en Vivo (Resultado del Prompt)
+                </span>
+                <h4 style="color: #ffffff; margin-bottom: 0; font-size: 1.2rem;">
+                  Ejemplo Real: Cómo se ve la Diapositiva HTML Unificada
+                </h4>
+              </div>
+              <span id="demo-slide-indicator" style="font-family: monospace; font-size: 0.88rem; color: var(--conased-cyan-bright); background: rgba(0, 56, 84, 0.6); padding: 0.35rem 0.8rem; border-radius: 6px;">
+                Diapositiva 1 de 5
+              </span>
+            </div>
+
+            <!-- Barra de Progreso Superior -->
+            <div style="background: rgba(255, 255, 255, 0.1); height: 5px; border-radius: 3px; margin: 1rem 0 1.5rem 0; overflow: hidden;">
+              <div id="demo-progress-bar" style="height: 100%; width: 20%; background: linear-gradient(90deg, var(--conased-cyan-bright), var(--accent-emerald)); transition: width 0.3s ease;"></div>
+            </div>
+
+            <!-- Contenedor de Diapositivas -->
+            <div id="demo-presentation-card" style="background: #031726; border: 1px solid var(--border-dark); border-radius: 12px; padding: 1.75rem; min-height: 250px; display: flex; flex-direction: column; justify-content: center;">
+              
+              <!-- Slide 1: Texto Informativo / Documentativo -->
+              <div id="demo-slide-1" class="demo-slide-content">
+                <span class="badge-tag" style="background: rgba(0, 180, 216, 0.2); color: var(--conased-cyan-bright);">1. Lectura Informativa e Introducción</span>
+                <h4 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 0.6rem;">El Salto Tecnológico del Vapor: De la Fuerza Muscular al Motor Continuo</h4>
+                <p style="color: var(--text-muted-light); font-size: 0.94rem; line-height: 1.65; margin-bottom: 0.85rem;">
+                  Durante milenios, el trabajo humano dependió exclusivamente de la fuerza muscular de personas y animales, o del impulso intermitente del viento y del agua. En 1769, James Watt patentó una innovación clave: el <strong>condensador separado</strong> para la máquina de vapor, logrando transformar de manera ininterrumpida la energía térmica del fuego en trabajo mecánico continuo.
+                </p>
+                <div style="background: rgba(0, 180, 216, 0.1); border-left: 3px solid var(--conased-cyan-bright); padding: 0.85rem 1rem; border-radius: 6px; font-size: 0.88rem; color: var(--conased-ice); margin-bottom: 0.75rem;">
+                  <i class="fa-solid fa-lightbulb" style="color: var(--conased-cyan-bright);"></i> <strong>Analogía cotidiana:</strong> Imagina sustituir una canoa a remos por un buque a motor: la fuerza ya no se cansa ni depende del clima. El vapor multiplicó las fábricas textiles y dio nacimiento a la red mundial de ferrocarriles.
+                </div>
+                <div style="font-size: 0.86rem; color: #a7f3d0;">
+                  <i class="fa-solid fa-arrow-right"></i> <em>Presiona "Siguiente" para iniciar el juego interactivo de 3 preguntas.</em>
+                </div>
+              </div>
+
+              <!-- Slide 2: Pregunta 1 -->
+              <div id="demo-slide-2" class="demo-slide-content" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="badge-tag" style="background: var(--accent-amber-bg); color: var(--accent-amber); margin-bottom: 0;">Pregunta 1 de 3: Principio Técnico</span>
+                  <span style="font-size: 0.8rem; color: var(--text-muted-light);">Toca una opción para comprobar</span>
+                </div>
+                <h4 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.85rem;">¿Cuál fue la innovación técnica fundamental introducida por James Watt?</h4>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q1" data-correct="false">
+                    A) Descubrir que el agua líquida genera vapor al hervir.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q1" data-correct="true">
+                    B) Incorporar un condensador separado para enfriar el vapor sin enfriar el cilindro principal en cada ciclo.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q1" data-correct="false">
+                    C) Reemplazar totalmente el uso de agua y carbón en las industrias textiles.
+                  </button>
+                </div>
+                <div id="demo-quiz-feedback-q1" style="margin-top: 0.75rem; font-size: 0.88rem; min-height: 24px;"></div>
+              </div>
+
+              <!-- Slide 3: Pregunta 2 -->
+              <div id="demo-slide-3" class="demo-slide-content" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="badge-tag" style="background: var(--accent-amber-bg); color: var(--accent-amber); margin-bottom: 0;">Pregunta 2 de 3: Impacto Social y Productivo</span>
+                  <span style="font-size: 0.8rem; color: var(--text-muted-light);">Toca una opción para comprobar</span>
+                </div>
+                <h4 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.85rem;">¿Qué transformación productiva inmediata provocó la máquina de vapor en el siglo XIX?</h4>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q2" data-correct="true">
+                    A) Trasladó la producción del taller artesanal manual a las grandes fábricas y expandió el transporte con el ferrocarril.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q2" data-correct="false">
+                    B) Hizo que la población abandonara las ciudades industriales para retornar a la agricultura de subsistencia.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q2" data-correct="false">
+                    C) Obligó al comercio internacional a depender exclusivamente de carretas y tracción animal.
+                  </button>
+                </div>
+                <div id="demo-quiz-feedback-q2" style="margin-top: 0.75rem; font-size: 0.88rem; min-height: 24px;"></div>
+              </div>
+
+              <!-- Slide 4: Pregunta 3 -->
+              <div id="demo-slide-4" class="demo-slide-content" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="badge-tag" style="background: var(--accent-amber-bg); color: var(--accent-amber); margin-bottom: 0;">Pregunta 3 de 3: Conexión Pedagógica con la IA</span>
+                  <span style="font-size: 0.8rem; color: var(--text-muted-light);">Toca una opción para comprobar</span>
+                </div>
+                <h4 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.85rem;">¿Por qué los pedagogos e historiadores comparan la Revolución del Vapor con la irrupción de la IA?</h4>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q3" data-correct="false">
+                    A) Porque ambas tecnologías reemplazan totalmente la necesidad de pensamiento y supervisión humana.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q3" data-correct="true">
+                    B) Porque así como el vapor multiplicó la fuerza física humana, la IA multiplica y asiste las capacidades cognitivas bajo dirección pedagógica.
+                  </button>
+                  <button class="btn btn-outline demo-quiz-btn" data-question="q3" data-correct="false">
+                    C) Porque ambas tecnologías operan sin necesidad de ninguna instrucción o prompt humano.
+                  </button>
+                </div>
+                <div id="demo-quiz-feedback-q3" style="margin-top: 0.75rem; font-size: 0.88rem; min-height: 24px;"></div>
+              </div>
+
+              <!-- Slide 5: Pantalla de Resultados y Puntaje Formativo -->
+              <div id="demo-slide-5" class="demo-slide-content" style="display: none;">
+                <span class="badge-tag" style="background: var(--accent-emerald-bg); color: var(--accent-emerald);">5. Pantalla de Puntaje y Devolución Formativa</span>
+                
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; margin-bottom: 1.25rem;">
+                  <div style="flex: 1; min-width: 240px;">
+                    <h4 id="demo-score-title" style="color: #ffffff; font-size: 1.3rem; margin-bottom: 0.35rem;">¡Evaluación Finalizada!</h4>
+                    <p id="demo-score-desc" style="color: var(--text-muted-light); font-size: 0.94rem; line-height: 1.6; margin: 0;">
+                      Comprobando tus respuestas del cuestionario...
+                    </p>
+                  </div>
+                  <div style="background: rgba(0, 56, 84, 0.8); border: 2px solid var(--conased-cyan-bright); border-radius: 12px; padding: 0.75rem 1.5rem; text-align: center; min-width: 130px;">
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted-light); display: block;">Puntaje Final</span>
+                    <span id="demo-score-number" style="font-size: 2rem; font-weight: 800; color: var(--conased-cyan-bright);">0 / 3</span>
+                  </div>
+                </div>
+
+                <!-- Desglose de preguntas -->
+                <div style="margin-bottom: 1.25rem;">
+                  <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--conased-ice); font-weight: 700; display: block; margin-bottom: 0.5rem;">
+                    Resumen de Respuestas:
+                  </span>
+                  <div id="demo-score-breakdown" style="display: flex; flex-direction: column; gap: 0.45rem;"></div>
+                </div>
+
+                <!-- Botón de Reinicio -->
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-dark);">
+                  <span style="font-size: 0.85rem; color: var(--conased-cyan-bright);">
+                    <i class="fa-solid fa-mobile-screen-button"></i> <em>Este archivo pesa solo ~38 KB y corre en cualquier celular sin internet.</em>
+                  </span>
+                  <button id="btn-demo-restart" class="btn btn-outline" style="padding: 0.45rem 1.1rem; font-size: 0.85rem; border-color: var(--conased-cyan-bright); color: var(--conased-cyan-bright);">
+                    <i class="fa-solid fa-rotate-right"></i> Reiniciar Cuestionario
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botonera de Control de la Diapositiva -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem;">
+              <button id="btn-demo-prev" class="btn btn-outline" style="padding: 0.5rem 1.25rem; font-size: 0.88rem;" disabled>
+                <i class="fa-solid fa-chevron-left"></i> Anterior
+              </button>
+              <button id="btn-demo-next" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.88rem;">
+                Siguiente <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LABORATORIO INTERACTIVO DE PROMPTS DOCENTES (SECCIÓN CLARA) -->
+    <section id="laboratorio-prompts" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-flask-vial"></i> Recursos Listos para Usar
+          </span>
+          <h2>Laboratorio de Prompts Docentes</h2>
+          <p class="text-muted">
+            Plantillas formuladas con rigor pedagógico listas para copiar, pegar y personalizar en tu disciplina:
+          </p>
+        </div>
+
+        <div class="prompt-lab-container">
+          <!-- Pestañas de Selección (6 Casos Clave) -->
+          <div class="prompt-tabs" style="display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.75rem; border-bottom: 2px solid rgba(0, 180, 216, 0.2); margin-bottom: 2rem; scrollbar-width: thin;">
+            <button class="tab-btn active" data-tab="tab-resumen-criterio">
+              <i class="fa-solid fa-file-lines"></i> Resumen con Criterio
+            </button>
+            <button class="tab-btn" data-tab="tab-cuestionario-academico">
+              <i class="fa-solid fa-list-check"></i> Cuestionario Académico
+            </button>
+            <button class="tab-btn" data-tab="tab-tutor-entrenamiento">
+              <i class="fa-solid fa-comments"></i> Tutor Q&A Interactivo
+            </button>
+            <button class="tab-btn" data-tab="tab-problema-pasoapaso">
+              <i class="fa-solid fa-calculator"></i> Resolución Paso a Paso
+            </button>
+            <button class="tab-btn" data-tab="tab-generar-imagen">
+              <i class="fa-solid fa-image"></i> Imagen para Documento
+            </button>
+            <button class="tab-btn" data-tab="tab-resumen-video">
+              <i class="fa-solid fa-video"></i> Resumen de Video
+            </button>
+          </div>
+
+          <!-- CASO 1: Resumen con Criterio Específico -->
+          <div id="tab-resumen-criterio" class="tab-pane active">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-file-lines" style="color: var(--conased-cyan-deep);"></i> Resumen de Documento con Criterio Temático Específico
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Evita resúmenes genéricos: extrae únicamente las ideas fuerza relevantes bajo un foco pedagógico preciso.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-resumen-criterio-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-resumen-criterio-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como Especialista en Análisis Textual y Síntesis Académica.
+A continuación te comparto el siguiente documento/texto:
+"""
+[PEGA AQUÍ EL TEXTO O ADJUNTA EL DOCUMENTO]
+"""
+
+TAREA:
+1. Extrae de 3 a 5 IDEAS FUERZA centrales bajo este CRITERIO ESPECÍFICO: [Ej: Implicancias metodológicas para la evaluación formativa / Causas socioeconómicas de la crisis / Criterios de sostenibilidad ambiental].
+2. Redacta una SÍNTESIS CONECTIVA de máximo 2 párrafos que articule esas ideas sin perder rigor.
+3. Señala 1 CONCLUSIÓN CRÍTICA o dilema no resuelto que el autor deje planteado.
+
+REGLAS: Descarta anécdotas o datos secundarios; responde con tono académico claro y directo.</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Cómo responde la IA):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <p style="margin-bottom: 0.5rem;"><strong>Ideas Fuerza (Criterio: Retroalimentación Formativa):</strong><br>
+                • <em>Oportunidad temporal:</em> El impacto pedagógico del feedback decae si se entrega al cierre del trimestre en lugar de durante el proceso.<br>
+                • <em>Foco en la tarea:</em> La devolución efectiva describe la estrategia cognitiva empleada, no la personalidad del alumno.<br>
+                • <em>Espacio de reescritura:</em> Requiere una instancia explícita para que el alumno aplique la sugerencia.</p>
+                <p style="margin-bottom: 0;"><strong>Síntesis:</strong> La evaluación formativa no reemplaza la calificación, sino que actúa como andamiaje regulador para que el error sea una fuente de información didáctica.</p>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt:
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿A quién va dirigido el resumen?</strong> (¿Para tu propia planificación docente, para alumnos de 14 años o para un informe directivo?).</li>
+                <li><strong>¿Qué recorte metodológico priorizar?</strong> (¿Teórico-conceptual, práctico-didáctico, normativo o estadístico?).</li>
+                <li><strong>¿Qué formato de entrega prefieres?</strong> (¿Viñetas jerarquizadas, tabla comparativa o cuadro sinóptico en texto?).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CASO 2: Cuestionario desde Texto Académico -->
+          <div id="tab-cuestionario-academico" class="tab-pane">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-list-check" style="color: var(--conased-cyan-deep);"></i> Cuestionario Pedagógico desde un Texto Académico
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Formula preguntas graduadas en niveles cognitivos (literal, inferencial y crítico) basadas estrictamente en la bibliografía.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-cuestionario-academico-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-cuestionario-academico-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como Diseñador de Evaluaciones de Comprensión Lectora.
+Basándote EXCLUSIVAMENTE en la información del siguiente texto académico:
+"""
+[PEGA AQUÍ EL TEXTO O CAPÍTULO DE BIBLIOGRAFÍA]
+"""
+
+Genera un cuestionario de 4 preguntas graduadas para estudiantes de [CURSO/NIVEL, ej: 3er año de secundaria]:
+1. PREGUNTAS 1 y 2 (Nivel Literal / Explícito): Evalúan conceptos o datos fundamentales expresados directamente en el texto.
+2. PREGUNTA 3 (Nivel Inferencial): Exige relacionar dos ideas o causas que el autor no une explícitamente en una sola frase.
+3. PREGUNTA 4 (Nivel Crítico / Aplicación): Plantea un dilema o situación real donde el alumno deba tomar posición fundamentándose en la tesis del autor.
+
+Para cada pregunta incluye:
+- Criterio de corrección y respuesta modelo esperada.
+- Referencia exacta al párrafo o sección que la respalda.</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Cómo responde la IA):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <p style="margin-bottom: 0.4rem;"><strong>P1 (Literal):</strong> Según el texto, ¿qué función hidrológica cumplen los humedales en crecientes?<br>
+                <em style="color: #0284c7;">Rta modelo: Actúan como esponjas naturales que amortiguan inundaciones y filtran sedimentos (Sección 1.2).</em></p>
+                <p style="margin-bottom: 0.4rem;"><strong>P2 (Inferencial):</strong> A partir de las secciones 2 y 4, ¿cómo se vincula la ganadería de islas con la pérdida de capacidad de retención de agua de los suelos?</p>
+                <p style="margin-bottom: 0;"><strong>P3 (Crítica/Aplicación):</strong> Un municipio planea rellenar 10 hectáreas de humedal para un parque industrial. Usando los argumentos del autor, redacta 2 objeciones ambientales fundamentadas.</p>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt:
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿Qué nivel de la Taxonomía de Bloom buscas priorizar?</strong> (¿Identificar datos, comparar procesos o juzgar consecuencias éticas?).</li>
+                <li><strong>¿Prefieres preguntas abiertas de desarrollo o múltiple opción con justificación escrita?</strong></li>
+                <li><strong>¿Deseas incluir distractores plausibles o trampas conceptuales comunes para detectar errores de lectura?</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CASO 3: Tutor Q&A Interactivo -->
+          <div id="tab-tutor-entrenamiento" class="tab-pane">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-comments" style="color: var(--conased-cyan-deep);"></i> Entrenamiento Interactivo (Tutor Socrático para Fijar Conceptos)
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Convierte a la IA en un tutor pedagógico paciente que hace una pregunta por vez, evalúa respuestas y da pistas sin anticipar la solución.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-tutor-entrenamiento-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-tutor-entrenamiento-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como un Tutor Socrático y Entrenador Pedagógico en [MATERIA Y TEMA, ej: Biología Celular / Leyes de Newton / Formación Ética].
+Tu objetivo es entrenar y afianzar los conceptos fundamentales de la unidad a través de un diálogo interactivo.
+
+REGLAS DEL ENTRENAMIENTO (ESTRICTAS):
+1. Hazme UNA SOLA PREGUNTA desafiante por turno y espera mi respuesta (no des la respuesta correcta por adelantado ni formules varias preguntas juntas).
+2. Si respondo con un error o duda: no me descalifiques; explica con empatía la confusión, dame una pista contextual y permíteme reintentar.
+3. Si respondo correctamente: valida brevemente el porqué, sube gradualmente la complejidad y pasa a la siguiente pregunta.
+4. Completa una ronda de 4 preguntas en total.
+5. Al finalizar, entrega una devolución con mis fortalezas y los 2 conceptos que debo repasar.
+
+Comienza presentándote brevemente y formulándome la Pregunta 1.</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Diálogo Tutor - Estudiante):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <p style="margin-bottom: 0.5rem;"><strong>Tutor IA:</strong> "¡Hola! Vamos a repasar las Leyes de Newton aplicadas a situaciones cotidianas.<br>
+                <em>Pregunta 1:</em> Vas en un colectivo a 60 km/h y de golpe el chofer frena en seco. Tu cuerpo se va hacia adelante. ¿Qué ley de la física lo explica y por qué en realidad ninguna fuerza te empuja hacia adelante?"</p>
+                <p style="margin-bottom: 0.5rem; color: #475569;"><strong>Alumno:</strong> "Porque la inercia es una fuerza que me empuja."</p>
+                <p style="margin-bottom: 0;"><strong>Tutor IA:</strong> "¡Excelente que menciones la inercia! Pero cuidado con una trampa común: <em>la inercia no es una fuerza</em>, sino la tendencia natural del cuerpo a mantener su velocidad previa. El vehículo frenó, pero tu masa quería seguir a 60 km/h. ¿Cómo redefinirías la respuesta sabiendo esto?"</p>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt:
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿Qué tono docente debe adoptar el tutor?</strong> (¿Riguroso de examen final universitario o empático y motivador de secundaria?).</li>
+                <li><strong>¿Quieres que use analogías de intereses juveniles?</strong> (Fútbol, redes sociales, videojuegos o transporte urbano).</li>
+                <li><strong>¿Cuántos intentos fallidos permites antes de revelar la solución guiada?</strong> (Ej: máximo 2 pistas por pregunta).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CASO 4: Resolución Paso a Paso -->
+          <div id="tab-problema-pasoapaso" class="tab-pane">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-calculator" style="color: var(--conased-cyan-deep);"></i> Resolución Paso a Paso con Explicación Contextual de Métodos
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Desglosa el razonamiento lógico, el porqué de cada decisión matemática o científica y el error típico de los alumnos.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-problema-pasoapaso-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-problema-pasoapaso-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como Profesor Experto en Didáctica de [DISCIPLINA, ej: Matemática / Química / Física / Gramática].
+Resuelve el siguiente problema explicando el razonamiento metodológico detrás de cada etapa:
+"""
+[PEGA AQUÍ EL ENUNCIADO DEL PROBLEMA O EJERCICIO]
+"""
+
+ESTRUCTURA DIDÁCTICA REQUERIDA:
+1. IDENTIFICACIÓN Y MODELADO: ¿Qué datos tenemos, qué incógnita buscamos y qué principio o teorema aplica aquí?
+2. RESOLUCIÓN PASO A PASO: Para cada paso muestra la operación o regla aplicada Y responde: "¿Por qué hacemos esto en este momento y no otra cosa?".
+3. ALERTA DE ERROR COMÚN: ¿Cuál es el error típico que cometen los alumnos en este ejercicio y cómo se evita?
+4. INTERPRETACIÓN DEL RESULTADO: ¿Qué significa el valor obtenido en una situación real y cómo verificar que es coherente?</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Cómo responde la IA):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <p style="margin-bottom: 0.4rem;"><strong>1. Modelado:</strong> Masa de NaCl (29.2 g), Volumen (500 ml = 0.5 l), Masa molar NaCl (58.45 g/mol). Fórmula: M = moles / litros.</p>
+                <p style="margin-bottom: 0.4rem;"><strong>2. Paso 1 (Gramos a Moles):</strong> 29.2 / 58.45 ≈ 0.5 mol. <em>¿Por qué?</em> Porque las propiedades químicas dependen del número de partículas y no del peso bruto en balanza.<br>
+                <strong>Paso 2 (Cálculo de Concentración):</strong> 0.5 mol / 0.5 l = 1 Molar. <em>¿Por qué?</em> La molaridad normaliza la cantidad respecto a un litro estándar.</p>
+                <p style="margin-bottom: 0;"><strong>3. Error Común a Evitar:</strong> Dividir gramos directamente por mililitros (29.2 / 500 = 0.058), ignorando el pasaje de unidades.</p>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt:
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿Prefieres resolución analítico-algebraica, geométrica o numérica aproximada?</strong></li>
+                <li><strong>¿Quieres comparar dos métodos de resolución distintos?</strong> (Ej: por conservación de energía vs. por cinemática clásica para ver cuál es más intuitivo).</li>
+                <li><strong>¿Qué nivel de notación formal y control de unidades físicas debe exigir la respuesta?</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CASO 5: Generar Imagen para Documento -->
+          <div id="tab-generar-imagen" class="tab-pane">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-image" style="color: var(--conased-cyan-deep);"></i> Generación de Imágenes Didácticas con Criterios Visuales y Preguntas Clave
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Consigue ilustraciones escolares certeras para portadas, guías y afiches, evitando clichés y deformaciones de la IA.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-generar-imagen-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-generar-imagen-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como Director de Arte y Diseñador Gráfico Educativo.
+Necesito que crees un PROMPT EN INGLÉS altamente descriptivo y optimizado para generadores de imágenes de IA (Midjourney v6, DALL-E 3 o FLUX) para ilustrar: [TEMA O ESCENA, ej: Un taller escolar de robótica con reciclaje].
+
+CRITERIOS VISUALES A DEFINIR:
+1. SUJETO Y ACCIÓN: [Ej: Dos estudiantes de 15 años concentrados ensamblando un robot con piezas recicladas].
+2. ESTILO ARTÍSTICO: [Ej: Ilustración editorial en acuarela y tinta / Fotografía documental cálida / Render 3D estilizado].
+3. ENCUADRE Y PLANO: [Ej: Plano medio con ángulo frontal, fondo ligeramente desenfocado].
+4. ILUMINACIÓN Y PALETA: [Ej: Luz solar de mañana por una ventana, tonos azul cian, terracota y madera clara].
+5. LO QUE DEBE EVITARSE (Prompt Negativo): Sin textos ilegibles flotantes, sin cables desproporcionados, sin dedos deformes.
+
+ENTREGA: El prompt final en inglés listo para copiar y 2 sugerencias de parámetros de relación de aspecto (--ar 16:9 o --ar 4:3).</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Prompt en inglés resultante para el generador visual):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <blockquote style="margin: 0; padding: 0.75rem 1rem; background: rgba(0, 180, 216, 0.08); border-left: 3px solid var(--conased-cyan-deep); font-style: italic; font-family: monospace; font-size: 0.85rem; color: var(--conased-navy-dark);">
+                  "Educational editorial watercolor illustration of two diverse teenage students collaborating in a bright robotics classroom, assembling a small rover with recycled parts, soft morning sunlight through wooden windows, warm wood and teal palette, medium shot, clean background, inspiring atmosphere, no text, no blur --ar 16:9 --v 6.0"
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt (Checklist Visual):
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿Qué estilo artístico conecta mejor con la edad de tus estudiantes?</strong> (¿Cómic juvenil, fotografía documental, acuarela botánica o infografía vectorial minimalista?).</li>
+                <li><strong>¿Dónde se ubicará la imagen en el documento escolar?</strong> (¿Encabezado panorámico 16:9, viñeta cuadrada 1:1 junto al texto o portada vertical 9:16 con aire libre para títulos?).</li>
+                <li><strong>¿Qué rasgos culturales o de contexto local deben respetarse?</strong> (Guardapolvos blancos, uniformes escolares públicos, geografía de Entre Ríos o arquitectura colonial).</li>
+                <li><strong>¿Qué clichés de "AI Slop" debes prohibir expresamente?</strong> (Robots con ojos azules brillantes, haces de luz mágicos en lugares absurdos o estética de película de ciencia ficción distópica).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CASO 6: Resumen de Video -->
+          <div id="tab-resumen-video" class="tab-pane">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h4 style="color: var(--conased-navy-dark); margin-bottom: 0.2rem; font-size: 1.15rem;">
+                  <i class="fa-solid fa-video" style="color: var(--conased-cyan-deep);"></i> Resumen y Explotación Pedagógica de Videos Educativos
+                </h4>
+                <p class="text-muted" style="font-size: 0.88rem; margin-bottom: 0;">
+                  Convierte conferencias o documentales en guías con marcas de tiempo, glosario previo y preguntas para el visionado activo.
+                </p>
+              </div>
+              <button class="btn btn-primary btn-copy" data-copy-target="#prompt-resumen-video-code">
+                <i class="fa-solid fa-copy"></i> Copiar Prompt
+              </button>
+            </div>
+
+            <pre id="prompt-resumen-video-code" style="background: #02121e; color: #a7f3d0; border-radius: 8px; padding: 1.25rem; font-family: monospace; font-size: 0.86rem; line-height: 1.65; white-space: pre-wrap; margin: 0;">Actúa como Diseñador de Recursos Didácticos Audiovisuales.
+A continuación te comparto la transcripción (o enlace y descripción temática) de un video de [DURACIÓN, ej: 12 minutos] sobre [TEMA, ej: La Crisis de los Misiles de 1962]:
+"""
+[PEGA AQUÍ LA TRANSCRIPCIÓN, SUBTÍTULOS O DESCRIPCIÓN DEL VIDEO]
+"""
+
+GENERA UNA GUÍA PEDAGÓGICA EN 4 BLOQUES:
+1. SÍNTESIS GENERAL: Tesis central o idea rectora del video en 1 párrafo conciso.
+2. ESTRUCTURA EN MARCAS DE TIEMPO (Timestamps temáticos): Divide el video en 3 o 4 momentos clave explicando el concepto principal de cada bloque.
+3. GLOSARIO PREVIO (Anticipación): 3 términos o conceptos técnicos que los estudiantes deben conocer ANTES de darle play.
+4. GUÍA DE ATENCIÓN ACTIVA (Durante el video): 2 preguntas desafiantes que los alumnos deben responder mientras miran para asegurar su concentración.</pre>
+
+            <!-- Fragmento de Ejemplo -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--conased-cyan-deep); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: var(--conased-navy-dark); display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-sparkles" style="color: var(--conased-cyan-deep);"></i> Fragmento de Ejemplo Breve (Cómo responde la IA):
+              </strong>
+              <div style="font-size: 0.88rem; color: #334155; line-height: 1.65;">
+                <p style="margin-bottom: 0.4rem;"><strong>1. Síntesis General:</strong> El video expone cómo la subducción entre la Placa de Nazca y la Sudamericana elevó la Cordillera de los Andes a lo largo de 200 millones de años.</p>
+                <p style="margin-bottom: 0.4rem;"><strong>2. Marcas de Tiempo:</strong><br>
+                • <em>00:00 - 02:45:</em> Placas tectónicas y choque de corteza oceánica densa.<br>
+                • <em>02:46 - 06:10:</em> Formación de magma, vulcanismo y plegamiento de rocas.<br>
+                • <em>06:11 - Fin:</em> Terremotos actuales y evidencia de que la cordillera sigue creciendo.</p>
+                <p style="margin-bottom: 0;"><strong>3. Pregunta de Atención Activa:</strong> ¿Por qué la corteza oceánica siempre se hunde por debajo de la continental y no al revés?</p>
+              </div>
+            </div>
+
+            <!-- Preguntas para Mejorar el Prompt -->
+            <div style="background: #f0fdf4; border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem; margin-top: 1.25rem;">
+              <strong style="color: #065f46; display: flex; align-items: center; gap: 0.5rem; font-size: 0.93rem; margin-bottom: 0.5rem;">
+                <i class="fa-solid fa-circle-question" style="color: var(--accent-emerald);"></i> Preguntas Sugeridas para Mejorar y Personalizar el Prompt:
+              </strong>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: #166534; line-height: 1.6;">
+                <li><strong>¿El video se proyectará completo en clase o se asignará como 'Clase Invertida' (Flipped Classroom) en casa?</strong></li>
+                <li><strong>¿Deseas incluir momentos de pausa sugeridos para debate oral colectivo?</strong> (Ej: pausar en el minuto 04:30 para formular una hipótesis).</li>
+                <li><strong>¿Quieres agregar una actividad práctica posterior de transferencia?</strong> (Redacción de síntesis, debate en parejas o diseño de un meme explicativo).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CASO TESTIGO: EL TALLER DE ARTE Y EL "PERSONAJE FANTÁSTICO" (SECCIÓN OSCURA CON FONDO ANGULADO) -->
+    <section id="taller-arte" class="section section-dark section-has-bg">
+      <div class="section-bg-fade-angled" style="background-image: url('images/taller_arte_personaje.jpg');" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-palette"></i> Caso Testigo de Creatividad y Rol Docente
+          </span>
+          <h2>El Caso del "Personaje Fantástico" y la Analogía del Taller de Arte</h2>
+          <p class="text-muted">
+            La generación creativa demuestra por qué la IA no reemplaza la mente del estudiante: exige más vocabulario, más cultura visual y una dirección humana activa frente al cliché del "AI Slop".
+          </p>
+        </div>
+
+        <div class="workshop-case-card" style="border-radius: 16px; padding: 2.25rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); max-width: 820px;">
+          <h3 style="color: var(--conased-cyan-bright); font-size: 1.35rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem;">
+            <i class="fa-solid fa-wand-sparkles" style="color: var(--conased-cyan-bright);"></i>
+            <span>La Consigna Escolar Habitual vs. Dirección Creativa Humana</span>
+          </h3>
+          <blockquote style="margin: 0 0 1.25rem 0; padding: 1rem 1.25rem; background: rgba(0, 180, 216, 0.08); border-left: 4px solid var(--conased-cyan-bright); border-radius: 6px; font-style: italic; color: var(--conased-ice); font-size: 1.05rem;">
+            "Crea una imagen (o describe) un personaje fantástico viviendo una aventura."
+          </blockquote>
+          <p style="font-size: 0.96rem; line-height: 1.75; color: #e2e8f0; margin-bottom: 1.25rem;">
+            <strong style="color: var(--accent-amber);"><i class="fa-solid fa-triangle-exclamation"></i> El mal uso automático:</strong> El estudiante copia esa frase tal cual en un generador visual o textual. La IA recurre al promedio estadístico de internet: devuelve un guerrero medieval genérico con espada brillante y un dragón en un bosque. El alumno entrega sin entusiasmo y el docente siente que <em>"la máquina hizo todo"</em>.
+          </p>
+          <div style="background: rgba(6, 214, 160, 0.12); border: 1px solid rgba(6, 214, 160, 0.35); border-radius: 10px; padding: 1.25rem;">
+            <strong style="color: #6ee7b7; display: block; margin-bottom: 0.4rem; font-size: 1rem;">
+              <i class="fa-solid fa-graduation-cap"></i> La Analogía del Taller de Plástica:
+            </strong>
+            <p style="margin: 0; font-size: 0.94rem; color: #d1fae5; line-height: 1.7;">
+              Si a un alumno en el taller de arte le das un lienzo en blanco y dices <em>"pinta algo"</em> sin enseñarle mezcla de colores, planos o técnicas, dibujará un monigote. Enseñar a usar la IA es exactamente igual: requiere enseñar <strong>estilos pictóricos, teoría de iluminación, planos fotográficos, vocabulario riguroso y coherencia estética</strong>. La IA es el pincel; el autor y estratega es el estudiante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVEGACIÓN ENTRE MÓDULOS -->
+    <section class="section section-dark" style="padding: 2.5rem 0; border-top: 1px solid var(--border-dark);">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <a href="modulo2.html" class="btn btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Módulo 2: Tipos de IA</span>
+          </a>
+
+          <div style="text-align: center;">
+            <span class="text-muted" style="font-size: 0.9rem;">
+              <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Has completado el Módulo 3 (Inclusión y Rol Docente)
+            </span>
+          </div>
+
+          <a href="modulo4.html" class="btn btn-primary">
+            <span>Siguiente: Módulo 4 (Opciones del Mercado)</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="footer-conased">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4><i class="fa-solid fa-brain" style="color: var(--conased-cyan-bright);"></i> FUNDACIÓN CONASED</h4>
+        <p style="font-size: 0.88rem; margin-top: 0.5rem;">
+          Fundación Concordiense para la Acción Social y Estudios para el Desarrollo. Capacitando docentes con visión humana, compromiso social e innovación pedagógica.
+        </p>
+      </div>
+      <div>
+        <h5 style="color: #ffffff; margin-bottom: 0.85rem;"><i class="fa-solid fa-sitemap"></i> Estructura de la Charla</h5>
+        <ul class="footer-links">
+          <li><a href="modulo1.html"><i class="fa-solid fa-angle-right"></i> Módulo 1: Conceptos Clave de IA</a></li>
+          <li><a href="modulo2.html"><i class="fa-solid fa-angle-right"></i> Módulo 2: Distintos Tipos de IA</a></li>
+          <li><a href="modulo3.html"><i class="fa-solid fa-angle-right"></i> Módulo 3: Inclusión y Rol Docente</a></li>
+          <li><a href="modulo4.html"><i class="fa-solid fa-angle-right"></i> Módulo 4: Opciones del Mercado</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p style="margin-bottom: 0;">&copy; 2026 Fundación CONASED — Material pedagógico de libre uso para capacitaciones docentes.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
