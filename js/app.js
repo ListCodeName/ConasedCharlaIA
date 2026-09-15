@@ -397,6 +397,27 @@ document.addEventListener('DOMContentLoaded', () => {
       updateDemoSlide(1);
     });
   }
+
+  // --- 10. Cerrojo Interactivo de Apertura (Módulo 1) ---
+  const unlockQuestionCard = document.getElementById('unlockQuestionCard');
+  const cerrojoTriggerBtn = document.getElementById('cerrojoTriggerBtn');
+  const cerrojoIcon = document.getElementById('cerrojoIcon');
+
+  if (unlockQuestionCard && cerrojoTriggerBtn) {
+    cerrojoTriggerBtn.addEventListener('click', () => {
+      // 1. Fase de desbloqueo del candado (cambio de icono y brillo)
+      unlockQuestionCard.classList.add('unlocking');
+      if (cerrojoIcon) {
+        cerrojoIcon.className = 'fa-solid fa-lock-open';
+      }
+
+      // 2. Fase de barrido lateral de persianas hacia los costados
+      setTimeout(() => {
+        unlockQuestionCard.classList.add('unlocked');
+        unlockQuestionCard.classList.remove('unlocking');
+      }, 320);
+    });
+  }
 });
 
 

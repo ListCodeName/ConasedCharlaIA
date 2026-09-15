@@ -29,6 +29,12 @@ graph TD
 
 ## 1. Módulo 1: Conceptos Clave de IA (Fundamentos, Prompting, Bucles Tóxicos y Memoria)
 
+### 1.0. Dinámica de Apertura: "Desbloqueo de la Caja Negra" (Cerrojo Interactivo)
+- **Recurso visual en pantalla:** Contenedor con cerrojo central y persianas de seguridad.
+- **Acción del orador:** Invita a la reflexión inicial y hace clic en el cerrojo para ejecutar el barrido lateral que revela la pregunta en tipografía gigante:
+  > **«¿Quiénes de nosotros hemos usado la IA... y cuántos sabemos realmente cómo funciona por dentro?»**
+- **Propósito pedagógico:** Diagnosticar la experiencia del auditorio docente, bajar la ansiedad tecnológica y tender el puente directo hacia la desmitificación ("Derribando Mitos de Ciencia Ficción").
+
 ### 1.1. Lo que NO es (Derribando fantasías de ciencia ficción)
 - **No es una mente consciente ni un ser que "piensa":** No tiene sentimientos, deseos ni voluntad propia.
 - **No es un oráculo infalible:** No "sabe la verdad", ni entiende el mundo como lo hace una persona.

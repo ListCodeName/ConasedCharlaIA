@@ -1350,3 +1350,248 @@ p {
   transform: translateY(-1px);
 }
 
+/* ==========================================================================
+   SECCIÓN DISPARADORA DE APERTURA: CERROJO Y BARRIDO LATERAL (Módulo 1)
+   ========================================================================== */
+.section-apertura-pregunta {
+  padding: 3.5rem 0 2rem 0;
+  background: linear-gradient(180deg, var(--conased-navy-dark) 0%, #031c2e 65%, #05263d 100%);
+  position: relative;
+  border-bottom: 1px solid rgba(0, 180, 216, 0.2);
+}
+
+.unlock-question-card {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #072e4a 0%, #031726 100%);
+  border: 1px solid rgba(0, 180, 216, 0.35);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), inset 0 0 40px rgba(0, 180, 216, 0.08);
+  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.unlock-question-card.unlocked {
+  border-color: rgba(0, 180, 216, 0.6);
+  box-shadow: 0 25px 60px -10px rgba(0, 180, 216, 0.25), inset 0 0 50px rgba(0, 180, 216, 0.12);
+}
+
+/* --- Capa de Contenido: Pregunta Revelada --- */
+.question-reveal-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1020px;
+  padding: 4rem 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.92);
+  filter: blur(12px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s ease;
+  pointer-events: none;
+}
+
+.unlock-question-card.unlocked .question-reveal-content {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+  pointer-events: auto;
+  transition-delay: 0.25s;
+}
+
+/* Tipografía significativamente grande comparada con h1 y h2 */
+.question-massive-text {
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 5.2vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00b4d8 0%, #90e0ef 45%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px rgba(0, 180, 216, 0.5));
+}
+
+/* --- Capa de Bloqueo: Puertas de Persiana Lateral --- */
+.curtain-doors-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.curtain-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  overflow: hidden;
+}
+
+.curtain-panel.curtain-left {
+  left: 0;
+  background: linear-gradient(135deg, #02121d 0%, #052033 60%, #062b46 100%);
+  border-right: 2px solid var(--conased-cyan-bright);
+  transform: translateX(0);
+  box-shadow: 15px 0 45px rgba(0, 0, 0, 0.85);
+}
+
+.curtain-panel.curtain-right {
+  right: 0;
+  background: linear-gradient(225deg, #02121d 0%, #052033 60%, #062b46 100%);
+  border-left: 2px solid var(--conased-cyan-bright);
+  transform: translateX(0);
+  box-shadow: -15px 0 45px rgba(0, 0, 0, 0.85);
+}
+
+/* Texturas y detalles visuales en los paneles */
+.curtain-tech-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0, 180, 216, 0.12) 1px, transparent 0),
+    linear-gradient(to right, rgba(0, 180, 216, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 180, 216, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px, 56px 56px, 56px 56px;
+  opacity: 0.7;
+}
+
+.curtain-seam-glow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  background: linear-gradient(to right, transparent, rgba(0, 180, 216, 0.2));
+}
+
+.curtain-left .curtain-seam-glow {
+  right: 0;
+}
+
+.curtain-right .curtain-seam-glow {
+  left: 0;
+  transform: scaleX(-1);
+}
+
+/* Animación de Barrido Lateral hacia los costados */
+.unlock-question-card.unlocked .curtain-panel.curtain-left {
+  transform: translateX(-100%);
+}
+
+.unlock-question-card.unlocked .curtain-panel.curtain-right {
+  transform: translateX(100%);
+}
+
+.unlock-question-card.unlocked .curtain-doors-overlay {
+  pointer-events: none;
+}
+
+/* --- Cerrojo Centrado Interactivo --- */
+.cerrojo-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 25;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+}
+
+.cerrojo-btn:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.cerrojo-btn:active {
+  transform: translate(-50%, -50%) scale(0.96);
+}
+
+.cerrojo-icon-shield {
+  position: relative;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #0096c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  border: 3px solid rgba(202, 240, 248, 0.75);
+  box-shadow: 0 0 35px rgba(0, 180, 216, 0.65), 0 12px 30px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cerrojo-btn:hover .cerrojo-icon-shield {
+  box-shadow: 0 0 55px rgba(0, 180, 216, 0.95), 0 15px 35px rgba(0, 0, 0, 0.85);
+  border-color: #ffffff;
+  transform: scale(1.06);
+}
+
+/* Ondas sonar concéntricas */
+.cerrojo-sonar-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 180, 216, 0.8);
+  transform: translate(-50%, -50%) scale(1);
+  animation: cerrojoSonar 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cerrojo-sonar-wave.delay {
+  animation-delay: 1.2s;
+}
+
+@keyframes cerrojoSonar {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.3);
+    opacity: 0;
+  }
+}
+
+/* Transición de desbloqueo en el cerrojo */
+.unlock-question-card.unlocking .cerrojo-btn {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.unlock-question-card.unlocking .cerrojo-icon-shield {
+  background: linear-gradient(135deg, #06d6a0 0%, #00b4d8 100%);
+  box-shadow: 0 0 60px rgba(6, 214, 160, 0.9), 0 0 90px rgba(0, 180, 216, 0.8);
+  border-color: #ffffff;
+}
+
+.unlock-question-card.unlocked .cerrojo-btn {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  pointer-events: none;
+}
+
+

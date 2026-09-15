@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Módulo 1: Conceptos Clave de IA | Fundación CONASED</title>
-  <meta name="description" content="Módulo 1: Conceptos Clave de IA. Desmitificamos la caja negra: modelos de lenguaje, tokens, probabilidad estadística, alucinaciones y la IA en la vida cotidiana.">
-  
+  <meta name="description"
+    content="Módulo 1: Conceptos Clave de IA. Desmitificamos la caja negra: modelos de lenguaje, tokens, probabilidad estadística, alucinaciones y la IA en la vida cotidiana.">
+
   <!-- Favicon SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
-  
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
+
   <!-- Estilos Globales -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <!-- HEADER INSTITUCIONAL CONASED -->
@@ -64,7 +68,8 @@
   <main>
     <!-- 1. HERO SECTION (OSCURA CON FONDO INTEGRADO Y FADE) -->
     <section class="hero-section section-dark">
-      <div class="hero-bg-fade" style="background-image: url('images/ia_fundamentos_redes.jpg');" aria-hidden="true"></div>
+      <div class="hero-bg-fade" style="background-image: url('images/ia_fundamentos_redes.jpg');" aria-hidden="true">
+      </div>
 
       <div class="container">
         <div class="hero-content">
@@ -73,7 +78,9 @@
           </div>
           <h1>Módulo 1: <span>Conceptos Clave</span> de la Inteligencia Artificial</h1>
           <p class="lead">
-            Desmitificamos la "caja negra": entenderemos qué son los Modelos de Lenguaje, tokens con simulador interactivo, probabilidad estadística, ingeniería de prompts (fórmula R-C-T-F-R), prevención del bucle tóxico y gestión estratégica de memoria y contexto en el chat.
+            Desmitificamos la "caja negra": entenderemos qué son los Modelos de Lenguaje, tokens con simulador
+            interactivo, probabilidad estadística, ingeniería de prompts (fórmula R-C-T-F-R), prevención del bucle
+            tóxico y gestión estratégica de memoria y contexto en el chat.
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a href="#mecanica" class="btn btn-primary">
@@ -99,6 +106,48 @@
       </div>
     </section>
 
+    <!-- SECCIÓN INTERACTIVA: PREGUNTA DISPARADORA DE APERTURA CON CERROJO -->
+    <section class="section-apertura-pregunta" id="apertura-pregunta" aria-label="Pregunta disparadora de apertura">
+      <div class="container">
+        <div class="unlock-question-card" id="unlockQuestionCard">
+
+          <!-- Capa de Contenido: Pregunta Revelada -->
+          <div class="question-reveal-content">
+            <h2 class="question-massive-text">
+              «¿Quiénes de nosotros hemos usado la IA... y cuánto conoce <span class="text-gradient-cyan">sobre su
+                funcionamiento</span>?»
+            </h2>
+          </div>
+
+          <!-- Capa de Bloqueo: Puertas con barrido lateral desde el centro -->
+          <div class="curtain-doors-overlay" id="curtainDoorsOverlay">
+            <!-- Hoja Izquierda (barre hacia la izquierda al desbloquear) -->
+            <div class="curtain-panel curtain-left">
+              <div class="curtain-tech-pattern"></div>
+              <div class="curtain-seam-glow"></div>
+            </div>
+
+            <!-- Hoja Derecha (barre hacia la derecha al desbloquear) -->
+            <div class="curtain-panel curtain-right">
+              <div class="curtain-tech-pattern"></div>
+              <div class="curtain-seam-glow"></div>
+            </div>
+
+            <!-- Cerrojo Centrado Interactivo -->
+            <button class="cerrojo-btn" id="cerrojoTriggerBtn"
+              aria-label="Hacer clic para desbloquear la pregunta inicial">
+              <div class="cerrojo-sonar-wave"></div>
+              <div class="cerrojo-sonar-wave delay"></div>
+              <div class="cerrojo-icon-shield">
+                <i class="fa-solid fa-lock" id="cerrojoIcon"></i>
+              </div>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- 2. QUÉ ES Y QUÉ NO ES (SECCIÓN CLARA) -->
     <section class="section section-light">
       <div class="container">
@@ -108,7 +157,8 @@
           </span>
           <h2>Derribando Mitos de Ciencia Ficción</h2>
           <p class="text-muted">
-            Antes de aprovechar una herramienta, debemos comprender su verdadera naturaleza sin caer en fantasías mediáticas ni en temores infundados.
+            Antes de aprovechar una herramienta, debemos comprender su verdadera naturaleza sin caer en fantasías
+            mediáticas ni en temores infundados.
           </p>
         </div>
 
@@ -119,20 +169,24 @@
               <i class="fa-solid fa-circle-xmark"></i> Lo que NO es la IA
             </div>
             <div class="card-illustration-box">
-              <img src="images/no_es_mente_consciente.jpg" alt="Ilustración de robot mecánico que no tiene mente consciente">
+              <img src="images/no_es_mente_consciente.jpg"
+                alt="Ilustración de robot mecánico que no tiene mente consciente">
             </div>
             <h3 style="color: var(--text-dark);">No es una Mente Consciente</h3>
             <p class="text-muted">
-              No tiene sentimientos, opiniones, deseos ni voluntad propia. No "sabe" lo que es verdad o mentira, ni comprende el mundo como lo hace una persona.
+              No tiene sentimientos, opiniones, deseos ni voluntad propia. No "sabe" lo que es verdad o mentira, ni
+              comprende el mundo como lo hace una persona.
             </p>
             <ul style="list-style: none; padding-left: 0; margin-top: 1rem; font-size: 0.95rem;">
               <li style="margin-bottom: 0.6rem; display: flex; gap: 0.6rem;">
                 <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 4px;"></i>
-                <span><strong>No es un oráculo infalible:</strong> No es un archivo de verdades universales garantizadas.</span>
+                <span><strong>No es un oráculo infalible:</strong> No es un archivo de verdades universales
+                  garantizadas.</span>
               </li>
               <li style="margin-bottom: 0.6rem; display: flex; gap: 0.6rem;">
                 <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 4px;"></i>
-                <span><strong>No es magia:</strong> Detrás no hay misterio, sino cálculo estadístico y grandes volúmenes de texto procesado.</span>
+                <span><strong>No es magia:</strong> Detrás no hay misterio, sino cálculo estadístico y grandes volúmenes
+                  de texto procesado.</span>
               </li>
             </ul>
           </div>
@@ -143,20 +197,24 @@
               <i class="fa-solid fa-circle-check"></i> Lo que SÍ es la IA
             </div>
             <div class="card-illustration-box">
-              <img src="images/modelo_probabilidad_lenguaje.jpg" alt="Ilustración conceptual de un modelo de probabilidad de lenguaje y autocompletar">
+              <img src="images/modelo_probabilidad_lenguaje.jpg"
+                alt="Ilustración conceptual de un modelo de probabilidad de lenguaje y autocompletar">
             </div>
             <h3 style="color: var(--text-dark);">Modelos de Lenguaje y Probabilidad</h3>
             <p class="text-muted">
-              Es un sistema computacional avanzado entrenado para detectar patrones sintácticos y predecir secuencias lógicas de palabras.
+              Es un sistema computacional avanzado entrenado para detectar patrones sintácticos y predecir secuencias
+              lógicas de palabras.
             </p>
             <ul style="list-style: none; padding-left: 0; margin-top: 1rem; font-size: 0.95rem;">
               <li style="margin-bottom: 0.6rem; display: flex; gap: 0.6rem;">
                 <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 4px;"></i>
-                <span><strong>El autocompletar definitivo:</strong> Como el texto predictivo del celular, pero con la capacidad de procesar y relacionar bibliotecas enteras del saber humano.</span>
+                <span><strong>El autocompletar definitivo:</strong> Como el texto predictivo del celular, pero con la
+                  capacidad de procesar y relacionar bibliotecas enteras del saber humano.</span>
               </li>
               <li style="margin-bottom: 0.6rem; display: flex; gap: 0.6rem;">
                 <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 4px;"></i>
-                <span><strong>El pasante brillante pero acelerado:</strong> Es como un graduado novato: extremadamente veloz y leyó millones de libros, pero carece de sentido común si no se le dan pautas claras.</span>
+                <span><strong>El pasante brillante pero acelerado:</strong> Es como un graduado novato: extremadamente
+                  veloz y leyó millones de libros, pero carece de sentido común si no se le dan pautas claras.</span>
               </li>
             </ul>
           </div>
@@ -184,7 +242,9 @@
             </div>
             <h3>1. ¿Qué es un Token?</h3>
             <p class="text-muted">
-              Las máquinas no leen palabras completas ni letras sueltas. Fragmentan todo texto en <strong>tokens</strong> (bloques de ~4 caracteres o sílabas). Por ejemplo, la palabra <em>"Educación"</em> se procesa habitualmente como <code>[Educa]</code> + <code>[ción]</code>.
+              Las máquinas no leen palabras completas ni letras sueltas. Fragmentan todo texto en
+              <strong>tokens</strong> (bloques de ~4 caracteres o sílabas). Por ejemplo, la palabra <em>"Educación"</em>
+              se procesa habitualmente como <code>[Educa]</code> + <code>[ción]</code>.
             </p>
           </div>
 
@@ -194,7 +254,9 @@
             </div>
             <h3>2. Predicción del Siguiente Token</h3>
             <p class="text-muted">
-              La IA calcula en cada milisegundo: <em>"Dados los tokens anteriores, ¿cuál es el fragmento estadísticamente más probable que debe venir ahora?"</em> Es como un músico improvisando: no tiene la melodía completa de antemano, pero deduce la siguiente nota armónica.
+              La IA calcula en cada milisegundo: <em>"Dados los tokens anteriores, ¿cuál es el fragmento
+                estadísticamente más probable que debe venir ahora?"</em> Es como un músico improvisando: no tiene la
+              melodía completa de antemano, pero deduce la siguiente nota armónica.
             </p>
           </div>
 
@@ -204,20 +266,25 @@
             </div>
             <h3>3. Árbol de Caminos Deductivos</h3>
             <p class="text-muted">
-              Cada palabra elegida abre y cierra ramas en un árbol de probabilidades. Si el prompt docente es ambiguo, la máquina toma una bifurcación al azar; si guiamos el camino con precisión (*"Razona paso a paso"*), minimizamos los errores.
+              Cada palabra elegida abre y cierra ramas en un árbol de probabilidades. Si el prompt docente es ambiguo,
+              la máquina toma una bifurcación al azar; si guiamos el camino con precisión (*"Razona paso a paso"*),
+              minimizamos los errores.
             </p>
           </div>
         </div>
 
         <!-- SIMULADOR INTERACTIVO DE TOKENS -->
         <div id="simulador-seccion" class="token-simulator-card">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
             <div>
               <h3 style="color: #ffffff; margin-bottom: 0.2rem;">
-                <i class="fa-solid fa-terminal" style="color: var(--conased-cyan-bright);"></i> Laboratorio Interactivo: Simulador de Tokens
+                <i class="fa-solid fa-terminal" style="color: var(--conased-cyan-bright);"></i> Laboratorio Interactivo:
+                Simulador de Tokens
               </h3>
               <p class="text-muted" style="margin-bottom: 0; font-size: 0.9rem;">
-                Escribe una frase típica de clase para observar cómo la IA la descompone en unidades de cómputo en tiempo real.
+                Escribe una frase típica de clase para observar cómo la IA la descompone en unidades de cómputo en
+                tiempo real.
               </p>
             </div>
             <span class="badge-tag" style="margin-bottom: 0;">
@@ -225,7 +292,8 @@
             </span>
           </div>
 
-          <textarea id="tokenInput" class="token-input-area" placeholder="Escribe aquí tu consigna o texto docente..." aria-label="Texto para simular tokens">La fotosíntesis permite a las plantas convertir energía lumínica en alimento.</textarea>
+          <textarea id="tokenInput" class="token-input-area" placeholder="Escribe aquí tu consigna o texto docente..."
+            aria-label="Texto para simular tokens">La fotosíntesis permite a las plantas convertir energía lumínica en alimento.</textarea>
 
           <div class="token-stats-bar">
             <div class="stat-box">
@@ -247,7 +315,8 @@
           </div>
 
           <div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted-light);">
+            <div
+              style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted-light);">
               <span><i class="fa-solid fa-eye"></i> Visualización de Fragmentación en Tokens:</span>
               <span>Colores asignados por bloque secuencial</span>
             </div>
@@ -266,18 +335,25 @@
           </span>
           <h2>¿Qué son las "Alucinaciones" y por qué Ocurren?</h2>
           <p class="text-muted">
-            El fenómeno más desconcertante para un docente principiante: cuando la máquina inventa datos con total seguridad y elocuencia aparente.
+            El fenómeno más desconcertante para un docente principiante: cuando la máquina inventa datos con total
+            seguridad y elocuencia aparente.
           </p>
         </div>
 
-        <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0, 56, 84, 0.06); margin-bottom: 2.5rem;">
+        <div
+          style="background: #ffffff; border: 1px solid var(--border-light); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0, 56, 84, 0.06); margin-bottom: 2.5rem;">
           <!-- Bloque de Ilustración Estilo Cómic -->
           <div style="position: relative; background: #031726; border-bottom: 1px solid var(--border-light);">
-            <img src="images/ia_alucinacion_comic.jpg" alt="Ilustración conceptual de alucinaciones en la IA: Robot asistente inventando datos con seguridad frente a una docente analítica con lupa" style="width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover;">
-            
-            <div style="background: linear-gradient(to top, rgba(3, 23, 38, 0.95) 0%, rgba(3, 23, 38, 0.7) 60%, transparent 100%); padding: 1.25rem 2rem; color: #ffffff;">
-              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.35rem;">
-                <span class="badge-tag" style="background: rgba(231, 111, 81, 0.25); color: #fca5a5; border: 1px solid rgba(231, 111, 81, 0.4); margin-bottom: 0;">
+            <img src="images/ia_alucinacion_comic.jpg"
+              alt="Ilustración conceptual de alucinaciones en la IA: Robot asistente inventando datos con seguridad frente a una docente analítica con lupa"
+              style="width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover;">
+
+            <div
+              style="background: linear-gradient(to top, rgba(3, 23, 38, 0.95) 0%, rgba(3, 23, 38, 0.7) 60%, transparent 100%); padding: 1.25rem 2rem; color: #ffffff;">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.35rem;">
+                <span class="badge-tag"
+                  style="background: rgba(231, 111, 81, 0.25); color: #fca5a5; border: 1px solid rgba(231, 111, 81, 0.4); margin-bottom: 0;">
                   <i class="fa-solid fa-masks-theater"></i> La Paradoja de la Alucinación
                 </span>
                 <span style="font-size: 0.85rem; color: var(--conased-cyan-bright); font-weight: 500;">
@@ -285,51 +361,70 @@
                 </span>
               </div>
               <p style="margin: 0; font-size: 0.92rem; color: var(--conased-ice); line-height: 1.6;">
-                <strong>El asistente confiado vs. el ojo pedagógico:</strong> La IA no tiene conciencia de la realidad; genera respuestas plausibles por pura probabilidad matemática (dibujando bicicletas con alas en Saturno con total felicidad). Es la docente quien, con libreta y lupa en mano, somete cada afirmación al juicio crítico y la evidencia empírica.
+                <strong>El asistente confiado vs. el ojo pedagógico:</strong> La IA no tiene conciencia de la realidad;
+                genera respuestas plausibles por pura probabilidad matemática (dibujando bicicletas con alas en Saturno
+                con total felicidad). Es la docente quien, con libreta y lupa en mano, somete cada afirmación al juicio
+                crítico y la evidencia empírica.
               </p>
             </div>
           </div>
 
           <!-- Contenido Explicativo y Pautas de Mitigación -->
           <div style="padding: 2rem;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
               <div>
                 <h3 style="color: var(--conased-navy-dark); font-size: 1.25rem; margin-bottom: 1rem;">
-                  <i class="fa-solid fa-brain" style="color: var(--accent-amber);"></i> Probabilidad Matemática vs. Verdad Fáctica
+                  <i class="fa-solid fa-brain" style="color: var(--accent-amber);"></i> Probabilidad Matemática vs.
+                  Verdad Fáctica
                 </h3>
                 <p class="text-muted" style="line-height: 1.7; margin-bottom: 1rem;">
-                  La IA no tiene noción de "verdad" ni de "mentira"; su algoritmo busca exclusivamente <strong>sonar gramaticalmente coherente y convincente</strong>. Al ser un predictor probabilístico, si le haces una pregunta ambigua o sobre un tema del que carece de registros fidedignos, <strong>inventará fechas, autores de libros, citas apócrifas o fórmulas imaginarias</strong> antes que admitir un límite.
+                  La IA no tiene noción de "verdad" ni de "mentira"; su algoritmo busca exclusivamente <strong>sonar
+                    gramaticalmente coherente y convincente</strong>. Al ser un predictor probabilístico, si le haces
+                  una pregunta ambigua o sobre un tema del que carece de registros fidedignos, <strong>inventará fechas,
+                    autores de libros, citas apócrifas o fórmulas imaginarias</strong> antes que admitir un límite.
                 </p>
-                <div style="background: var(--conased-ice); border-left: 4px solid var(--conased-cyan-deep); padding: 1.15rem; border-radius: 8px;">
-                  <strong style="color: var(--conased-teal-deep); display: block; margin-bottom: 0.35rem; font-size: 0.98rem;">
+                <div
+                  style="background: var(--conased-ice); border-left: 4px solid var(--conased-cyan-deep); padding: 1.15rem; border-radius: 8px;">
+                  <strong
+                    style="color: var(--conased-teal-deep); display: block; margin-bottom: 0.35rem; font-size: 0.98rem;">
                     <i class="fa-solid fa-shield-halved"></i> Moraleja Fundamental para el Docente:
                   </strong>
                   <p style="margin: 0; font-size: 0.92rem; color: var(--conased-navy-dark); line-height: 1.6;">
-                    La IA propone a toda velocidad, pero el docente dispone. Usala para arrancar con un borrador rápido, pero tomate siempre el tiempo de revisar los datos y adaptarlo con tu experiencia pedagógica antes de usarlo con los chicos.
+                    La IA propone a toda velocidad, pero el docente dispone. Usala para arrancar con un borrador rápido,
+                    pero tomate siempre el tiempo de revisar los datos y adaptarlo con tu experiencia pedagógica antes
+                    de usarlo con los chicos.
                   </p>
                 </div>
               </div>
 
               <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.75rem;">
                 <h4 style="color: var(--conased-teal-deep); margin-bottom: 1rem; font-size: 1.08rem;">
-                  <i class="fa-solid fa-list-check" style="color: var(--accent-emerald);"></i> 4 Estrategias para Mitigar las Alucinaciones:
+                  <i class="fa-solid fa-list-check" style="color: var(--accent-emerald);"></i> 4 Estrategias para
+                  Mitigar las Alucinaciones:
                 </h4>
                 <ul style="list-style: none; padding-left: 0; font-size: 0.92rem; color: #334155;">
                   <li style="margin-bottom: 0.85rem; display: flex; gap: 0.75rem;">
                     <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald); margin-top: 3px;"></i>
-                    <span><strong>Pedir justificación paso a paso (Chain of Thought):</strong> Exige al final del prompt: <em>"Explica paso a paso tu deducción lógica antes de dar la respuesta final"</em>.</span>
+                    <span><strong>Pedir justificación paso a paso (Chain of Thought):</strong> Exige al final del
+                      prompt: <em>"Explica paso a paso tu deducción lógica antes de dar la respuesta final"</em>.</span>
                   </li>
                   <li style="margin-bottom: 0.85rem; display: flex; gap: 0.75rem;">
                     <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald); margin-top: 3px;"></i>
-                    <span><strong>Instrucción de honestidad estricta:</strong> Incluye: <em>"Si no dispones del dato histórico o científico certero, indícalo expresamente como desconocido en lugar de inventar una hipótesis"</em>.</span>
+                    <span><strong>Instrucción de honestidad estricta:</strong> Incluye: <em>"Si no dispones del dato
+                        histórico o científico certero, indícalo expresamente como desconocido en lugar de inventar una
+                        hipótesis"</em>.</span>
                   </li>
                   <li style="margin-bottom: 0.85rem; display: flex; gap: 0.75rem;">
                     <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald); margin-top: 3px;"></i>
-                    <span><strong>Proveer el texto fuente (Grounding):</strong> Sube o pega tú mismo el fragmento del manual o bibliografía y pide: <em>"Responde basándote únicamente en el texto suministrado"</em>.</span>
+                    <span><strong>Proveer el texto fuente (Grounding):</strong> Sube o pega tú mismo el fragmento del
+                      manual o bibliografía y pide: <em>"Responde basándote únicamente en el texto
+                        suministrado"</em>.</span>
                   </li>
                   <li style="margin-bottom: 0; display: flex; gap: 0.75rem;">
                     <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald); margin-top: 3px;"></i>
-                    <span><strong>Triangulación cruzada:</strong> Si un dato o bibliografía te genera dudas, búscalo en Google académico o pídele enlaces directos a la fuente original.</span>
+                    <span><strong>Triangulación cruzada:</strong> Si un dato o bibliografía te genera dudas, búscalo en
+                      Google académico o pídele enlaces directos a la fuente original.</span>
                   </li>
                 </ul>
               </div>
@@ -341,7 +436,8 @@
 
     <!-- 5. LA IA EN LA VIDA COTIDIANA (SECCIÓN OSCURA CON FONDO ANGULADO) -->
     <section id="cotidiana" class="section section-dark section-has-bg">
-      <div class="section-bg-fade-angled" style="background-image: url('images/ia_vida_cotidiana.jpg');" aria-hidden="true"></div>
+      <div class="section-bg-fade-angled" style="background-image: url('images/ia_vida_cotidiana.jpg');"
+        aria-hidden="true"></div>
       <div class="container">
         <div class="section-header">
           <span class="badge-tag">
@@ -349,7 +445,8 @@
           </span>
           <h2>La IA en Nuestra Vida Cotidiana: Ya Convivimos con Ella</h2>
           <p class="text-muted">
-            No es una tecnología lejana ni una promesa del futuro. Estas 6 aplicaciones forman parte de tu día a día desde hace años.
+            No es una tecnología lejana ni una promesa del futuro. Estas 6 aplicaciones forman parte de tu día a día
+            desde hace años.
           </p>
         </div>
 
@@ -361,7 +458,8 @@
             </div>
             <h3>1. Chatbots de Bancos y Servicios</h3>
             <p class="text-muted">
-              Asistentes virtuales de WhatsApp bancario o empresas de telefonía. Han evolucionado de opciones numéricas rígidas ("Marque 1...") a comprender intenciones en lenguaje natural.
+              Asistentes virtuales de WhatsApp bancario o empresas de telefonía. Han evolucionado de opciones numéricas
+              rígidas ("Marque 1...") a comprender intenciones en lenguaje natural.
             </p>
           </div>
 
@@ -372,7 +470,8 @@
             </div>
             <h3>2. Streaming y Entretenimiento</h3>
             <p class="text-muted">
-              Netflix, Spotify y YouTube. Las secciones <em>"Porque viste..."</em> o las listas de reproducción semanales analizan patrones de millones de usuarios para anticipar tus gustos.
+              Netflix, Spotify y YouTube. Las secciones <em>"Porque viste..."</em> o las listas de reproducción
+              semanales analizan patrones de millones de usuarios para anticipar tus gustos.
             </p>
           </div>
 
@@ -383,7 +482,8 @@
             </div>
             <h3>3. Movilidad y Navegación</h3>
             <p class="text-muted">
-              Google Maps y Waze. Predicen embotellamientos, trazan la ruta óptima en tiempo real y calculan la hora exacta de llegada cruzando datos satelitales y de otros conductores.
+              Google Maps y Waze. Predicen embotellamientos, trazan la ruta óptima en tiempo real y calculan la hora
+              exacta de llegada cruzando datos satelitales y de otros conductores.
             </p>
           </div>
 
@@ -394,7 +494,8 @@
             </div>
             <h3>4. Asistentes de Voz</h3>
             <p class="text-muted">
-              Siri, Alexa y Google Assistant. Convierten ondas sonoras en texto comprensible (Speech-to-Text), interpretan la orden y ejecutan la acción solicitada en fracciones de segundo.
+              Siri, Alexa y Google Assistant. Convierten ondas sonoras en texto comprensible (Speech-to-Text),
+              interpretan la orden y ejecutan la acción solicitada en fracciones de segundo.
             </p>
           </div>
 
@@ -405,7 +506,8 @@
             </div>
             <h3>5. Filtros Anti-Spam y Redacción</h3>
             <p class="text-muted">
-              Tu casilla de correo clasifica millones de mensajes sospechosos al día. Además, funciones como <em>Smart Compose</em> sugieren cómo completar la frase mientras redactas un email.
+              Tu casilla de correo clasifica millones de mensajes sospechosos al día. Además, funciones como <em>Smart
+                Compose</em> sugieren cómo completar la frase mientras redactas un email.
             </p>
           </div>
 
@@ -416,7 +518,8 @@
             </div>
             <h3>6. Fotografía Móvil y Sensores</h3>
             <p class="text-muted">
-              Modo retrato con desenfoque computacional (bokeh), algoritmos para fotos nocturnas con poca luz y reconocimiento de rostros o texto en vivo directamente desde la lente de tu celular.
+              Modo retrato con desenfoque computacional (bokeh), algoritmos para fotos nocturnas con poca luz y
+              reconocimiento de rostros o texto en vivo directamente desde la lente de tu celular.
             </p>
           </div>
         </div>
@@ -432,7 +535,8 @@
           </span>
           <h2>Ingeniería de Prompt: El Arte de Dialogar con la IA</h2>
           <p class="text-muted">
-            Aprender a formular una consigna no es un truco informático; es el acto pedagógico de estructurar con claridad nuestro pensamiento para que el modelo probabilístico trabaje con rigor docente.
+            Aprender a formular una consigna no es un truco informático; es el acto pedagógico de estructurar con
+            claridad nuestro pensamiento para que el modelo probabilístico trabaje con rigor docente.
           </p>
         </div>
 
@@ -444,10 +548,12 @@
             </div>
             <h3>¿Qué es un Prompt?</h3>
             <p class="text-muted">
-              Es la consigna, instrucción estructurada o texto de entrada que le proporcionamos a la IA para orientar su procesamiento probabilístico hacia un objetivo pedagógico concreto.
+              Es la consigna, instrucción estructurada o texto de entrada que le proporcionamos a la IA para orientar su
+              procesamiento probabilístico hacia un objetivo pedagógico concreto.
             </p>
             <p class="text-muted" style="font-size: 0.9rem;">
-              No es una simple "búsqueda en internet" ni un deseo a una lámpara mágica: es un <strong>diálogo directivo</strong> donde se establecen condiciones, roles, públicos destinatarios y límites de trabajo.
+              No es una simple "búsqueda en internet" ni un deseo a una lámpara mágica: es un <strong>diálogo
+                directivo</strong> donde se establecen condiciones, roles, públicos destinatarios y límites de trabajo.
             </p>
           </div>
 
@@ -457,11 +563,15 @@
             </div>
             <h3>¿Qué se Considera un "Buen Prompt"?</h3>
             <p class="text-muted">
-              Un buen prompt es aquel que elimina la ambigüedad y proporciona contexto docente suficiente para que el modelo no tenga que adivinar.
+              Un buen prompt es aquel que elimina la ambigüedad y proporciona contexto docente suficiente para que el
+              modelo no tenga que adivinar.
             </p>
-            <div style="background: rgba(6, 214, 160, 0.1); border-left: 3px solid var(--accent-emerald); padding: 0.85rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem; color: #caf0f8;">
+            <div
+              style="background: rgba(6, 214, 160, 0.1); border-left: 3px solid var(--accent-emerald); padding: 0.85rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem; color: #caf0f8;">
               <i class="fa-solid fa-scale-balanced"></i> <strong>Regla de oro de la claridad docente:</strong><br>
-              <em>"¿Un colega docente entendería con total precisión lo que acabo de pedir sin necesidad de hacerme diez preguntas antes?"</em> Si la consigna es ambigua para un colega, para la IA será una lotería probabilística.
+              <em>"¿Un colega docente entendería con total precisión lo que acabo de pedir sin necesidad de hacerme diez
+                preguntas antes?"</em> Si la consigna es ambigua para un colega, para la IA será una lotería
+              probabilística.
             </div>
           </div>
         </div>
@@ -469,49 +579,67 @@
         <!-- Fórmula Universal RCTFR -->
         <div style="margin-top: 3rem;">
           <h3 style="color: #ffffff; text-align: center; margin-bottom: 0.5rem;">
-            <i class="fa-solid fa-puzzle-piece" style="color: var(--conased-cyan-bright);"></i> La Fórmula Universal: Método R-C-T-F-R
+            <i class="fa-solid fa-puzzle-piece" style="color: var(--conased-cyan-bright);"></i> La Fórmula Universal:
+            Método R-C-T-F-R
           </h3>
-          <p class="text-muted" style="text-align: center; max-width: 750px; margin: 0 auto 2rem auto; font-size: 0.95rem;">
+          <p class="text-muted"
+            style="text-align: center; max-width: 750px; margin: 0 auto 2rem auto; font-size: 0.95rem;">
             Aplica esta estructura de 5 componentes cada vez que necesites un recurso de alta precisión didáctica:
           </p>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem;">
             <div class="card" style="border-top: 4px solid var(--conased-cyan-bright); padding: 1.25rem;">
-              <strong style="color: var(--conased-cyan-bright); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">R · Rol</strong>
-              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Quién debe ser la IA?</span>
-              <span style="font-size: 0.82rem; color: #caf0f8; background: rgba(0, 180, 216, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
+              <strong
+                style="color: var(--conased-cyan-bright); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">R ·
+                Rol</strong>
+              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Quién debe
+                ser la IA?</span>
+              <span
+                style="font-size: 0.82rem; color: #caf0f8; background: rgba(0, 180, 216, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
                 <em>"Actúa como un especialista en didáctica de las Ciencias Sociales..."</em>
               </span>
             </div>
 
             <div class="card" style="border-top: 4px solid var(--conased-cyan); padding: 1.25rem;">
-              <strong style="color: var(--conased-cyan); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">C · Contexto</strong>
-              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Para quién y dónde?</span>
-              <span style="font-size: 0.82rem; color: #caf0f8; background: rgba(0, 150, 199, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
+              <strong style="color: var(--conased-cyan); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">C ·
+                Contexto</strong>
+              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Para quién y
+                dónde?</span>
+              <span
+                style="font-size: 0.82rem; color: #caf0f8; background: rgba(0, 150, 199, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
                 <em>"Para alumnos de 2º año de secundaria técnica (14 años) con saberes básicos..."</em>
               </span>
             </div>
 
             <div class="card" style="border-top: 4px solid var(--accent-emerald); padding: 1.25rem;">
-              <strong style="color: var(--accent-emerald); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">T · Tarea</strong>
-              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Qué acción exacta debe ejecutar?</span>
-              <span style="font-size: 0.82rem; color: #caf0f8; background: rgba(6, 214, 160, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
+              <strong style="color: var(--accent-emerald); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">T
+                · Tarea</strong>
+              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Qué acción
+                exacta debe ejecutar?</span>
+              <span
+                style="font-size: 0.82rem; color: #caf0f8; background: rgba(6, 214, 160, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
                 <em>"Diseña una rúbrica analítica de 4 criterios con 3 niveles de logro..."</em>
               </span>
             </div>
 
             <div class="card" style="border-top: 4px solid var(--accent-amber); padding: 1.25rem;">
-              <strong style="color: var(--accent-amber); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">F · Formato</strong>
-              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Cómo quieres la respuesta?</span>
-              <span style="font-size: 0.82rem; color: #caf0f8; background: rgba(231, 111, 81, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
+              <strong style="color: var(--accent-amber); font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">F ·
+                Formato</strong>
+              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Cómo quieres
+                la respuesta?</span>
+              <span
+                style="font-size: 0.82rem; color: #caf0f8; background: rgba(231, 111, 81, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
                 <em>"En una tabla Markdown con columnas: Criterio, En desarrollo y Logrado..."</em>
               </span>
             </div>
 
             <div class="card" style="border-top: 4px solid #f72585; padding: 1.25rem;">
-              <strong style="color: #f72585; font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">R · Restricciones</strong>
-              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Qué NO debe hacer?</span>
-              <span style="font-size: 0.82rem; color: #caf0f8; background: rgba(247, 37, 133, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
+              <strong style="color: #f72585; font-size: 1.2rem; display: block; margin-bottom: 0.3rem;">R ·
+                Restricciones</strong>
+              <span class="text-muted" style="font-size: 0.88rem; display: block; margin-bottom: 0.5rem;">¿Qué NO debe
+                hacer?</span>
+              <span
+                style="font-size: 0.82rem; color: #caf0f8; background: rgba(247, 37, 133, 0.1); padding: 0.4rem; border-radius: 4px; display: block;">
                 <em>"Sin introducción obvia, máximo 200 palabras, con lenguaje accesible..."</em>
               </span>
             </div>
@@ -529,12 +657,15 @@
           </span>
           <h2>Consecuencias de un Mal Prompt: AI Slop y los Bucles Tóxicos</h2>
           <p class="text-muted">
-            Cuando la consigna que le damos a la máquina es vaga o descuidada, la IA no se detiene a pedir explicaciones: recurre al promedio estadístico de internet generando "comida chatarra intelectual" y encerrándonos en círculos viciosos.
+            Cuando la consigna que le damos a la máquina es vaga o descuidada, la IA no se detiene a pedir
+            explicaciones: recurre al promedio estadístico de internet generando "comida chatarra intelectual" y
+            encerrándonos en círculos viciosos.
           </p>
         </div>
 
         <!-- AI Slop Card -->
-        <div style="background: var(--surface-light); border-left: 5px solid var(--accent-amber); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow-sm); margin-bottom: 3rem;">
+        <div
+          style="background: var(--surface-light); border-left: 5px solid var(--accent-amber); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow-sm); margin-bottom: 3rem;">
           <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
             <div style="font-size: 2.5rem; color: var(--accent-amber);">
               <i class="fa-solid fa-dumpster"></i>
@@ -544,30 +675,37 @@
                 ¿Qué es el "AI Slop" (Relleno o Basura de IA)?
               </h3>
               <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 0.75rem;">
-                Así como en el correo existe el <em>Spam</em>, hoy la comunidad tecnológica denomina <strong>Slop</strong> a la marea de contenido sintético de baja calidad, masivo, predecible y sin valor real.
+                Así como en el correo existe el <em>Spam</em>, hoy la comunidad tecnológica denomina
+                <strong>Slop</strong> a la marea de contenido sintético de baja calidad, masivo, predecible y sin valor
+                real.
               </p>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
                 <div style="background: var(--surface-light-card); padding: 0.85rem; border-radius: 8px;">
                   <strong style="color: var(--text-dark); font-size: 0.9rem; display: block; margin-bottom: 0.25rem;">
                     <i class="fa-solid fa-feather-pointed" style="color: var(--accent-amber);"></i> Prolijidad Vacía
                   </strong>
-                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Párrafos impecables gramaticalmente pero que al leerlos con atención no dicen nada sustancial.</span>
+                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Párrafos impecables gramaticalmente
+                    pero que al leerlos con atención no dicen nada sustancial.</span>
                 </div>
                 <div style="background: var(--surface-light-card); padding: 0.85rem; border-radius: 8px;">
                   <strong style="color: var(--text-dark); font-size: 0.9rem; display: block; margin-bottom: 0.25rem;">
                     <i class="fa-solid fa-repeat" style="color: var(--accent-amber);"></i> Clichés Repetitivos
                   </strong>
-                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Frases hechas como <em>"En un mundo en constante cambio..."</em> o <em>"Es de vital importancia destacar..."</em>.</span>
+                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Frases hechas como <em>"En un mundo
+                      en constante cambio..."</em> o <em>"Es de vital importancia destacar..."</em>.</span>
                 </div>
                 <div style="background: var(--surface-light-card); padding: 0.85rem; border-radius: 8px;">
                   <strong style="color: var(--text-dark); font-size: 0.9rem; display: block; margin-bottom: 0.25rem;">
                     <i class="fa-solid fa-link-slash" style="color: var(--accent-amber);"></i> Falta Total de Arraigo
                   </strong>
-                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Propuestas desconectadas del tiempo real, los recursos escolares y la realidad emocional del aula.</span>
+                  <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Propuestas desconectadas del tiempo
+                    real, los recursos escolares y la realidad emocional del aula.</span>
                 </div>
               </div>
               <div style="margin-top: 1rem; font-size: 0.9rem; font-weight: 600; color: var(--conased-teal-deep);">
-                <i class="fa-solid fa-gavel"></i> Ley de oro de la IA: <em>"Basura entra, basura sale" (Garbage in, Garbage out)</em>. Sin contexto docente rico, la respuesta siempre será Slop.
+                <i class="fa-solid fa-gavel"></i> Ley de oro de la IA: <em>"Basura entra, basura sale" (Garbage in,
+                  Garbage out)</em>. Sin contexto docente rico, la respuesta siempre será Slop.
               </div>
             </div>
           </div>
@@ -576,7 +714,8 @@
         <!-- Los 3 Bucles Tóxicos -->
         <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
           <h3 style="color: var(--text-dark);">
-            <i class="fa-solid fa-arrows-spin" style="color: var(--accent-amber);"></i> Los 3 Bucles Tóxicos que Debemos Evitar
+            <i class="fa-solid fa-arrows-spin" style="color: var(--accent-amber);"></i> Los 3 Bucles Tóxicos que Debemos
+            Evitar
           </h3>
           <p class="text-muted">
             Identifica estas trampas cotidianas antes de quedar atrapado en ellas:
@@ -593,11 +732,17 @@
               El Micro-Loop del Desgaste
             </strong>
             <p class="text-muted" style="font-size: 0.9rem;">
-              <strong>La trampa:</strong> El docente escribe una consigna telegráfica rápida (<em>"Hazme una clase de Geografía"</em>). La IA devuelve un texto largo y genérico (Slop). El docente le reclama: <em>"No, no me gusta, cámbialo"</em>. Al no darle nuevas pautas, la IA improvisa más relleno o alucina. Tras 5 intentos en el mismo chat, el docente abandona frustrado creyendo que la IA no sirve.
+              <strong>La trampa:</strong> El docente escribe una consigna telegráfica rápida (<em>"Hazme una clase de
+                Geografía"</em>). La IA devuelve un texto largo y genérico (Slop). El docente le reclama: <em>"No, no me
+                gusta, cámbialo"</em>. Al no darle nuevas pautas, la IA improvisa más relleno o alucina. Tras 5 intentos
+              en el mismo chat, el docente abandona frustrado creyendo que la IA no sirve.
             </p>
-            <div style="background: rgba(231, 111, 81, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
-              <strong style="color: var(--accent-amber);"><i class="fa-solid fa-shield-halved"></i> Cómo romperlo:</strong><br>
-              Frena. No intentes parchar indefinidamente un chat viciado. Abre un chat limpio (Reset) y reformula con la fórmula R-C-T-F-R.
+            <div
+              style="background: rgba(231, 111, 81, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
+              <strong style="color: var(--accent-amber);"><i class="fa-solid fa-shield-halved"></i> Cómo
+                romperlo:</strong><br>
+              Frena. No intentes parchar indefinidamente un chat viciado. Abre un chat limpio (Reset) y reformula con la
+              fórmula R-C-T-F-R.
             </div>
           </div>
 
@@ -610,11 +755,16 @@
               El Macro-Loop de la Simulación
             </strong>
             <p class="text-muted" style="font-size: 0.9rem;">
-              <strong>La trampa:</strong> Un docente abrumado genera una guía de 10 preguntas con un prompt rápido. El alumno copia esas preguntas en ChatGPT y genera 4 páginas de respuestas en 15 segundos. El docente recibe 30 monografías idénticas, no tiene tiempo de leer tanta verborrea y le pide a la IA que califique los trabajos. <strong>Resultado:</strong> Máquinas hablando con máquinas sin que ninguna persona aprenda.
+              <strong>La trampa:</strong> Un docente abrumado genera una guía de 10 preguntas con un prompt rápido. El
+              alumno copia esas preguntas en ChatGPT y genera 4 páginas de respuestas en 15 segundos. El docente recibe
+              30 monografías idénticas, no tiene tiempo de leer tanta verborrea y le pide a la IA que califique los
+              trabajos. <strong>Resultado:</strong> Máquinas hablando con máquinas sin que ninguna persona aprenda.
             </p>
-            <div style="background: rgba(247, 37, 133, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
+            <div
+              style="background: rgba(247, 37, 133, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
               <strong style="color: #f72585;"><i class="fa-solid fa-shield-halved"></i> Cómo romperlo:</strong><br>
-              Cambia la evaluación: califica el proceso, la defensa oral, el debate en clase y el criterio crítico para detectar errores en la IA, en vez de monografías fotocopiadas.
+              Cambia la evaluación: califica el proceso, la defensa oral, el debate en clase y el criterio crítico para
+              detectar errores en la IA, en vez de monografías fotocopiadas.
             </div>
           </div>
 
@@ -627,11 +777,16 @@
               Tercerización Ciega del Juicio
             </strong>
             <p class="text-muted" style="font-size: 0.9rem;">
-              <strong>La trampa:</strong> Usar la IA para <em>no pensar</em> en lugar de usarla para <em>pensar mejor</em>. Cuando docentes o alumnos aceptan pasivamente cualquier respuesta sin contrastar datos, se atrofia progresivamente la capacidad de síntesis, argumentación, vocabulario y criterio crítico personal.
+              <strong>La trampa:</strong> Usar la IA para <em>no pensar</em> en lugar de usarla para <em>pensar
+                mejor</em>. Cuando docentes o alumnos aceptan pasivamente cualquier respuesta sin contrastar datos, se
+              atrofia progresivamente la capacidad de síntesis, argumentación, vocabulario y criterio crítico personal.
             </p>
-            <div style="background: rgba(0, 119, 182, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
-              <strong style="color: var(--conased-cyan-deep);"><i class="fa-solid fa-shield-halved"></i> Cómo romperlo:</strong><br>
-              El docente como curador y director pedagógico: la IA produce borradores rápidos; la decisión, el recorte ético y la mirada humana son 100% tuyas.
+            <div
+              style="background: rgba(0, 119, 182, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.85rem;">
+              <strong style="color: var(--conased-cyan-deep);"><i class="fa-solid fa-shield-halved"></i> Cómo
+                romperlo:</strong><br>
+              El docente como curador y director pedagógico: la IA produce borradores rápidos; la decisión, el recorte
+              ético y la mirada humana son 100% tuyas.
             </div>
           </div>
         </div>
@@ -647,18 +802,25 @@
           </span>
           <h2>El Contexto y la Gestión de la Memoria en el Chat</h2>
           <p class="text-muted">
-            ¿Cómo "recuerda" la IA lo que conversamos? Entender la mecánica técnica detrás del chat nos permite mantener conversaciones limpias, evitar desvíos y ahorrar tiempo.
+            ¿Cómo "recuerda" la IA lo que conversamos? Entender la mecánica técnica detrás del chat nos permite mantener
+            conversaciones limpias, evitar desvíos y ahorrar tiempo.
           </p>
         </div>
 
         <!-- Bloque Ilustración Cómic: La Ilusión de la Memoria en la IA -->
-        <div style="background: var(--conased-navy-medium); border: 1px solid var(--border-dark); border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); margin-bottom: 2.5rem;">
+        <div
+          style="background: var(--conased-navy-medium); border: 1px solid var(--border-dark); border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); margin-bottom: 2.5rem;">
           <div style="position: relative; background: #031726;">
-            <img src="images/ia_memoria_reenvio_comic.jpg" alt="Ilustración caricaturesca de la gestión de memoria en IA: un robot asistente cargando y reenviando desesperadamente todo el historial de preguntas y respuestas anteriores hacia la máquina cerebral de contexto para poder contestar una nueva duda de la docente" style="width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover;">
-            
-            <div style="background: linear-gradient(to top, rgba(3, 23, 38, 0.98) 0%, rgba(3, 23, 38, 0.8) 60%, transparent 100%); padding: 1.5rem 2rem; color: #ffffff;">
-              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
-                <span class="badge-tag" style="background: rgba(0, 180, 216, 0.2); color: var(--conased-cyan-bright); border: 1px solid rgba(0, 180, 216, 0.4); margin-bottom: 0;">
+            <img src="images/ia_memoria_reenvio_comic.jpg"
+              alt="Ilustración caricaturesca de la gestión de memoria en IA: un robot asistente cargando y reenviando desesperadamente todo el historial de preguntas y respuestas anteriores hacia la máquina cerebral de contexto para poder contestar una nueva duda de la docente"
+              style="width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover;">
+
+            <div
+              style="background: linear-gradient(to top, rgba(3, 23, 38, 0.98) 0%, rgba(3, 23, 38, 0.8) 60%, transparent 100%); padding: 1.5rem 2rem; color: #ffffff;">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <span class="badge-tag"
+                  style="background: rgba(0, 180, 216, 0.2); color: var(--conased-cyan-bright); border: 1px solid rgba(0, 180, 216, 0.4); margin-bottom: 0;">
                   <i class="fa-solid fa-arrows-spin"></i> Mecánica Técnica Oculta
                 </span>
                 <span style="font-size: 0.85rem; color: var(--accent-amber); font-weight: 600;">
@@ -666,37 +828,50 @@
                 </span>
               </div>
               <p style="margin: 0; font-size: 0.95rem; color: var(--conased-ice); line-height: 1.6;">
-                <strong>La ilusión de la memoria:</strong> La IA no tiene recuerdos conscientes biológicos ni "recuerda" la charla como un ser humano. Cada vez que tú le envías un nuevo mensaje, el sistema toma <em>en silencio</em> todas las preguntas y respuestas anteriores del chat y se las vuelve a meter completas a la máquina como contexto de entrada. Si la conversación se vuelve kilométrica, el robot se satura (límite de la ventana de contexto) y comienza a olvidar las pautas del inicio o a arrastrar errores pasados.
+                <strong>La ilusión de la memoria:</strong> La IA no tiene recuerdos conscientes biológicos ni "recuerda"
+                la charla como un ser humano. Cada vez que tú le envías un nuevo mensaje, el sistema toma <em>en
+                  silencio</em> todas las preguntas y respuestas anteriores del chat y se las vuelve a meter completas a
+                la máquina como contexto de entrada. Si la conversación se vuelve kilométrica, el robot se satura
+                (límite de la ventana de contexto) y comienza a olvidar las pautas del inicio o a arrastrar errores
+                pasados.
               </p>
             </div>
           </div>
         </div>
 
         <!-- Caja de Higiene Digital -->
-        <div style="background: rgba(0, 56, 84, 0.45); border: 1px solid rgba(0, 180, 216, 0.25); border-radius: 14px; padding: 2rem;">
+        <div
+          style="background: rgba(0, 56, 84, 0.45); border: 1px solid rgba(0, 180, 216, 0.25); border-radius: 14px; padding: 2rem;">
           <h3 style="color: #ffffff; margin-bottom: 0.5rem;">
-            <i class="fa-solid fa-broom" style="color: var(--conased-cyan-bright);"></i> Regla de Oro de Higiene Digital: ¿Cuándo Mantener y Cuándo Iniciar un Chat Nuevo?
+            <i class="fa-solid fa-broom" style="color: var(--conased-cyan-bright);"></i> Regla de Oro de Higiene
+            Digital: ¿Cuándo Mantener y Cuándo Iniciar un Chat Nuevo?
           </h3>
           <p class="text-muted" style="font-size: 0.92rem; margin-bottom: 1.5rem;">
             No uses un único chat como "cajón de sastre" para todo el año escolar:
           </p>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-            <div style="background: rgba(6, 214, 160, 0.1); border: 1px solid rgba(6, 214, 160, 0.3); border-radius: 10px; padding: 1.5rem;">
+            <div
+              style="background: rgba(6, 214, 160, 0.1); border: 1px solid rgba(6, 214, 160, 0.3); border-radius: 10px; padding: 1.5rem;">
               <strong style="color: var(--accent-emerald); display: block; font-size: 1.1rem; margin-bottom: 0.5rem;">
                 <i class="fa-solid fa-check-circle"></i> Cuándo Mantener el Chat Abierto
               </strong>
               <span style="font-size: 0.88rem; color: var(--text-muted-light); line-height: 1.6;">
-                Únicamente mientras desarrolles una <strong>misma tarea o proyecto pedagógico coherente</strong> (por ejemplo, diseñar las 4 clases de una misma unidad didáctica de Historia), donde el contexto previo y las definiciones acordadas sumen valor directo.
+                Únicamente mientras desarrolles una <strong>misma tarea o proyecto pedagógico coherente</strong> (por
+                ejemplo, diseñar las 4 clases de una misma unidad didáctica de Historia), donde el contexto previo y las
+                definiciones acordadas sumen valor directo.
               </span>
             </div>
 
-            <div style="background: rgba(231, 111, 81, 0.1); border: 1px solid rgba(231, 111, 81, 0.3); border-radius: 10px; padding: 1.5rem;">
+            <div
+              style="background: rgba(231, 111, 81, 0.1); border: 1px solid rgba(231, 111, 81, 0.3); border-radius: 10px; padding: 1.5rem;">
               <strong style="color: var(--accent-amber); display: block; font-size: 1.1rem; margin-bottom: 0.5rem;">
                 <i class="fa-solid fa-rotate-left"></i> Cuándo Iniciar un Chat Limpio (Reset)
               </strong>
               <span style="font-size: 0.88rem; color: var(--text-muted-light); line-height: 1.6;">
-                Cada vez que cambies de materia, tema o curso de alumnos; cuando la IA empiece a dar respuestas contradictorias en círculos; o cuando la conversación acumulada sea demasiado extensa. Un chat limpio garantiza respuestas frescas, veloces y sin sesgos arrastrados.
+                Cada vez que cambies de materia, tema o curso de alumnos; cuando la IA empiece a dar respuestas
+                contradictorias en círculos; o cuando la conversación acumulada sea demasiado extensa. Un chat limpio
+                garantiza respuestas frescas, veloces y sin sesgos arrastrados.
               </span>
             </div>
           </div>
@@ -723,11 +898,13 @@
       <div class="footer-brand">
         <h4><i class="fa-solid fa-brain" style="color: var(--conased-cyan-bright);"></i> FUNDACIÓN CONASED</h4>
         <p style="font-size: 0.88rem; margin-top: 0.5rem;">
-          Fundación Concordiense para la Acción Social y Estudios para el Desarrollo. Comprometidos con la alfabetización pedagógica y la formación de docentes para los desafíos del siglo XXI.
+          Fundación Concordiense para la Acción Social y Estudios para el Desarrollo. Comprometidos con la
+          alfabetización pedagógica y la formación de docentes para los desafíos del siglo XXI.
         </p>
       </div>
       <div>
-        <h5 style="color: #ffffff; margin-bottom: 0.85rem;"><i class="fa-solid fa-sitemap"></i> Estructura de la Charla</h5>
+        <h5 style="color: #ffffff; margin-bottom: 0.85rem;"><i class="fa-solid fa-sitemap"></i> Estructura de la Charla
+        </h5>
         <ul class="footer-links">
           <li><a href="modulo1.html"><i class="fa-solid fa-angle-right"></i> Módulo 1: Conceptos Clave de IA</a></li>
           <li><a href="modulo2.html"><i class="fa-solid fa-angle-right"></i> Módulo 2: Distintos Tipos de IA</a></li>
@@ -737,10 +914,12 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <p style="margin-bottom: 0;">&copy; 2026 Fundación CONASED — Material pedagógico de libre uso para capacitaciones docentes.</p>
+      <p style="margin-bottom: 0;">&copy; 2026 Fundación CONASED — Material pedagógico de libre uso para capacitaciones
+        docentes.</p>
     </div>
   </footer>
 
   <script src="js/app.js"></script>
 </body>
+
 </html>
