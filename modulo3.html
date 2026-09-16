@@ -83,7 +83,7 @@
               <i class="fa-solid fa-file-signature"></i> Gestión y Documentos
             </a>
             <a href="#ahorro-tiempo-creatividad" class="btn btn-outline">
-              <i class="fa-solid fa-chart-line"></i> Ahorro de Tiempo y Creatividad
+              <i class="fa-solid fa-stopwatch"></i> Comparativa de Tiempo
             </a>
             <a href="#guia-html-interactivo" class="btn btn-outline">
               <i class="fa-solid fa-code"></i> Presentaciones HTML/CSS/JS
@@ -188,159 +188,513 @@
           </span>
           <h2>Creación de Material Pedagógico y Estructuración de Documentos</h2>
           <p class="text-muted">
-            Cómo canalizar la capacidad generativa de los modelos para ordenar secuencias didácticas completas y redactar ágilmente notas formales, pedidos institucionales y autorizaciones escolares.
+            Cómo canalizar la capacidad de análisis de los modelos para explorar documentos extensos, contrastar fuentes y generar producciones académicas e institucionales de alto impacto.
           </p>
         </div>
 
-        <div class="cards-grid">
-          <!-- Card 1: Secuencias Didácticas y Proyectos ABP -->
-          <div class="card">
-            <div class="card-icon-box" style="background: rgba(0, 180, 216, 0.15); color: var(--conased-cyan-bright);">
-              <i class="fa-solid fa-list-ol"></i>
+        <!-- Header Fijado: Tarea Cotidiana Común en la Comunidad Educativa -->
+        <div class="task-scenario-header">
+          <div class="task-roles-tags">
+            <span class="role-chip"><i class="fa-solid fa-user-graduate"></i> Estudiantes de Carreras y Nivel Superior</span>
+            <span class="role-chip emerald"><i class="fa-solid fa-chalkboard-user"></i> Profesores y Equipos Docentes</span>
+            <span class="role-chip amber"><i class="fa-solid fa-building-columns"></i> Directivos y Gestión Administrativa</span>
+          </div>
+          <div class="task-scenario-body">
+            <div class="task-scenario-icon">
+              <i class="fa-solid fa-book-open-reader"></i>
             </div>
-            <h3>Secuencias de Clases y Proyectos (ABP)</h3>
-            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.65;">
-              Planificación clase a clase y diseño de <strong>Aprendizaje Basado en Proyectos (ABP)</strong>: te ayuda a estructurar unidades completas de 4 a 8 clases articuladas, armar proyectos donde los alumnos resuelven desafíos reales, definir objetivos graduales, preguntas disparadoras y rúbricas de evaluación paso a paso.
-            </p>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
-              <i class="fa-solid fa-circle-check"></i> Proyectos escolares e interdisciplinarios listos para el aula sin perder horas de planificación.
+            <div class="task-scenario-info">
+              <span class="task-pretitle">Tarea Cotidiana de la Práctica Educativa</span>
+              <h3 class="task-main-title">
+                Procesamiento, Análisis y Explotación de Material Documental Extenso (PDFs, Libros, Investigaciones y Normativas)
+              </h3>
+              <p class="task-desc">
+                Frente a un documento denso de decenas o cientos de páginas, la IA permite superar la lectura pasiva tradicional y transformarlo en una fuente de consulta viva, estructurada y conversacional a través de los siguientes pasos secuenciales:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Control de Pasos -->
+        <div class="steps-toolbar">
+          <span class="steps-progress-badge">
+            <i class="fa-solid fa-layer-group"></i> Flujo de 6 Pasos para Producir Conocimiento Activo
+          </span>
+          <button type="button" class="btn-toggle-all-steps" id="toggleAllStepsBtn" aria-label="Alternar todos los pasos">
+            <i class="fa-solid fa-angles-down"></i>
+            <span>Desplegar todos los pasos</span>
+          </button>
+        </div>
+
+        <!-- Lista de Burbujas Desplegables con Títulos Claros -->
+        <div class="step-bubbles-list">
+
+          <!-- Paso 1 -->
+          <div class="step-bubble-item is-open">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="true">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">01</div>
+                <h3 class="step-bubble-title">Mapeo y Radiografía Estructural del Documento</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h4>Extracción de Ejes Vertebrales e Índice Temático</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Obtener un mapa conceptual y temático de los núcleos del texto sin necesidad de leer a ciegas cientos de páginas.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-bolt"></i> Exploración rápida</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-compass"></i>
+                    <h4>Identificación de Tesis, Marco Teórico y Objetivos</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Determinar con exactitud cuál es el argumento central del autor, la metodología utilizada y la postura que defiende.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-bullseye"></i> Foco analítico</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Card 2: Notas y Pedidos Formales -->
-          <div class="card">
-            <div class="card-icon-box" style="background: rgba(231, 111, 81, 0.15); color: var(--accent-amber);">
-              <i class="fa-solid fa-envelope-open-text"></i>
+          <!-- Paso 2 -->
+          <div class="step-bubble-item">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">02</div>
+                <h3 class="step-bubble-title">Diálogo Conversacional Focalizado («Charlar con el PDF»)</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
             </div>
-            <h3>Notas Institucionales y Pedidos</h3>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Estructuración protocolar e impecable de solicitudes de insumos y equipamiento para talleres técnicos, notas de elevación a directivos o supervisión escolar, y pedidos formales de mantenimiento edilicio.
-            </p>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
-              <i class="fa-solid fa-circle-check"></i> Redacción formal sin desgaste burocrático.
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-comments"></i>
+                    <h4>Preguntas Guiadas de Descubrimiento Progresivo</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Interrogar al modelo sobre dudas puntuales para ir descubriendo el contenido en forma de charla paso a paso.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-lightbulb"></i> Aprendizaje activo</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h4>Analogías Cotidianas y Aclaración de Pasajes Complejos</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Pedir metáforas pedagógicas o explicaciones graduales para comprender pasajes técnicos, jurídicos o abstractos.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-brain"></i> Comprensión profunda</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h4>Simulación de Entrevista con el Autor</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Hacer que la IA adopte la voz, época y marco teórico del autor para defender sus postulados o responder contraargumentos.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-masks-theater"></i> Roleplay didáctico</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Card 3: Permisos y Salidas Escolares -->
-          <div class="card">
-            <div class="card-icon-box" style="background: rgba(6, 214, 160, 0.15); color: var(--accent-emerald);">
-              <i class="fa-solid fa-bus"></i>
+          <!-- Paso 3 -->
+          <div class="step-bubble-item">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">03</div>
+                <h3 class="step-bubble-title">Síntesis y Resúmenes Bajo Criterios Específicos</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
             </div>
-            <h3>Autorizaciones y Salidas Educativas</h3>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Confección rápida de notas a padres y tutores para visitas guiadas o salidas de campo, con cronograma, requerimientos de traslado, teléfonos de emergencia, fichas de salud y cláusulas legales de consentimiento.
-            </p>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
-              <i class="fa-solid fa-circle-check"></i> Cumplimiento normativo y seguridad institucional.
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-filter"></i>
+                    <h4>Resumen Filtrado por Perfil y Nivel de Audiencia</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Generar versiones a medida: resumen ejecutivo para directivos, guía de estudio para estudiantes o fichaje docente.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-users"></i> Adaptabilidad</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-spell-check"></i>
+                    <h4>Extracción de Glosarios Técnicos en Contexto</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Extraer conceptos clave y tecnicismos definidos rigurosamente según el uso que el autor les da en la obra.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-book"></i> Vocabulario técnico</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    <h4>Filtrado por Variable o Problemática Concreta</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Sintetizar únicamente lo referido a una variable específica: evaluación formativa, protocolos de convivencia o cronogramas.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-magnifying-glass"></i> Síntesis dirigida</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Card 4: Exploración de Ideas y Disparadores -->
-          <div class="card">
-            <div class="card-icon-box" style="background: rgba(247, 37, 133, 0.15); color: #f72585;">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <!-- Paso 4 -->
+          <div class="step-bubble-item">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">04</div>
+                <h3 class="step-bubble-title">Contraste y Cruce Crítico entre Diferentes Fuentes</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
             </div>
-            <h3>Exploración y Disparadores</h3>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Búsqueda de analogías cotidianas para explicar temas abstractos (por ejemplo, el flujo de electrones en física comparado con una autopista), dilemas éticos históricos para iniciar debates y desafíos semanales para el aula.
-            </p>
-            <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #a7f3d0;">
-              <i class="fa-solid fa-circle-check"></i> Conexión inmediata con los intereses juveniles.
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h4>Cotejo Comparativo entre Autores o Enfoques</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Cruzar dos libros o investigaciones sobre un mismo tema para identificar puntos de encuentro y discrepancias teóricas.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-scale-balanced"></i> Pensamiento crítico</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                    <h4>Detección de Vacíos y Contradicciones</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Descubrir qué aspectos aborda un autor que el otro omite, y evidenciar tensiones conceptuales entre distintos períodos.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-triangle-exclamation"></i> Rigor analítico</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h4>Cruce entre Normativa Externa y Realidad Institucional</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Comparar resoluciones ministeriales con el reglamento, acuerdos pedagógicos o plan operativo de la institución.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-gavel"></i> Gestión escolar</span>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Paso 5 -->
+          <div class="step-bubble-item">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">05</div>
+                <h3 class="step-bubble-title">Generación de Preguntas de Interiorización y Autoevaluación</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <h4>Batería de Preguntas Socráticas y Disparadoras</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Formular interrogantes de orden superior que motiven el debate, la problematización y la reflexión en el aula o examen.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-comments"></i> Debate reflexivo</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h4>Cuestionarios de Autoevaluación con Feedback</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Construir reactivos de evaluación formativa donde cada opción incorrecta incluya una explicación conceptual.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-circle-check"></i> Evaluación formativa</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <h4>Casos de Estudio y Dilemas Prácticos</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Transformar conceptos teóricos en escenarios prácticos de resolución de problemas para trabajar en grupos.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-lightbulb"></i> Aplicación real</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 6 -->
+          <div class="step-bubble-item">
+            <div class="step-bubble-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="step-bubble-left">
+                <div class="step-number-bubble">06</div>
+                <h3 class="step-bubble-title">Producción de Instrumentos Didácticos y Entregables Aplicados</h3>
+              </div>
+              <div class="step-bubble-toggle-btn">
+                <span>Acciones útiles</span>
+                <div class="step-toggle-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="step-bubble-content">
+              <div class="step-actions-grid">
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-list-ol"></i>
+                    <h4>Guías de Lectura y Secuencias Didácticas (ABP)</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Traducir el marco documental en actividades secuenciadas para 4 a 8 clases, con objetivos graduales y consignas claras.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-calendar-days"></i> Planificación ágil</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <h4>Matrices Comparativas y Rúbricas Analíticas</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Formatear información dispersa en matrices de doble entrada o rúbricas de evaluación con descriptores observables.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-table"></i> Formato listo</span>
+                </div>
+                <div class="step-action-card">
+                  <div class="step-action-header">
+                    <i class="fa-solid fa-universal-access"></i>
+                    <h4>Adaptación Multinivel y Comunicación Formal</h4>
+                  </div>
+                  <p class="step-action-text">
+                    Adecuar el lenguaje para estudiantes con NEE o redactar actas, notas de elevación y solicitudes institucionales.
+                  </p>
+                  <span class="step-action-tag"><i class="fa-solid fa-hand-holding-heart"></i> Inclusión escolar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- 4. ESQUEMA: AHORRO DE TIEMPO OPERATIVO VS. EXPLOSIÓN CREATIVA (SECCIÓN CLARA) -->
+    <!-- 4. COMPARATIVA DE TIEMPO: MEDIOS CLÁSICOS VS. IA (SECCIÓN CLARA) -->
     <section id="ahorro-tiempo-creatividad" class="section section-light">
       <div class="container">
         <div class="section-header">
           <span class="badge-tag">
-            <i class="fa-solid fa-chart-pie"></i> Transformación de la Práctica
+            <i class="fa-solid fa-stopwatch"></i> Eficiencia Temporal
           </span>
-          <h2>Del Agotamiento en Pestañas y Wikipedia a la Explosión Creativa</h2>
+          <h2>Comparativa de Tiempo: Medios Clásicos de Búsqueda y Análisis vs. IA</h2>
           <p class="text-muted">
-            El mayor impacto de la IA no es la automatización en sí, sino la recuperación de tiempo y energía mental docente para volcarla en lo que realmente transforma el aula: la creatividad didáctica y el vínculo humano.
+            Estimación del tiempo promedio invertido en tareas cotidianas de estudio, docencia y gestión educativa empleando métodos tradicionales frente a la asistencia de IA.
           </p>
         </div>
 
-        <!-- Comparativa Histórica de Fricción -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
-          <div style="background: #fff5f5; border: 1px solid #fed7d7; border-radius: 12px; padding: 1.75rem;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-              <i class="fa-solid fa-clock-rotate-left" style="font-size: 1.5rem; color: #e53e3e;"></i>
-              <h3 style="color: #9b2c2c; margin-bottom: 0; font-size: 1.15rem;">El Cuello de Botella Histórico</h3>
+        <!-- Infografía Comparativa de Tiempo -->
+        <div class="time-infographic-grid">
+
+          <!-- 1. Búsquedas en Internet -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-globe"></i> Búsqueda de Información en Internet
+              </span>
             </div>
-            <p style="font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin-bottom: 0.75rem;">
-              Antes de los modelos generativos, preparar una clase innovadora implicaba pasar <strong>1 a 2 horas nocturnas abriendo 20 pestañas del navegador</strong>, esquivando publicidad en blogs educativos obsoletos y rebotando en Wikipedia para contrastar datos o buscar ejemplos.
-            </p>
-            <p style="font-size: 0.88rem; color: #742a2a; margin-bottom: 0; font-weight: 600;">
-              <i class="fa-solid fa-triangle-exclamation"></i> Consecuencia: Agotamiento mental, fatiga burocrática y clases estandarizadas por falta de tiempo material.
-            </p>
-          </div>
-
-          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 1.75rem;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-              <i class="fa-solid fa-bolt" style="font-size: 1.5rem; color: #059669;"></i>
-              <h3 style="color: #065f46; margin-bottom: 0; font-size: 1.15rem;">El Salto Cualitativo con IA</h3>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">1h</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-92%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">5m</span>
+              </div>
             </div>
-            <p style="font-size: 0.92rem; color: #166534; line-height: 1.7; margin-bottom: 0.75rem;">
-              La IA actúa como un <strong>motor de síntesis, estructuración y selección temática inmediata</strong>. No reemplaza el criterio docente: reemplaza las 20 pestañas dispersas entregando una base estructurada en 60 segundos sobre la cual el docente aplica su filtro pedagógico.
-            </p>
-            <p style="font-size: 0.88rem; color: #065f46; margin-bottom: 0; font-weight: 600;">
-              <i class="fa-solid fa-circle-check"></i> Resultado: Liberación de horas semanales para el diseño de experiencias didácticas memorables.
-            </p>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 8%;"></div>
+            </div>
           </div>
-        </div>
 
-        <!-- Esquema Visual: Disminución de Tiempo vs. Aumento de Creatividad -->
-        <div style="background: #031726; border-radius: 16px; padding: 2rem; color: #ffffff; border: 1px solid var(--border-dark);">
-          <h3 style="color: var(--conased-cyan-bright); font-size: 1.25rem; margin-bottom: 0.5rem;">
-            <i class="fa-solid fa-scale-unbalanced-flip"></i> Esquema de Transferencia: De la Burocracia a la Creatividad
-          </h3>
-          <p style="font-size: 0.92rem; color: var(--text-muted-light); margin-bottom: 1.5rem;">
-            Visualización de cómo la reducción drástica de tiempo en tareas mecánicas habilita la creación de materiales lúdicos e interactivos de alto impacto:
-          </p>
-
-          <div style="overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 620px;">
-              <thead>
-                <tr style="background: rgba(0, 56, 84, 0.6); border-bottom: 2px solid rgba(0, 180, 216, 0.3);">
-                  <th style="padding: 1rem 1.25rem; text-align: left; color: #ffffff;">Tarea Docente Habitual</th>
-                  <th style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">Método Tradicional (Pestañas / Wikipedia)</th>
-                  <th style="padding: 1rem 1.25rem; text-align: center; color: var(--accent-emerald);">Con Asistencia de IA</th>
-                  <th style="padding: 1rem 1.25rem; text-align: left; color: var(--conased-cyan-bright);">Transferencia a la Creatividad</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Búsqueda y Curaduría Temática</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">45 a 60 min (dispersión)</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">3 a 5 min (-92%)</td>
-                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Diseño de <strong>juegos de rol y trivias temáticas</strong> para consolidar los conceptos.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Documentos Formales (Notas, Permisos)</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">30 a 40 min (redacción)</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">2 min (-94%)</td>
-                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Planificación de <strong>dinámicas grupales y experiencias prácticas</strong> fuera del aula.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Rúbricas Analíticas con Descriptores</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">50 a 70 min (redacción de niveles)</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">4 min (-93%)</td>
-                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Tiempo para <strong>devolución cualitativa y diálogo personal</strong> con cada estudiante.</td>
-                </tr>
-                <tr>
-                  <td style="padding: 1rem 1.25rem; font-weight: 600; color: #ffffff;">Adaptación Curricular para Diversidad</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; color: #fca5a5;">40 a 50 min (reescritura manual)</td>
-                  <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--accent-emerald);">3 min en 3 niveles (-93%)</td>
-                  <td style="padding: 1rem 1.25rem; color: #caf0f8;">Acompañamiento empático a alumnos con dificultades o altas capacidades.</td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- 2. Búsquedas en Documentos -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-file-pdf"></i> Búsqueda en Documentos (PDFs / Libros)
+              </span>
+            </div>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">1h 30m</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-94%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">5m</span>
+              </div>
+            </div>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 6%;"></div>
+            </div>
           </div>
+
+          <!-- 3. Producción de Materiales Infográficos -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-chart-pie"></i> Producción de Materiales e Infografías
+              </span>
+            </div>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">2h</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-92%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">10m</span>
+              </div>
+            </div>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 8%;"></div>
+            </div>
+          </div>
+
+          <!-- 4. Diseño -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-palette"></i> Diseño de Diapositivas y Presentaciones
+              </span>
+            </div>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">1h 15m</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-89%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">8m</span>
+              </div>
+            </div>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 11%;"></div>
+            </div>
+          </div>
+
+          <!-- 5. Redacción de Notas y Comunicaciones -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-envelope-open-text"></i> Redacción de Notas y Comunicaciones
+              </span>
+            </div>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">40m</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-93%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">3m</span>
+              </div>
+            </div>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 7%;"></div>
+            </div>
+          </div>
+
+          <!-- 6. Confección de Evaluaciones y Rúbricas -->
+          <div class="time-card-item">
+            <div class="time-card-header">
+              <span class="criteria-badge">
+                <i class="fa-solid fa-list-check"></i> Confección de Evaluaciones y Rúbricas
+              </span>
+            </div>
+            <div class="time-compare-duel">
+              <div class="time-box before">
+                <span class="time-box-label">Antes (Clásico)</span>
+                <span class="time-stat time-before">1h</span>
+              </div>
+              <div class="time-compare-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="reduction-pill">-92%</span>
+              </div>
+              <div class="time-box after">
+                <span class="time-box-label">Con IA</span>
+                <span class="time-stat time-after">5m</span>
+              </div>
+            </div>
+            <div class="time-ratio-bar">
+              <div class="time-ratio-fill" style="width: 8%;"></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

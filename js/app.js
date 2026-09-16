@@ -398,25 +398,83 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 10. Cerrojo Interactivo de Apertura (Módulo 1) ---
-  const unlockQuestionCard = document.getElementById('unlockQuestionCard');
-  const cerrojoTriggerBtn = document.getElementById('cerrojoTriggerBtn');
-  const cerrojoIcon = document.getElementById('cerrojoIcon');
+  // --- 10. Cerrojo Interactivo de Apertura (Módulos con Pregunta Disparadora) ---
+  const unlockCards = document.querySelectorAll('.unlock-question-card');
+  unlockCards.forEach(card => {
+    const triggerBtn = card.querySelector('.cerrojo-btn') || document.getElementById('cerrojoTriggerBtn');
+    const icon = card.querySelector('.cerrojo-icon-shield i') || document.getElementById('cerrojoIcon');
 
-  if (unlockQuestionCard && cerrojoTriggerBtn) {
-    cerrojoTriggerBtn.addEventListener('click', () => {
-      // 1. Fase de desbloqueo del candado (cambio de icono y brillo)
-      unlockQuestionCard.classList.add('unlocking');
-      if (cerrojoIcon) {
-        cerrojoIcon.className = 'fa-solid fa-lock-open';
+    if (triggerBtn) {
+      triggerBtn.addEventListener('click', () => {
+        // 1. Fase de desbloqueo del candado (cambio de icono y brillo)
+        card.classList.add('unlocking');
+        if (icon) {
+          icon.className = 'fa-solid fa-lock-open';
+        }
+
+        // 2. Fase de barrido lateral de persianas hacia los costados
+        setTimeout(() => {
+          card.classList.add('unlocked');
+          card.classList.remove('unlocking');
+        }, 320);
+      });
+    }
+  });
+
+  // --- 11. Burbujas Desplegables de Pasos Documentales (Módulo 3) ---
+  const stepItems = document.querySelectorAll('.step-bubble-item');
+  const toggleAllStepsBtn = document.getElementById('toggleAllStepsBtn');
+
+  if (stepItems.length > 0) {
+    stepItems.forEach(item => {
+      const header = item.querySelector('.step-bubble-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          item.classList.toggle('is-open');
+          const isOpen = item.classList.contains('is-open');
+          header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          updateToggleAllBtn();
+        });
+
+        header.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            header.click();
+          }
+        });
       }
-
-      // 2. Fase de barrido lateral de persianas hacia los costados
-      setTimeout(() => {
-        unlockQuestionCard.classList.add('unlocked');
-        unlockQuestionCard.classList.remove('unlocking');
-      }, 320);
     });
+
+    if (toggleAllStepsBtn) {
+      toggleAllStepsBtn.addEventListener('click', () => {
+        const anyClosed = Array.from(stepItems).some(item => !item.classList.contains('is-open'));
+        stepItems.forEach(item => {
+          const header = item.querySelector('.step-bubble-header');
+          if (anyClosed) {
+            item.classList.add('is-open');
+            if (header) header.setAttribute('aria-expanded', 'true');
+          } else {
+            item.classList.remove('is-open');
+            if (header) header.setAttribute('aria-expanded', 'false');
+          }
+        });
+        updateToggleAllBtn();
+      });
+    }
+
+    function updateToggleAllBtn() {
+      if (!toggleAllStepsBtn) return;
+      const allOpen = Array.from(stepItems).every(item => item.classList.contains('is-open'));
+      const textSpan = toggleAllStepsBtn.querySelector('span');
+      const icon = toggleAllStepsBtn.querySelector('i');
+      if (allOpen) {
+        if (textSpan) textSpan.textContent = 'Colapsar todos los pasos';
+        if (icon) icon.className = 'fa-solid fa-angles-up';
+      } else {
+        if (textSpan) textSpan.textContent = 'Desplegar todos los pasos';
+        if (icon) icon.className = 'fa-solid fa-angles-down';
+      }
+    }
   }
 });
 

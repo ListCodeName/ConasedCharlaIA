@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Módulo 2: Distintos Tipos de IA | Fundación CONASED</title>
-  <meta name="description" content="Módulo 2: Distintos Tipos de IA. Mapa de tecnologías: IA generativa, sistemas multimodales, algoritmos predictivos, ANI vs AGI y el caso del Taller de Arte.">
+  <meta name="description" content="Módulo 2: Distintos Tipos de IA. Habilidades de modelos, IAs especializadas, plataformas de propósito general, niveles de razonamiento e IAs integradas en plataformas de trabajo (Canva, Google Drive, Microsoft 365).">
   
   <!-- Favicon SVG -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
@@ -73,7 +73,7 @@
           </div>
           <h1>Módulo 2: <span>Variedad de IAs</span>, Especialidades y Niveles de Razonamiento</h1>
           <p class="lead">
-            Exploraremos las habilidades reales que poseen hoy los modelos (texto, imágenes, audio, video y documentos extensos), las IAs de propósito general frente a las especializadas, y cómo aprovechar los distintos niveles de razonamiento (como en Google Gemini).
+            Exploraremos las habilidades reales que poseen hoy los modelos (texto, imágenes, audio, video y documentos extensos), las IAs de propósito general frente a las especializadas, los niveles de razonamiento y las IAs integradas en plataformas cotidianas.
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a href="#habilidades-formatos" class="btn btn-primary">
@@ -88,7 +88,51 @@
             <a href="#niveles-razonamiento" class="btn btn-outline">
               <i class="fa-solid fa-brain"></i> Niveles de Razonamiento
             </a>
+            <a href="#ias-integradas" class="btn btn-outline">
+              <i class="fa-solid fa-puzzle-piece"></i> IAs Integradas
+            </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA: PREGUNTA DISPARADORA DE APERTURA CON CERROJO -->
+    <section class="section-apertura-pregunta" id="apertura-pregunta" aria-label="Pregunta disparadora de apertura">
+      <div class="container">
+        <div class="unlock-question-card" id="unlockQuestionCard">
+
+          <!-- Capa de Contenido: Pregunta Revelada -->
+          <div class="question-reveal-content">
+            <h2 class="question-massive-text">
+              «¿Qué tipos de IA conocen y <span class="text-gradient-cyan">para qué las utilizan</span>?»
+            </h2>
+          </div>
+
+          <!-- Capa de Bloqueo: Puertas con barrido lateral desde el centro -->
+          <div class="curtain-doors-overlay" id="curtainDoorsOverlay">
+            <!-- Hoja Izquierda (barre hacia la izquierda al desbloquear) -->
+            <div class="curtain-panel curtain-left">
+              <div class="curtain-tech-pattern"></div>
+              <div class="curtain-seam-glow"></div>
+            </div>
+
+            <!-- Hoja Derecha (barre hacia la derecha al desbloquear) -->
+            <div class="curtain-panel curtain-right">
+              <div class="curtain-tech-pattern"></div>
+              <div class="curtain-seam-glow"></div>
+            </div>
+
+            <!-- Cerrojo Centrado Interactivo -->
+            <button class="cerrojo-btn" id="cerrojoTriggerBtn"
+              aria-label="Hacer clic para desbloquear la pregunta inicial">
+              <div class="cerrojo-sonar-wave"></div>
+              <div class="cerrojo-sonar-wave delay"></div>
+              <div class="cerrojo-icon-shield">
+                <i class="fa-solid fa-lock" id="cerrojoIcon"></i>
+              </div>
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
@@ -453,25 +497,140 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Regla de Oro Docente -->
-        <div style="background: rgba(0, 56, 84, 0.45); border: 1px solid rgba(0, 180, 216, 0.25); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
-          <div style="font-size: 2rem; color: var(--conased-cyan-bright);">
-            <i class="fa-solid fa-lightbulb"></i>
+    <!-- 6. IAS INTEGRADAS EN PLATAFORMAS (SECCIÓN OSCURA CON FONDO AMBIENTAL Y FADE OUT) -->
+    <section id="ias-integradas" class="section section-dark section-has-bg">
+      <div class="section-bg-fade-angled" style="background-image: url('images/ias_integradas_cartoon.jpg');" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">
+            <i class="fa-solid fa-puzzle-piece"></i> Asistentes Embebidos
+          </span>
+          <h2>IAs Integradas en Plataformas de Trabajo</h2>
+          <p class="text-muted">
+            Modelos de IA diseñados para operar directamente dentro del software donde producimos a diario: suites ofimáticas, nubes colaborativas y lienzos de diseño, sin tener que cambiar de ventana.
+          </p>
+        </div>
+
+        <!-- Mini Grid de Plataformas Representativas -->
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: 2rem;">
+          <!-- Google Workspace -->
+          <div class="card" style="border-top: 4px solid #4285f4; padding: 1.4rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
+              <div class="card-icon-box" style="width: 42px; height: 42px; font-size: 1.15rem; background: rgba(66, 133, 244, 0.15); color: #60a5fa; margin-bottom: 0;">
+                <i class="fa-brands fa-google-drive"></i>
+              </div>
+              <div>
+                <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">Google Drive / Workspace</h3>
+                <span style="font-size: 0.75rem; color: #93c5fd; font-weight: 500;">Docs · Sheets · Slides · Gmail</span>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 0.88rem; line-height: 1.55; margin-bottom: 0;">
+              Asistente Gemini embebido para redactar borradores en Docs, generar fórmulas y gráficos en Sheets, y sintetizar archivos alojados en tu Drive.
+            </p>
           </div>
-          <div style="flex: 1; min-width: 280px;">
-            <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 0.25rem;">
-              Criterio Docente de Selección de Nivel
-            </strong>
-            <span style="font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
-              Usa el modo <strong>Rápido (Flash)</strong> cuando el factor crítico sea el tiempo y la tarea sea mecánica. Activa el modo <strong>Razonamiento (Pro/Thinking)</strong> cuando necesites profundidad lógica, rigor científico o diseño curricular fundamentado.
-            </span>
+
+          <!-- Canva -->
+          <div class="card" style="border-top: 4px solid #7d2ae8; padding: 1.4rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
+              <div class="card-icon-box" style="width: 42px; height: 42px; font-size: 1.15rem; background: rgba(125, 42, 232, 0.15); color: #c084fc; margin-bottom: 0;">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div>
+                <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">Canva Magic Studio</h3>
+                <span style="font-size: 0.75rem; color: #d8b4fe; font-weight: 500;">Diseño Gráfico · Presentaciones</span>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 0.88rem; line-height: 1.55; margin-bottom: 0;">
+              IA en el lienzo para crear o editar imágenes, borrar fondos con un clic, reformular textos para afiches y adaptar presentaciones completas.
+            </p>
+          </div>
+
+          <!-- Microsoft 365 Copilot -->
+          <div class="card" style="border-top: 4px solid #0078d4; padding: 1.4rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
+              <div class="card-icon-box" style="width: 42px; height: 42px; font-size: 1.15rem; background: rgba(0, 120, 212, 0.15); color: #38bdf8; margin-bottom: 0;">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <div>
+                <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">Microsoft 365 Copilot</h3>
+                <span style="font-size: 0.75rem; color: #7dd3fc; font-weight: 500;">Word · Excel · PowerPoint · Teams</span>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 0.88rem; line-height: 1.55; margin-bottom: 0;">
+              Copiloto que transforma documentos en diapositivas, resume extensos hilos de correo y automatiza el análisis estadístico en hojas de cálculo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Comparativa: Ventajas y Desventajas -->
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 2rem;">
+          <!-- Ventajas -->
+          <div class="card" style="border-top: 4px solid var(--accent-emerald);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <div class="card-icon-box" style="background: var(--accent-emerald-bg); color: var(--accent-emerald); width: 44px; height: 44px; font-size: 1.25rem; margin-bottom: 0;">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <h3 style="color: #ffffff; margin-bottom: 0.15rem; font-size: 1.25rem;">Ventajas Clave</h3>
+                <span style="font-size: 0.8rem; color: var(--accent-emerald); font-weight: 600;">Puntos fuertes en la práctica</span>
+              </div>
+            </div>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Cero fricción:</strong> No necesitas copiar ni pegar entre pestañas; trabaja sobre el documento activo.</div>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Contexto automático:</strong> Lee la información del archivo abierto sin que tengas que adjuntarlo o describirlo.</div>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Facilidad de uso:</strong> Integrada en menús e iconos ya conocidos por el equipo docente.</div>
+              </li>
+              <li style="margin-bottom: 0; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-check" style="color: var(--accent-emerald); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Formato listo:</strong> Inserta diapositivas, imágenes recortadas o tablas maquetadas directamente.</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Desventajas -->
+          <div class="card" style="border-top: 4px solid var(--accent-amber);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <div class="card-icon-box" style="background: var(--accent-amber-bg); color: var(--accent-amber); width: 44px; height: 44px; font-size: 1.25rem; margin-bottom: 0;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <div>
+                <h3 style="color: #ffffff; margin-bottom: 0.15rem; font-size: 1.25rem;">Desventajas y Límites</h3>
+                <span style="font-size: 0.8rem; color: var(--accent-amber); font-weight: 600;">Aspectos a tener en cuenta</span>
+              </div>
+            </div>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.9rem; color: var(--text-muted-light); line-height: 1.6;">
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Menor flexibilidad:</strong> Respuestas más estructuradas y acotadas; no admiten prompts libres tan complejos.</div>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Costos de suscripción:</strong> La mayoría de funciones útiles exigen planes de pago (Google One AI, Canva Pro, M365 Copilot).</div>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Atadura tecnológica (Lock-in):</strong> Si la escuela cambia de plataforma, se pierden los flujos y automatizaciones.</div>
+              </li>
+              <li style="margin-bottom: 0; display: flex; gap: 0.65rem;">
+                <i class="fa-solid fa-xmark" style="color: var(--accent-amber); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                <div><strong style="color: #ffffff;">Menor deliberación:</strong> Carecen de los modos de razonamiento paso a paso propios de los modelos insignia dedicados.</div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
-
 
     <!-- NAVEGACIÓN ENTRE MÓDULOS -->
     <section class="section section-dark" style="padding: 2.5rem 0; border-top: 1px solid var(--border-dark);">
