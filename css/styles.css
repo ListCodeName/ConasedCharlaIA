@@ -1335,6 +1335,125 @@ p {
   margin-bottom: 0;
 }
 
+/* Badges Compactos de los 4 Ejes de la Exposición */
+.welcome-pillars-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 1.75rem;
+}
+
+.welcome-pillar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 50px;
+  padding: 0.65rem 1.45rem 0.65rem 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 56, 84, 0.06);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.welcome-pillar-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 56, 84, 0.12);
+}
+
+.welcome-pillar-badge .pillar-badge-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.welcome-pillar-badge:hover .pillar-badge-icon {
+  transform: scale(1.1);
+}
+
+.welcome-pillar-badge .pillar-badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--conased-navy-dark);
+  white-space: nowrap;
+}
+
+/* 1. Conceptos Clave (Cian Profundo) */
+.pillar-badge-cyan-deep {
+  border-left: 4px solid var(--conased-cyan-deep);
+}
+.pillar-badge-cyan-deep .pillar-badge-icon {
+  background: rgba(0, 119, 182, 0.12);
+  color: var(--conased-cyan-deep);
+  border: 1px solid rgba(0, 119, 182, 0.25);
+}
+.pillar-badge-cyan-deep:hover {
+  border-color: rgba(0, 119, 182, 0.4);
+  border-left-color: var(--conased-cyan-deep);
+}
+
+/* 2. Tipos de IA (Cian Brillante) */
+.pillar-badge-cyan-bright {
+  border-left: 4px solid var(--conased-cyan-bright);
+}
+.pillar-badge-cyan-bright .pillar-badge-icon {
+  background: rgba(0, 180, 216, 0.12);
+  color: var(--conased-cyan);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+}
+.pillar-badge-cyan-bright:hover {
+  border-color: rgba(0, 180, 216, 0.45);
+  border-left-color: var(--conased-cyan-bright);
+}
+
+/* 3. Inclusión en el Rol Docente (Esmeralda) */
+.pillar-badge-emerald {
+  border-left: 4px solid var(--accent-emerald);
+}
+.pillar-badge-emerald .pillar-badge-icon {
+  background: rgba(6, 214, 160, 0.14);
+  color: #047857;
+  border: 1px solid rgba(6, 214, 160, 0.35);
+}
+.pillar-badge-emerald:hover {
+  border-color: rgba(6, 214, 160, 0.5);
+  border-left-color: var(--accent-emerald);
+}
+
+/* 4. Cierre de la Presentación (Ámbar / Naranja) */
+.pillar-badge-amber {
+  border-left: 4px solid var(--accent-amber);
+}
+.pillar-badge-amber .pillar-badge-icon {
+  background: rgba(231, 111, 81, 0.14);
+  color: #c2410c;
+  border: 1px solid rgba(231, 111, 81, 0.35);
+}
+.pillar-badge-amber:hover {
+  border-color: rgba(231, 111, 81, 0.5);
+  border-left-color: var(--accent-amber);
+}
+
+@media (max-width: 640px) {
+  .welcome-pillars-badges {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .welcome-pillar-badge {
+    width: 100%;
+  }
+}
+
 /* --- Demostrador Unificado de Diapositivas HTML (Módulo 3) --- */
 .demo-quiz-btn {
   text-align: left !important;
@@ -2203,12 +2322,62 @@ p {
   margin-bottom: 1.25rem;
 }
 
+/* Badge Introductorio a las Acciones de Fundación CONASED */
+.conased-intro-badge-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.conased-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: linear-gradient(145deg, rgba(8, 41, 64, 0.75) 0%, rgba(4, 22, 36, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 180, 216, 0.35);
+  border-radius: 50px;
+  padding: 0.65rem 1.6rem 0.65rem 0.85rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 180, 216, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.conased-intro-badge:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 180, 216, 0.6);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), 0 0 22px rgba(0, 180, 216, 0.22);
+}
+
+.conased-intro-badge-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.18);
+  color: var(--conased-cyan-bright);
+  border: 1px solid rgba(0, 180, 216, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+.conased-intro-badge-text {
+  color: #e0f2fe;
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 /* Badges de Acciones Institucionales CONASED (Diseño Alternativo: Ícono Protagonista + Solo Título) */
 .conased-badges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 1.25rem;
-  margin-top: 2.25rem;
+  margin-top: 1.75rem;
   margin-bottom: 2.25rem;
 }
 
@@ -2421,54 +2590,96 @@ p {
 }
 .badge-color-fuchsia::before { background: #e879f9; }
 
-/* Tarjetas de Agradecimiento a la Comunidad */
-.gratitude-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.75rem;
-  margin-bottom: 3rem;
+/* Badges de Agradecimiento a los Presentes (Sección Clara) */
+.gratitude-badges-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
-.gratitude-card {
+.gratitude-badge {
   background: #ffffff;
   border: 1px solid var(--border-light);
-  border-radius: 16px;
-  padding: 2.25rem 1.75rem;
-  box-shadow: 0 6px 25px rgba(0, 56, 84, 0.06);
-  position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  display: flex;
-  flex-direction: column;
+  border-radius: 50px;
+  padding: 0.85rem 1.85rem 0.85rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.15rem;
+  box-shadow: 0 4px 20px rgba(0, 56, 84, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
 }
 
-.gratitude-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(0, 56, 84, 0.12);
+.gratitude-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 56, 84, 0.12);
 }
 
-.gratitude-card-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
+.gratitude-badge-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.25rem;
-}
-
-.gratitude-card h3 {
-  color: var(--conased-navy-dark);
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
-.gratitude-card p {
-  color: #475569;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  margin-bottom: 0;
-  flex: 1;
+.gratitude-badge:hover .gratitude-badge-icon {
+  transform: scale(1.1);
+}
+
+.gratitude-badge-text {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--conased-navy-dark);
+}
+
+/* Color Emerald (Docentes) */
+.gratitude-badge-emerald {
+  border-left: 5px solid var(--accent-emerald);
+}
+.gratitude-badge-emerald .gratitude-badge-icon {
+  background: rgba(6, 214, 160, 0.15);
+  color: #047857;
+  border: 1px solid rgba(6, 214, 160, 0.35);
+}
+.gratitude-badge-emerald:hover {
+  border-color: rgba(6, 214, 160, 0.5);
+  border-left-color: var(--accent-emerald);
+}
+
+/* Color Cyan (Equipos Directivos) */
+.gratitude-badge-cyan {
+  border-left: 5px solid var(--conased-cyan-deep);
+}
+.gratitude-badge-cyan .gratitude-badge-icon {
+  background: rgba(0, 150, 199, 0.15);
+  color: var(--conased-cyan-deep);
+  border: 1px solid rgba(0, 150, 199, 0.35);
+}
+.gratitude-badge-cyan:hover {
+  border-color: rgba(0, 150, 199, 0.5);
+  border-left-color: var(--conased-cyan-deep);
+}
+
+/* Color Amber (Comunidad en General) */
+.gratitude-badge-amber {
+  border-left: 5px solid var(--accent-amber);
+}
+.gratitude-badge-amber .gratitude-badge-icon {
+  background: rgba(231, 111, 81, 0.15);
+  color: #c2410c;
+  border: 1px solid rgba(231, 111, 81, 0.35);
+}
+.gratitude-badge-amber:hover {
+  border-color: rgba(231, 111, 81, 0.5);
+  border-left-color: var(--accent-amber);
 }
 
 /* ==========================================================================
