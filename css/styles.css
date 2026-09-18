@@ -2134,3 +2134,824 @@ p {
   background: #059669;
   border-radius: 10px;
 }
+
+/* ==========================================================================
+   MÓDULO 4: CIERRE, AGRADECIMIENTO Y COMPROMISO INSTITUCIONAL CONASED
+   ========================================================================== */
+
+/* Contenedor del Logo Institucional Showcase */
+.conased-showcase-card {
+  background: linear-gradient(135deg, rgba(7, 38, 59, 0.85) 0%, rgba(3, 23, 38, 0.95) 100%);
+  border: 1px solid rgba(0, 180, 216, 0.35);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 0 35px rgba(0, 180, 216, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.conased-showcase-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--conased-cyan-bright), var(--accent-emerald), var(--accent-amber));
+}
+
+.conased-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.25rem;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3), 0 0 0 6px rgba(0, 180, 216, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conased-logo-badge:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 180, 216, 0.45), 0 0 0 8px rgba(0, 180, 216, 0.25);
+}
+
+.conased-logo-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.conased-institution-title {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.conased-institution-sub {
+  color: var(--conased-cyan-bright);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+/* Badges de Acciones Institucionales CONASED (Diseño Alternativo: Ícono Protagonista + Solo Título) */
+.conased-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.conased-action-badge {
+  background: linear-gradient(145deg, rgba(8, 41, 64, 0.7) 0%, rgba(4, 22, 36, 0.85) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 180, 216, 0.22);
+  border-radius: 20px;
+  padding: 1.65rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  transition: all 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.conased-action-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.conased-action-badge:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(145deg, rgba(12, 54, 84, 0.85) 0%, rgba(6, 29, 48, 0.95) 100%);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+
+.conased-action-badge .badge-icon-box {
+  width: 66px;
+  height: 66px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.95rem;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.conased-action-badge:hover .badge-icon-box {
+  transform: scale(1.12);
+}
+
+.conased-action-badge h4 {
+  color: #ffffff;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+}
+
+/* Variantes de color y resplandor para los Badges */
+/* 1. Emerald */
+.badge-color-emerald .badge-icon-box {
+  background: rgba(6, 214, 160, 0.16);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(6, 214, 160, 0.4);
+}
+.conased-action-badge.badge-color-emerald:hover {
+  border-color: rgba(6, 214, 160, 0.6);
+  box-shadow: 0 12px 32px rgba(6, 214, 160, 0.22);
+}
+.badge-color-emerald::before { background: var(--accent-emerald); }
+
+/* 2. Cyan */
+.badge-color-cyan .badge-icon-box {
+  background: rgba(0, 180, 216, 0.16);
+  color: var(--conased-cyan-bright);
+  border: 1px solid rgba(0, 180, 216, 0.4);
+}
+.conased-action-badge.badge-color-cyan:hover {
+  border-color: rgba(0, 180, 216, 0.6);
+  box-shadow: 0 12px 32px rgba(0, 180, 216, 0.25);
+}
+.badge-color-cyan::before { background: var(--conased-cyan-bright); }
+
+/* 3. Rose */
+.badge-color-rose .badge-icon-box {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.4);
+}
+.conased-action-badge.badge-color-rose:hover {
+  border-color: rgba(244, 63, 94, 0.6);
+  box-shadow: 0 12px 32px rgba(244, 63, 94, 0.22);
+}
+.badge-color-rose::before { background: #fb7185; }
+
+/* 4. Purple */
+.badge-color-purple .badge-icon-box {
+  background: rgba(168, 85, 247, 0.16);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+.conased-action-badge.badge-color-purple:hover {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 12px 32px rgba(168, 85, 247, 0.22);
+}
+.badge-color-purple::before { background: #c084fc; }
+
+/* 5. Amber */
+.badge-color-amber .badge-icon-box {
+  background: rgba(245, 158, 11, 0.16);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.conased-action-badge.badge-color-amber:hover {
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.22);
+}
+.badge-color-amber::before { background: #fbbf24; }
+
+/* 6. Blue */
+.badge-color-blue .badge-icon-box {
+  background: rgba(59, 130, 246, 0.16);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+.conased-action-badge.badge-color-blue:hover {
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.22);
+}
+.badge-color-blue::before { background: #60a5fa; }
+
+/* 7. Teal */
+.badge-color-teal .badge-icon-box {
+  background: rgba(20, 184, 166, 0.16);
+  color: #2dd4bf;
+  border: 1px solid rgba(20, 184, 166, 0.4);
+}
+.conased-action-badge.badge-color-teal:hover {
+  border-color: rgba(20, 184, 166, 0.6);
+  box-shadow: 0 12px 32px rgba(20, 184, 166, 0.22);
+}
+.badge-color-teal::before { background: #2dd4bf; }
+
+/* 8. Orange */
+.badge-color-orange .badge-icon-box {
+  background: rgba(249, 115, 22, 0.16);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+}
+.conased-action-badge.badge-color-orange:hover {
+  border-color: rgba(249, 115, 22, 0.6);
+  box-shadow: 0 12px 32px rgba(249, 115, 22, 0.22);
+}
+.badge-color-orange::before { background: #fb923c; }
+
+/* 9. Lime */
+.badge-color-lime .badge-icon-box {
+  background: rgba(163, 230, 53, 0.16);
+  color: #a3e635;
+  border: 1px solid rgba(163, 230, 53, 0.4);
+}
+.conased-action-badge.badge-color-lime:hover {
+  border-color: rgba(163, 230, 53, 0.6);
+  box-shadow: 0 12px 32px rgba(163, 230, 53, 0.22);
+}
+.badge-color-lime::before { background: #a3e635; }
+
+/* 10. Indigo */
+.badge-color-indigo .badge-icon-box {
+  background: rgba(129, 140, 248, 0.16);
+  color: #818cf8;
+  border: 1px solid rgba(129, 140, 248, 0.4);
+}
+.conased-action-badge.badge-color-indigo:hover {
+  border-color: rgba(129, 140, 248, 0.6);
+  box-shadow: 0 12px 32px rgba(129, 140, 248, 0.22);
+}
+.badge-color-indigo::before { background: #818cf8; }
+
+/* 11. Red */
+.badge-color-red .badge-icon-box {
+  background: rgba(248, 113, 113, 0.16);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+}
+.conased-action-badge.badge-color-red:hover {
+  border-color: rgba(248, 113, 113, 0.6);
+  box-shadow: 0 12px 32px rgba(248, 113, 113, 0.22);
+}
+.badge-color-red::before { background: #f87171; }
+
+/* 12. Fuchsia */
+.badge-color-fuchsia .badge-icon-box {
+  background: rgba(232, 121, 249, 0.16);
+  color: #e879f9;
+  border: 1px solid rgba(232, 121, 249, 0.4);
+}
+.conased-action-badge.badge-color-fuchsia:hover {
+  border-color: rgba(232, 121, 249, 0.6);
+  box-shadow: 0 12px 32px rgba(232, 121, 249, 0.22);
+}
+.badge-color-fuchsia::before { background: #e879f9; }
+
+/* Tarjetas de Agradecimiento a la Comunidad */
+.gratitude-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.gratitude-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 2.25rem 1.75rem;
+  box-shadow: 0 6px 25px rgba(0, 56, 84, 0.06);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.gratitude-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 56, 84, 0.12);
+}
+
+.gratitude-card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.gratitude-card h3 {
+  color: var(--conased-navy-dark);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.gratitude-card p {
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+/* ==========================================================================
+   SECCIÓN CLÍMAX: MUCHAS GRACIAS POR SU ATENCIÓN (CURSIVA + DORADO)
+   ========================================================================== */
+.closing-golden-section {
+  background: radial-gradient(ellipse at center, #092c44 0%, #031726 65%, #010c14 100%);
+  border-top: 2px solid rgba(212, 175, 55, 0.35);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.35);
+  padding: 5.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.closing-golden-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.golden-ribbon-adornment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: #d4af37;
+  font-size: 0.95rem;
+}
+
+.golden-ribbon-line {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.golden-climax-text {
+  font-family: 'Great Vibes', 'Playfair Display', cursive, serif;
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #fff275 0%, #ffd700 25%, #f5af19 50%, #d4af37 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 18px rgba(212, 175, 55, 0.4));
+  padding: 0.2rem 0;
+}
+
+.golden-closing-quote {
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #f8fafc;
+  line-height: 1.7;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.golden-institution-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.5rem;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50px;
+  color: #fef08a;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   SECCIÓN 6: EL SALTO CUALITATIVO, EL «¿POR QUÉ?» Y LA CURIOSIDAD DOCENTE
+   ========================================================================== */
+
+/* 1. Banner Monumental de la Pregunta "¿POR QUÉ?" */
+.why-monumental-card {
+  position: relative;
+  background: radial-gradient(ellipse at center, #07263b 0%, #031726 80%, #020e18 100%);
+  border: 1px solid rgba(0, 180, 216, 0.35);
+  border-radius: 20px;
+  padding: 3.25rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 20, 35, 0.35), 0 0 35px rgba(0, 180, 216, 0.15);
+  margin-bottom: 2.5rem;
+}
+
+.why-monumental-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.18) 0%, rgba(6, 214, 160, 0.08) 50%, transparent 75%);
+  pointer-events: none;
+  filter: blur(20px);
+}
+
+.why-intro-context {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  color: var(--conased-ice);
+  max-width: 820px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.why-giant-display {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.why-giant-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-emerald);
+  background: rgba(6, 214, 160, 0.12);
+  border: 1px solid rgba(6, 214, 160, 0.3);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.why-giant-text {
+  font-family: var(--font-heading);
+  font-size: clamp(3.8rem, 11vw, 7.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 0;
+  background: linear-gradient(135deg, #caf0f8 0%, #00b4d8 40%, #06d6a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 6px 25px rgba(0, 180, 216, 0.45));
+  animation: whyTextPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes whyTextPulse {
+  0% {
+    filter: drop-shadow(0 6px 20px rgba(0, 180, 216, 0.35));
+    transform: scale(1);
+  }
+  100% {
+    filter: drop-shadow(0 8px 30px rgba(6, 214, 160, 0.5));
+    transform: scale(1.015);
+  }
+}
+
+.why-reflection-quote {
+  position: relative;
+  z-index: 1;
+  max-width: 840px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  color: #e2e8f0;
+  line-height: 1.75;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.5rem;
+}
+
+/* 2. Matriz de Contraste de Paradigmas (Método Obsoleto vs Salto Cualitativo) */
+.paradigm-contrast-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .paradigm-contrast-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.paradigm-box {
+  border-radius: 16px;
+  padding: 1.85rem;
+  box-shadow: 0 4px 20px rgba(0, 30, 50, 0.06);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.paradigm-box:hover {
+  transform: translateY(-3px);
+}
+
+.paradigm-obsolete {
+  background: #ffffff;
+  border: 1px solid rgba(231, 111, 81, 0.25);
+  border-top: 5px solid var(--accent-amber);
+}
+
+.paradigm-evolution {
+  background: #ffffff;
+  border: 1px solid rgba(6, 214, 160, 0.3);
+  border-top: 5px solid var(--accent-emerald);
+  box-shadow: 0 6px 25px rgba(6, 214, 160, 0.08);
+}
+
+.paradigm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.paradigm-obsolete .paradigm-badge {
+  background: rgba(231, 111, 81, 0.12);
+  color: #c2410c;
+}
+
+.paradigm-evolution .paradigm-badge {
+  background: rgba(6, 214, 160, 0.14);
+  color: #047857;
+}
+
+.paradigm-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.paradigm-obsolete h3 {
+  color: #9a3412;
+}
+
+.paradigm-evolution h3 {
+  color: #065f46;
+}
+
+.paradigm-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.paradigm-list li {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.paradigm-obsolete .paradigm-list li i {
+  color: var(--accent-amber);
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.paradigm-evolution .paradigm-list li i {
+  color: var(--accent-emerald);
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* 3. Marco Controlado de Curiosidad Innata */
+.curiosity-framework-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8fc 100%);
+  border: 1px solid var(--border-light);
+  border-left: 5px solid var(--conased-cyan-bright);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2.75rem;
+  box-shadow: 0 4px 20px rgba(0, 56, 84, 0.06);
+}
+
+.curiosity-pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .curiosity-pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.curiosity-pillar {
+  background: #ffffff;
+  border: 1px solid rgba(0, 119, 182, 0.15);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.curiosity-pillar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.6rem;
+}
+
+.curiosity-pillar-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(0, 180, 216, 0.12);
+  color: var(--conased-cyan-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.curiosity-pillar h4 {
+  font-size: 0.98rem;
+  color: var(--conased-navy-dark);
+  margin: 0;
+}
+
+.curiosity-pillar p {
+  font-size: 0.88rem;
+  color: var(--text-muted-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 4. Cuadrícula de Ejemplos Disciplinares */
+.discipline-examples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .discipline-examples-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.discipline-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 56, 84, 0.07);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.discipline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 56, 84, 0.12);
+}
+
+.discipline-card-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.discipline-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.discipline-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.discipline-title-group h3 {
+  font-size: 1.15rem;
+  color: var(--conased-navy-dark);
+  margin: 0;
+}
+
+.discipline-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  flex: 1;
+}
+
+.discipline-shift-summary {
+  background: #f8fafd;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border-left: 3px solid var(--text-muted-light);
+}
+
+.discipline-shift-summary strong {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.discipline-procedure-box {
+  background: rgba(0, 119, 182, 0.05);
+  border: 1px dashed rgba(0, 119, 182, 0.3);
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+}
+
+.discipline-procedure-box h4 {
+  font-size: 0.92rem;
+  color: var(--conased-cyan-deep);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discipline-procedure-box p {
+  font-size: 0.89rem;
+  color: #334155;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.discipline-justification-box {
+  background: rgba(6, 214, 160, 0.1);
+  border: 1px solid rgba(6, 214, 160, 0.35);
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+  margin-top: auto;
+}
+
+.discipline-justification-box h4 {
+  font-size: 0.92rem;
+  color: #047857;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discipline-justification-box p {
+  font-size: 0.89rem;
+  color: #064e3b;
+  line-height: 1.65;
+  margin: 0;
+}
+
+

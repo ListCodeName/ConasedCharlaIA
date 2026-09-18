@@ -21,8 +21,8 @@
 ```mermaid
 graph TD
     A[Módulo 1: Conceptos Clave de IA<br/>Fundamentos, Prompting, Bucles Tóxicos y Memoria] --> B[Módulo 2: Distintos Tipos de IA<br/>Habilidades, Especialidades, Propósito General y Razonamiento]
-    B --> C[Módulo 3: Inclusión en el Rol Docente y en el Aula<br/>Debate, Gestión, Ahorro de Tiempo y Diapositivas HTML]
-    C --> D[Módulo 4: Opciones del Mercado<br/>Comparativa de Plataformas, Matriz de Decisión y Ética]
+    B --> C[Módulo 3: Inclusión en el Rol Docente y en el Aula<br/>Debate, Gestión Documental, Ahorro de Tiempo y Taller de Arte]
+    C --> D[Módulo 4: Cierre de la Presentación<br/>Conclusiones, Hoja de Ruta y Broche Final]
 ```
 
 ---
@@ -241,53 +241,66 @@ graph TD
 - **El salto cualitativo con IA:** Reducción del tiempo burocrático y de búsqueda (-92% a -94%) actuando como motor de síntesis, selección y primer borrador estructurado.
 - **Esquema de transferencia a la creatividad:** Cómo las horas recuperadas de la burocracia se vuelcan en dinámicas pedagógicas de alto impacto, atención personalizada a estudiantes con ritmos diversos y recuperación de la vocación docente.
 
-### 3.4. Mini Guía: Presentaciones Interactivas en Archivo Unificado HTML/CSS/JS
-- **Por qué es una alternativa superior a PPTX y PDF:**
-  - *Portabilidad total en celulares:* Abre de inmediato en cualquier navegador móvil sin requerir PowerPoint, Office instalado ni visores pesados de PDF.
-  - *Cero dependencias y peso pluma:* Todo el contenido vive en un solo archivo de 30 a 50 KB, ideal para compartir por WhatsApp o pendrive en escuelas sin internet.
-  - *Interactividad y dinamismo:* Tarjetas que se revelan, navegación táctil y micro-cuestionarios con retroalimentación inmediata.
-  - *Afianzamiento activo:* El alumno interactúa directamente con el contenido en su dispositivo.
-- **Confección del prompt unificado (Paso a Paso):**
-  - *Estructura didáctica en 3 fases:* 1) Texto documentativo/informativo introductorio con analogía cotidiana, 2) Juego interactivo de 3 preguntas con validación inmediata en verde/rojo y feedback formativo, 3) Pantalla final de puntaje con diagnóstico personalizado ("¡Excelente trabajo!", "¡Has hecho un buen trabajo! Repasa...", "Debe repasar más este tema...").
-  - *Requisitos técnicos estrictos:* Código unificado en un solo archivo `.html`, CSS y JS embebidos, diseño Mobile-First con modo oscuro y botones táctiles.
-- **Plantilla de prompt conciso copiable y simulador en vivo unificado** (5 diapositivas interactivas con cálculo de puntaje en tiempo real y reinicio).
-- **Ambientación visual institucional:** Sección con efecto fade out angulado de fondo (`presentaciones_html_interactivas.jpg`) que ilustra la interfaz móvil con elementos holográficos web (código HTML, CSS, JavaScript y micro-quizzes interactivos).
+### 3.4. Dinámica Interactiva: Cerrojo y Pregunta de Transición al Taller Creativo
+- **Pregunta disparadora revelada tras el desbloqueo:**
+  > **«Si la IA nos ahorra horas de rutina... ¿en qué invertiremos el tiempo recuperado con nuestros alumnos?»**
+- **Sentido metodológico:** Tender el puente reflexivo entre el ahorro del tiempo burocrático y la entrega creativa y artística del docente y el alumno.
 
-### 3.5. Laboratorio de Prompts Docentes (Estructuras Mínimas, Ejemplos y Preguntas de Iteración)
-- Reformulación con prompts concisos, fragmentos breves de respuesta simulada y preguntas de mejora según el contexto escolar:
-  1. *Resumen de Documento con Criterio Temático Específico:* Filtro pedagógico de ideas fuerza, síntesis conectiva y dilemas abiertos.
-  2. *Cuestionario a partir de Texto Académico:* Evaluación graduada en 3 niveles (literal, inferencial y crítico/aplicación) con respuestas modelo referenciadas.
-  3. *Tutor Interactivo Q&A (Entrenamiento Socrático para Fijar Conceptos):* Diálogo uno a uno que no anticipa respuestas, ofrece pistas formativas y adapta la complejidad.
-  4. *Resolución de Problemas Paso a Paso con Explicación Contextual de Métodos:* Modelado inicial, justificación conceptual de cada operación, alerta de errores típicos e interpretación real.
-  5. *Generación de Imágenes Didácticas con Criterios Visuales y Preguntas Clave:* Especificación de sujeto, estilo artístico, iluminación, paleta, encuadre y prompt negativo anti-cliché.
-  6. *Resumen y Explotación Pedagógica de Videos:* Extracción de tesis central, marcas de tiempo (timestamps), glosario previo y preguntas de atención activa para el visionado.
-
-### 3.6. Caso Testigo: El "Personaje Fantástico" y la Analogía del Taller de Arte
+### 3.5. Caso Testigo: El "Personaje Fantástico" y la Analogía del Taller de Arte
 - Explicación de cómo pasar de una consigna escolar habitual y el mal uso automático (AI Slop cliché) a una dirección creativa humana con rigor estético.
 - Analogía del Taller de Plástica: la IA como pincel técnico y el estudiante como verdadero autor y estratega (ambientado con la ilustración botánica del personaje fantástico en técnica de acuarela).
 
+### 3.6. El Salto Cualitativo: La Pregunta «¿POR QUÉ?», la Curiosidad y Ejemplos Disciplinares
+- **La Pregunta Fundamental («¿POR QUÉ?»):**
+  - Una vez asimilados los usos técnicos de la IA y el ahorro masivo de horas mecánicas (-92% a -94%), el docente debe hacerse la pregunta teleológica central: *«¿Por qué y para qué incorporamos la IA?»*.
+  - No para acelerar viejas prácticas vacías, sino para dar un salto cualitativo hacia el pensamiento profundo.
+- **Superación de Métodos Obsoletos:**
+  - Dejar atrás la «caza de frases» en libros para responder cuestionarios fácticos básicos (tarea que hoy cualquier IA resuelve en 2 segundos sin aprendizaje).
+  - Dar lugar a la creatividad, la experimentación activa y la ampliación en múltiples perspectivas y ejes temáticos.
+- **Favorecer la Curiosidad Innata en un Marco Controlado:**
+  - Encender la curiosidad natural del estudiante mediante 3 pilares docentes:
+    1. *Norte Curricular Claro:* Objetivos pedagógicos y preguntas disparadoras bien definidas.
+    2. *Filtro Crítico y Verificación:* Detección de sesgos, contraste con fuentes rigurosas y chequeo de alucinaciones.
+    3. *Defensa y Metacognición Humana:* Evaluación centrada en la explicación oral del razonamiento con palabras propias.
+- **Repertorio de Ejemplos Disciplinares (Proceder + Justificación Pedagógica):**
+  1. *Matemáticas y Razonamiento Lógico:* Solicitar el paso a paso a la IA, explorar múltiples vías lógicas de resolución (algebraica, geométrica, gráfica) y evaluar la defensa oral del porqué de cada paso.
+     - *Justificación:* La máquina calcula de inmediato; el valor irreemplazable de la mente humana está en la metacognición y en la justificación de premisas.
+  2. *Historia y Ciencias Sociales:* Cargar libros digitalizados y fuentes de época en la IA para transformarla en un experto temático situado. Indagar en ejes transversales: vida cotidiana, vestimenta, arquitectura, tensiones étnicas y valores de la sociedad.
+     - *Justificación:* Transforma la historia de una cronología estéril de fechas memorizadas a un laboratorio vivo de empatía histórica y pensamiento multicausal.
+  3. *Lengua, Literatura y Comunicación:* Entrevistar con IA a personajes secundarios o antagonistas explorando dilemas éticos no explicitados; reescribir escenas desde perspectivas silenciadas, depurar clichés (AI Slop) y reelaborar el texto con voz de autor propia.
+     - *Justificación:* Estimula la comprensión lectora profunda, la polifonía de voces y la agudeza estilística.
+  4. *Ciencias Naturales y Biología:* Utilizar la IA como simulador de perturbaciones ecosistémicas (ej. cambios en el río Uruguay y sus humedales), formulando hipótesis, contrastando con informes científicos regionales y debatiendo medidas ecológicas y dilemas bioéticos.
+     - *Justificación:* Fomenta el pensamiento sistémico, la indagación científica genuina y la responsabilidad ambiental situada.
+
 ---
 
-## 4. Módulo 4: Opciones del Mercado (Ventajas, Desventajas y Decisión Docente)
+## 4. Módulo 4: Cierre y Compromiso Institucional
 
-### 4.1. Comparativa Honesta de Plataformas Líderes
-- **ChatGPT (OpenAI):** Gran versatilidad, velocidad, voz en tiempo real y aplicaciones móviles. Precauciones sobre clichés y datos sensibles en planes gratuitos.
-- **Claude (Anthropic):** Redacción pedagógica superior en español, tono empático y humano, menor alucinación en análisis cualitativo y sistema de artefactos.
-- **Google Gemini:** Ventana de contexto millonaria capaz de analizar libros completos en PDF de un solo envío e integración nativa con Google Classroom y Drive.
-- **Microsoft Copilot:** Búsquedas web con enlaces directos a las fuentes citadas, integración en herramientas de oficina e inicio de sesión institucional seguro.
+### 4.1. La Labor Institucional de Fundación CONASED
+- **Logo oficial de CONASED en alta definición y misión institucional.**
+- **Fundación Concordiense para la Acción Social y Estudios para el Desarrollo:** El rol de la institución como articulador territorial y democratizador de la tecnología en Concordia y la región.
+- **Nexo introductorio:** Puente entre la capacitación pedagógico-digital y el compromiso territorial amplio de la institución.
+- **Badges de Acciones y Áreas de Trabajo Comunitario (Diseño de Alto Impacto: Ícono Destacado + Título):**
+  1. *Capacitación Gratuita y Continua:* Talleres aplicados para docentes y comunidad sin costo.
+  2. *Inclusión y Equidad Social:* Achicar la brecha digital con metodologías adaptables a todo contexto socioeconómico.
+  3. *Acción Social y Solidaria:* Ayuda social directa, presencia territorial y articulación solidaria comunitaria.
+  4. *Ética y Enfoque Humanista:* Defensa de los valores humanos y protección de las infancias en la era digital.
+  5. *Eventos Comunitarios e Integración:* Jornadas públicas, festejos populares y actividades inclusivas abiertas.
+  6. *Alfabetización Digital:* Formación en herramientas tecnológicas accesibles para toda la sociedad.
+  7. *Talleres de Oficios y Empleo:* Trayectos de formación para la inserción y el desarrollo laboral local.
+  8. *Acompañamiento Familiar:* Contención, orientación y apoyo a familias en contextos de vulnerabilidad.
+  9. *Apoyo Escolar Barrial:* Espacios de refuerzo pedagógico y merenderos en barrios populares.
+  10. *Deporte y Recreación Juvenil:* Promoción de actividades saludables y contención juvenil.
+  11. *Salud y Bienestar Comunitario:* Jornadas de prevención, salud comunitaria y hábitos saludables.
+  12. *Cultura y Participación Barrial:* Fomento del arte popular, la identidad local y la expresión comunitaria.
 
-### 4.2. Matriz de Decisión según la Tarea Docente
-- Guía rápida para saber qué herramienta abrir según se requiera: investigación con fuentes, redacción de rúbricas empáticas, análisis de libros en PDF, lluvia de ideas o generación de presentaciones interactivas en código HTML.
+### 4.2. Agradecimiento a la Comunidad Educativa
+- Reconocimiento explícito y sincero a los asistentes por su tiempo, calidez y compromiso con la educación.
+- Homenaje en 3 dimensiones: a los docentes y profesores frente al aula, a los equipos directivos e institucionales, y a la comunidad en general.
 
-### 4.3. Gestión Técnica de la Memoria del Chat, Tokens y Sesgo
-- El reenvío silencioso del historial en cada interacción.
-- El efecto bola de nieve y consumo acelerado de tokens.
-- Ancla probabilística y contaminación de respuestas.
-- **Regla de oro de higiene digital:** Cuándo mantener un chat abierto y cuándo abrir un chat limpio (reset).
+### 4.3. Clímax de Cierre: "Muchas Gracias por su Atención"
+- Composición visual de gala con tipografía cursiva estilizada (*Great Vibes*) en dorado metálico brillante con ribetes decorativos.
+- Mensaje ancla de vocación y despedida: *«La tecnología abre caminos y multiplica posibilidades; pero son la mirada atenta, la paciencia y el corazón de los educadores lo que transforma las vidas de nuestros estudiantes.»*
+- Sello institucional de Fundación CONASED.
 
-### 4.4. Ética, Privacidad Escolar y Chuleta de Bolsillo Pre-Envío
-- Regla inquebrantable de no subir nombres reales, legajos ni datos médicos de menores.
-- Evolución de la evaluación: privilegiar el proceso y la defensa oral frente a detectores de IA falibles.
-- La calidez humana docente irreemplazable.
-- Checklist de bolsillo de 4 preguntas de control antes de presionar Enviar.
 
